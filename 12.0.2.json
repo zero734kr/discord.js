@@ -11,7 +11,7 @@
                 "welcome": {
                     "name": "환영합니다",
                     "type": "md",
-                    "content": "<div align=\"center\">\n  <br />\n  <p>\n    <a href=\"https://discord.js.org\"><img src=\"/static/logo.svg\" width=\"546\" alt=\"discord.js\" id=\"djs-logo\" /></a>\n  </p>\n  <br />\n  <p>\n    <a href=\"https://discord.gg/bRCvFy9\"><img src=\"https://discordapp.com/api/guilds/222078108977594368/embed.png\" alt=\"Discord server\" /></a>\n    <a href=\"https://www.npmjs.com/package/discord.js\"><img src=\"https://img.shields.io/npm/v/discord.js.svg?maxAge=3600\" alt=\"NPM version\" /></a>\n    <a href=\"https://www.npmjs.com/package/discord.js\"><img src=\"https://img.shields.io/npm/dt/discord.js.svg?maxAge=3600\" alt=\"NPM downloads\" /></a>\n    <a href=\"https://travis-ci.org/discordjs/discord.js\"><img src=\"https://travis-ci.org/discordjs/discord.js.svg\" alt=\"Build status\" /></a>\n    <a href=\"https://david-dm.org/discordjs/discord.js\"><img src=\"https://img.shields.io/david/discordjs/discord.js.svg?maxAge=3600\" alt=\"Dependencies\" /></a>\n    <a href=\"https://www.patreon.com/discordjs\"><img src=\"https://img.shields.io/badge/donate-patreon-F96854.svg\" alt=\"Patreon\" /></a>\n  </p>\n  <p>\n    <a href=\"https://nodei.co/npm/discord.js/\"><img src=\"https://nodei.co/npm/discord.js.png?downloads=true&stars=true\" alt=\"NPM info\" /></a>\n  </p>\n</div>\n\n# Welcome!\n\nWelcome to the discord.js v12 documentation.\n\n## About\n\ndiscord.js is a powerful [Node.js](https://nodejs.org) module that allows you to easily interact with the\n[Discord API](https://discordapp.com/developers/docs/intro).\n\n- Object-oriented\n- Predictable abstractions\n- Performant\n- 100% coverage of the Discord API\n\n## Installation\n\n**Node.js 12.0.0 or newer is required.**  \nIgnore any warnings about unmet peer dependencies, as they're all optional.\n\nWithout voice support: `npm install discord.js`  \nWith voice support ([@discordjs/opus](https://www.npmjs.com/package/@discordjs/opus)): `npm install discord.js @discordjs/opus`  \nWith voice support ([opusscript](https://www.npmjs.com/package/opusscript)): `npm install discord.js opusscript`\n\n### Audio engines\n\nThe preferred audio engine is @discordjs/opus, as it performs significantly better than opusscript. When both are available, discord.js will automatically choose @discordjs/opus.\nUsing opusscript is only recommended for development environments where @discordjs/opus is tough to get working.\nFor production bots, using @discordjs/opus should be considered a necessity, especially if they're going to be running on multiple servers.\n\n### Optional packages\n\n- [zlib-sync](https://www.npmjs.com/package/zlib-sync) for WebSocket data compression and inflation (`npm install zlib-sync`)\n- [erlpack](https://github.com/discordapp/erlpack) for significantly faster WebSocket data (de)serialisation (`npm install discordapp/erlpack`)\n- One of the following packages can be installed for faster voice packet encryption and decryption:\n  - [sodium](https://www.npmjs.com/package/sodium) (`npm install sodium`)\n  - [libsodium.js](https://www.npmjs.com/package/libsodium-wrappers) (`npm install libsodium-wrappers`)\n- [bufferutil](https://www.npmjs.com/package/bufferutil) for a much faster WebSocket connection (`npm install bufferutil`)\n- [utf-8-validate](https://www.npmjs.com/package/utf-8-validate) in combination with `bufferutil` for much faster WebSocket processing (`npm install utf-8-validate`)\n\n## Example usage\n\n```js\nconst Discord = require('discord.js');\nconst client = new Discord.Client();\n\nclient.on('ready', () => {\n  console.log(`Logged in as ${client.user.tag}!`);\n});\n\nclient.on('message', msg => {\n  if (msg.content === 'ping') {\n    msg.reply('pong');\n  }\n});\n\nclient.login('token');\n```\n\n## Links\n\n- [Website](https://discord.js.org/) ([source](https://github.com/discordjs/website))\n- [Documentation](https://discord.js.org/#/docs/main/master/general/welcome)\n- [Guide](https://discordjs.guide/) ([source](https://github.com/discordjs/guide)) - this is still for stable  \n  See also the WIP [Update Guide](https://discordjs.guide/additional-info/changes-in-v12.html) also including updated and removed items in the library.\n- [Discord.js Discord server](https://discord.gg/bRCvFy9)\n- [Discord API Discord server](https://discord.gg/discord-api)\n- [GitHub](https://github.com/discordjs/discord.js)\n- [NPM](https://www.npmjs.com/package/discord.js)\n- [Related libraries](https://discordapi.com/unofficial/libs.html)\n\n### Extensions\n\n- [RPC](https://www.npmjs.com/package/discord-rpc) ([source](https://github.com/discordjs/RPC))\n\n## Contributing\n\nBefore creating an issue, please ensure that it hasn't already been reported/suggested, and double-check the\n[documentation](https://discord.js.org/#/docs).  \nSee [the contribution guide](https://github.com/discordjs/discord.js/blob/master/.github/CONTRIBUTING.md) if you'd like to submit a PR.\n\n## Help\n\nIf you don't understand something in the documentation, you are experiencing problems, or you just need a gentle\nnudge in the right direction, please don't hesitate to join our official [Discord.js Server](https://discord.gg/bRCvFy9).\n",
+                    "content": "<div align=\"center\">\n  <br />\n  <p>\n    <a href=\"https://discord.js.org\"><img src=\"/static/logo.svg\" width=\"546\" alt=\"discord.js\" id=\"djs-logo\" /></a>\n  </p>\n  <br />\n  <p>\n    <a href=\"https://discord.gg/bRCvFy9\"><img src=\"https://discordapp.com/api/guilds/222078108977594368/embed.png\" alt=\"Discord server\" /></a>\n    <a href=\"https://www.npmjs.com/package/discord.js\"><img src=\"https://img.shields.io/npm/v/discord.js.svg?maxAge=3600\" alt=\"NPM version\" /></a>\n    <a href=\"https://www.npmjs.com/package/discord.js\"><img src=\"https://img.shields.io/npm/dt/discord.js.svg?maxAge=3600\" alt=\"NPM downloads\" /></a>\n    <a href=\"https://travis-ci.org/discordjs/discord.js\"><img src=\"https://travis-ci.org/discordjs/discord.js.svg\" alt=\"Build status\" /></a>\n    <a href=\"https://david-dm.org/discordjs/discord.js\"><img src=\"https://img.shields.io/david/discordjs/discord.js.svg?maxAge=3600\" alt=\"Dependencies\" /></a>\n    <a href=\"https://www.patreon.com/discordjs\"><img src=\"https://img.shields.io/badge/donate-patreon-F96854.svg\" alt=\"Patreon\" /></a>\n  </p>\n  <p>\n    <a href=\"https://nodei.co/npm/discord.js/\"><img src=\"https://nodei.co/npm/discord.js.png?downloads=true&stars=true\" alt=\"NPM info\" /></a>\n  </p>\n</div>\n\n# 환영합니다!\n\ndiscord.js v12 문서에 오신 걸을 환영합니다!\n\n## 머릿말\n\ndiscord.js 는 강력한  [Node.js](https://nodejs.org) 모듈로써 [디스코드 API](https://discordapp.com/developers/docs/intro)와 쉽게 상호작용하게 해줍니다.\n\n- 객체 지향적\n- 빠르고 효율적\n- 다양한 기능\n- 유연함\n- 100% Promise 기반\n\n## 설치\n\n**12.0.0 버전 이상의 Node.js 가 요구됩니다**\n모두 선택 사항이기 때문에 비적합한 동위 종속성(unmet peer dependencies)에 대한 모든 경고를 무시하세요.\n\n음성 기능이 필요 없다면: `npm install discord.js`\n음성 기능과 함께: ([@discordjs/opus](https://www.npmjs.com/package/@discordjs/opus)): `npm install discord.js @discordjs/opus`\n음성 기능과 함께: ([opusscript](https://www.npmjs.com/package/opusscript)): `npm install discord.js opusscript`\n\n### 오디오 엔진\n\n추천하는 opus 엔진은 @discordjs/opus입니다. opusscript보다 훨씬 원할하게 작동합니다. 만약 두 개 모두 사용이 가능할 경우, discord.js 는 자동적으로 @discordjs/opus 를 선택합니다.\nopusscript를 사용하는 경우에는 단지 @ discordjs/opus를 사용하기 힘든 개발환경에서만 권장됩니다.\n개발용 봇의 경우 @discordjs/opus 사용은 필수사항이여야 하며, 특히 여러 서버에서 실행될 경우 더욱 그러해야 합니다.\n\n### 선택적인 패키지들\n\n- [zlib-sync](https://www.npmjs.com/package/zlib-sync) 웹소켓 데이터 압축 및 가속 (`npm install zlib-sync`)\n- [erlpack](https://github.com/discordapp/erlpack) 훨씬 더 빠른 웹소켓 데이터 (de)serialisation (`npm install discordapp/erlpack`)\n- 다음 패키지들 중 하나는 더 빠른 패킷 암호화 및 암호 해독을 위해 설치될 수 있습니다:\n  - [sodium](https://www.npmjs.com/package/sodium) (`npm install sodium`)\n  - [libsodium.js](https://www.npmjs.com/package/libsodium-wrappers) (`npm install libsodium-wrappers`)\n- [bufferutil](https://www.npmjs.com/package/bufferutil) 훨씬 더 빠른 웹소켓 연결 (`npm install bufferutil`)\n- [utf-8-validate](https://www.npmjs.com/package/utf-8-validate) 훨씬 빠른 웹소켓 처리를 위해 `bufferutil`과 조합 (`npm install utf-8-validate`)\n\n## 예시\n\n```js\nconst Discord = require('discord.js');\nconst client = new Discord.Client();\n\nclient.on('ready', () => {\n  console.log(`${client.user.tag}에 로그인하였습니다!`);\n});\n\nclient.on('message', msg => {\n  if (msg.content === '핑') {\n    msg.reply('퐁!');\n  }\n});\n\nclient.login('토큰');\n```\n\n## 관련링크\n\n- [공식 웹사이트 (영문)](https://discord.js.org/) ([source](https://github.com/discordjs/website))\n- [공식 문서 (영문)](https://discord.js.org/#/docs/main/master/general/welcome)\n- [가이드 (영문)](https://discordjs.guide/) ([source](https://github.com/discordjs/guide)) - this is still for stable  \n  또한 [업데이트 가이드 (영문)](https://discordjs.guide/additional-info/changes-in-v12.html) 의 \">\n  <br />\n  <p>\n    <a href=\"https://discord.js.org\"><img src=\"/static/logo.svg\" width=\"546\" alt=\"discord.js\" id=\"djs-logo\" /></a>\n  </p>\n  <br />\n  <p>\n    <a href=\"https://discord.gg/bRCvFy9\"><img src=\"https://discordapp.com/api/guilds/222078108977594368/embed.png\" alt=\"Discord server\" /></a>\n    <a href=\"https://www.npmjs.com/package/discord.js\"><img src=\"https://img.shields.io/npm/v/discord.js.svg?maxAge=3600\" alt=\"NPM version\" /></a>\n    <a href=\"https://www.npmjs.com/package/discord.js\"><img src=\"https://img.shields.io/npm/dt/discord.js.svg?maxAge=3600\" alt=\"NPM downloads\" /></a>\n    <a href=\"https://travis-ci.org/discordjs/discord.js\"><img src=\"https://travis-ci.org/discordjs/discord.js.svg\" alt=\"Build status\" /></a>\n    <a href=\"https://david-dm.org/discordjs/discord.js\"><img src=\"https://img.shields.io/david/discordjs/discord.js.svg?maxAge=3600\" alt=\"Dependencies\" /></a>\n    <a href=\"https://www.patreon.com/discordjs\"><img src=\"https://img.shields.io/badge/donate-patreon-F96854.svg\" alt=\"Patreon\" /></a>\n  </p>\n  <p>\n    <a href=\"https://nodei.co/npm/discord.js/\"><img src=\"https://nodei.co/npm/discord.js.png?downloads=true&stars=true\" alt=\"NPM info\" /></a>\n  </p>\n</div>\n\n# 환영합니다!\n\ndiscord.js v12 문서에 오신 걸을 환영합니다!\n\n## 머릿말\n\ndiscord.js 는 강력한  [Node.js](https://nodejs.org) 모듈로써 [디스코드 API](https://discordapp.com/developers/docs/intro)와 쉽게 상호작용하게 해줍니다.\n\n- 객체 지향적\n- 빠르고 효율적\n- 다양한 기능\n- 유연함\n- 100% Promise 기반\n\n## 설치\n\n**12.0.0 버전 이상의 Node.js 가 요구됩니다**\n모두 선택 사항이기 때문에 비적합한 동위 종속성(unmet peer dependencies)에 대한 모든 경고를 무시하세요.\n\n음성 기능이 필요 없다면: `npm install discord.js`\n음성 기능과 함께: ([@discordjs/opus](https://www.npmjs.com/package/@discordjs/opus)): `npm install discord.js @discordjs/opus`\n음성 기능과 함께: ([opusscript](https://www.npmjs.com/package/opusscript)): `npm install discord.js opusscript`\n\n### 오디오 엔진\n\n추천하는 opus 엔진은 @discordjs/opus입니다. opusscript보다 훨씬 원할하게 작동합니다. 만약 두 개 모두 사용이 가능할 경우, discord.js 는 자동적으로 @discordjs/opus 를 선택합니다.\nopusscript를 사용하는 경우에는 단지 @ discordjs/opus를 사용하기 힘든 개발환경에서만 권장됩니다.\n개발용 봇의 경우 @discordjs/opus 사용은 필수사항이여야 하며, 특히 여러 서버에서 실행될 경우 더욱 그러해야 합니다.\n\n### 선택적인 패키지들\n\n- [zlib-sync](https://www.npmjs.com/package/zlib-sync) 웹소켓 데이터 압축 및 가속 (`npm install zlib-sync`)\n- [erlpack](https://github.com/discordapp/erlpack) 훨씬 더 빠른 웹소켓 데이터 (de)serialisation (`npm install discordapp/erlpack`)\n- 다음 패키지들 중 하나는 더 빠른 패킷 암호화 및 암호 해독을 위해 설치될 수 있습니다:\n  - [sodium](https://www.npmjs.com/package/sodium) (`npm install sodium`)\n  - [libsodium.js](https://www.npmjs.com/package/libsodium-wrappers) (`npm install libsodium-wrappers`)\n- [bufferutil](https://www.npmjs.com/package/bufferutil) 훨씬 더 빠른 웹소켓 연결 (`npm install bufferutil`)\n- [utf-8-validate](https://www.npmjs.com/package/utf-8-validate) 훨씬 빠른 웹소켓 처리를 위해 `bufferutil`과 조합 (`npm install utf-8-validate`)\n\n## 예시\n\n```js\nconst Discord = require('discord.js');\nconst client = new Discord.Client();\n\nclient.on('ready', () => {\n  console.log(`${client.user.tag}에 로그인하였습니다!`);\n});\n\nclient.on('message', msg => {\n  if (msg.content === '핑') {\n    msg.reply('퐁!');\n  }\n});\n\nclient.login('토큰');\n```\n\n## 관련링크\n\n- [공식 웹사이트 (영문)](https://discord.js.org/) ([source](https://github.com/discordjs/website))\n- [공식 문서 (영문)](https://discord.js.org/#/docs/main/master/general/welcome)\n- [가이드 (영문)](https://discordjs.guide/) ([source](https://github.com/discordjs/guide)) - this is still for stable  \n  또한 [업데이트 가이드 (영문)](https://discordjs.guide/additional-info/changes-in-v12.html) 의 진행중인 작업을 확인하세요. 라이브러리에서 업데이트되거나 제거된 항목들을 포함합니다.\n- [Discord.js 공식 디스코드 서버 (영문)](https://discord.gg/bRCvFy9)\n- [디스코드 API 디스코드 서버](https://discord.gg/discord-api)\n- [GitHub](https://github.com/discordjs/discord.js)\n- [NPM](https://www.npmjs.com/package/discord.js)\n- [관련된 라이브러리들](https://discordapi.com/unofficial/libs.html)\n\n- [Discord.js 비공식 한국 디스코드 서버](https://discord.gg/TwZeg6z)\n\n### 확장\n\n- [RPC](https://www.npmjs.com/package/discord-rpc) ([source](https://github.com/discordjs/RPC))\n\n## 기여하기\n\n이슈를 작성하기 전에 아직 보고/제안되지 않았는지 확인하고 해당 이슈를 다시 확인하십시오.\n[문서](https://discord.js.org/#/docs).  \nPR를 등록하고 싶으시다면 [기여 가이드](https://github.com/discordjs/discord.js/blob/master/.github/CONTRIBUTING.md)를 먼저 확인해보세요.\n\n## 도움\n\n문서에 있는 내용을 이해하지 못하거나, 문제가 발생한다면 부드럽게 처리하면 됩니다.\n올바른 방향으로 나아가세요. 주저하지 마시고 공식 [Discord.js 서버 (영문)](https://discord.gg/b)RCvFy9)를 방문하세요.\n- [Discord.js 비공식 한국 디스코드 서버](https://discord.gg/TwZeg6z)\n",
                     "path": "docs/general/welcome.md"
                 },
                 "updating": {
@@ -23,7 +23,7 @@
                 "faq": {
                     "name": "자주 물어보는 질문",
                     "type": "md",
-                    "content": "# Frequently Asked Questions\n\nThese questions are some of the most frequently asked.\n\n## No matter what, I get `SyntaxError: Block-scoped declarations (let, const, function, class) not yet supported outside strict mode`‽\n\nUpdate to Node.js 12.0.0 or newer.\n\n## How do I get voice working?\n\n- Install FFMPEG.\n- Install either the `@discordjs/opus` package or the `opusscript` package.\n  @discordjs/opus is greatly preferred, due to it having significantly better performance.\n\n## How do I install FFMPEG?\n\n- **npm:** `npm install ffmpeg-static`\n- **Ubuntu 16.04:** `sudo apt install ffmpeg`\n- **Ubuntu 14.04:** `sudo apt-get install libav-tools`\n- **Windows:** `npm install ffmpeg-static` or see the [FFMPEG section of AoDude's guide](https://github.com/bdistin/OhGodMusicBot/blob/master/README.md#download-ffmpeg).\n\n## How do I set up @discordjs/opus?\n\n- **Ubuntu:** Simply run `npm install @discordjs/opus`, and it's done. Congrats!\n- **Windows:** Run `npm install --global --production windows-build-tools` in an admin command prompt or PowerShell.\n  Then, running `npm install @discordjs/opus` in your bot's directory should successfully build it. Woo!\n\nOther questions can be found at the [official Discord.js guide](https://discordjs.guide/popular-topics/common-questions.html)\nIf you have issues not listed here or on the guide, feel free to ask in the [official Discord.js server](https://discord.gg/bRCvFy9).\nAlways make sure to read the [documentation](https://discord.js.org/#/docs/main/stable/general/welcome).\n",
+                    "content": "# 자주 물어보는 질문\n\n이 질문들은 가장 자주 물어보는 것들입니다.\n\n## `SyntaxError: Block-scoped declarations (let, const, function, class) not yet supported outside strict mode` 에러를 신경쓰지마세요‽\n\nNode.js 12.0.0 또는 더 최신 버전으로 업데이트하세요\n\n## 보이스는 어떻게 작동하게 하나요?\n\n- FFMPEG를 설치합니다.\n- `@discordjs/opus` 패키지 또는 `opusscript` 패키지를 설치합니다.\n @discordjs/opus는 성능이 현저하게 향상되었기 때문에 크게 선호된다.\n\n## FFMPEG는 어떻게 설치하나요?\n\n- **npm:** `npm install ffmpeg-static`\n- **Ubuntu 16.04:** `sudo apt install ffmpeg`\n- **Ubuntu 14.04:** `sudo apt-get install libav-tools`\n- **Windows:** `npm install ffmpeg-static` 또는 [AoDude의 가이드에서 FFMPEG 섹션(영문)](https://github.com/bdistin/OhGodMusicBot/blob/master/README.md#download-ffmpeg)을 확인해보세요.\n\n## @discordjs/opus를 어떻게 설정하나요?\n\n- **Ubuntu:** 간단하게 `npm install @discordjs/opus`, 를 실행하고 끝입니다. 축하합니다!\n- **Windows:**  `npm install --global --production windows-build-tools` 를 관리자 명령어 프롬포트 또는 PowerShell 에서 실행하세요.\n  그리고 `npm install @discordjs/opus` 를 실행하면 봇 디랙토리는 성공적으로 빌드할것입니다.  우후!\n\n다른 질문들은 [공식 Discord.js 가이드(영문)](https://discordjs.guide/popular-topics/common-questions.html) 에서 찾을 수 있습니다.\n만약 이곳에 써있지 않은 이슈가 있다면, 편하게  [공식 Discord.js 서버(영문)](https://discord.gg/bRCvFy9) 방문해보세요.\n항상  [문서](https://discord.js.org/#/docs/main/stable/general/welcome)를 먼저 읽어보도록하세요.\n(한국어 도움이 필요하시다면 [한국어 비공식 Discord.js 서버](https://discord.gg/TwZeg6z) 에서 도와드릴게요!)",
                     "path": "docs/general/faq.md"
                 }
             }
@@ -34,13 +34,13 @@
                 "voice": {
                     "name": "음성",
                     "type": "md",
-                    "content": "# Introduction to Voice\n\nVoice in discord.js can be used for many things, such as music bots, recording or relaying audio.\n\nIn discord.js, you can use voice by connecting to a `VoiceChannel` to obtain a `VoiceConnection`, where you can start streaming and receiving audio.\n\nTo get started, make sure you have:\n\n- FFmpeg - `npm install ffmpeg-static`\n- an opus encoder, choose one from below:\n  - `npm install @discordjs/opus` (better performance)\n  - `npm install opusscript`\n- a good network connection\n\nThe preferred opus engine is @discordjs/opus, as it performs significantly better than opusscript. When both are available, discord.js will automatically choose @discordjs/opus.\nUsing opusscript is only recommended for development environments where @discordjs/opus is tough to get working.\nFor production bots, using @discordjs/opus should be considered a necessity, especially if they're going to be running on multiple servers.\n\n## Joining a voice channel\n\nThe example below reacts to a message and joins the sender's voice channel, catching any errors. This is important\nas it allows us to obtain a `VoiceConnection` that we can start to stream audio with.\n\n```js\nconst Discord = require('discord.js');\nconst client = new Discord.Client();\n\nclient.login('token here');\n\nclient.on('message', async message => {\n  // Voice only works in guilds, if the message does not come from a guild,\n  // we ignore it\n  if (!message.guild) return;\n\n  if (message.content === '/join') {\n    // Only try to join the sender's voice channel if they are in one themselves\n    if (message.member.voice.channel) {\n      const connection = await message.member.voice.channel.join();\n    } else {\n      message.reply('You need to join a voice channel first!');\n    }\n  }\n});\n```\n\n## Streaming to a Voice Channel\n\nIn the previous example, we looked at how to join a voice channel in order to obtain a `VoiceConnection`. Now that we\nhave obtained a voice connection, we can start streaming audio to it.\n\n### Introduction to playing on voice connections\n\nThe most basic example of playing audio over a connection would be playing a local file:\n\n```js\nconst dispatcher = connection.play('/home/discord/audio.mp3');\n```\n\nThe `dispatcher` in this case is a `StreamDispatcher` - here you can control the volume and playback of the stream:\n\n```js\ndispatcher.pause();\ndispatcher.resume();\n\ndispatcher.setVolume(0.5); // half the volume\n\ndispatcher.on('finish', () => {\n  console.log('Finished playing!');\n});\n\ndispatcher.destroy(); // end the stream\n```\n\nWe can also pass in options when we first play the stream:\n\n```js\nconst dispatcher = connection.play('/home/discord/audio.mp3', {\n  volume: 0.5,\n});\n```\n\n### What can I play?\n\nDiscord.js allows you to play a lot of things:\n\n```js\n// ReadableStreams, in this example YouTube audio\nconst ytdl = require('ytdl-core');\nconnection.play(ytdl('https://www.youtube.com/watch?v=ZlAU_w7-Xp8', { filter: 'audioonly' }));\n\n// Files on the internet\nconnection.play('http://www.sample-videos.com/audio/mp3/wave.mp3');\n\n// Local files\nconnection.play('/home/discord/audio.mp3');\n```\n\nNew to v12 is the ability to play OggOpus and WebmOpus streams with much better performance by skipping out Ffmpeg. Note this comes at the cost of no longer having volume control over the stream:\n\n```js\nconnection.play(fs.createReadStream('./media.webm'), {\n  type: 'webm/opus',\n});\n\nconnection.play(fs.createReadStream('./media.ogg'), {\n  type: 'ogg/opus',\n});\n```\n\nMake sure to consult the documentation for a full list of what you can play - there's too much to cover here!\n\n## Voice Broadcasts\n\nA voice broadcast is very useful for \"radio\" bots, that play the same audio across multiple channels. It means audio is only transcoded once, and is much better on performance.\n\n```js\nconst broadcast = client.voice.createBroadcast();\n\nbroadcast.on('subscribe', dispatcher => {\n  console.log('New broadcast subscriber!');\n});\n\nbroadcast.on('unsubscribe', dispatcher => {\n  console.log('Channel unsubscribed from broadcast :(');\n});\n```\n\n`broadcast` is an instance of `VoiceBroadcast`, which has the same `play` method you are used to with regular VoiceConnections:\n\n```js\nconst dispatcher = broadcast.play('./audio.mp3');\n\nconnection.play(broadcast);\n```\n\nIt's important to note that the `dispatcher` stored above is a `BroadcastDispatcher` - it controls all the dispatcher subscribed to the broadcast, e.g. setting the volume of this dispatcher affects the volume of all subscribers.\n\n## Voice Receive\n\ncoming soon&trade;\n",
+                    "content": "# 음성 기능 소개\n\ndiscord.js 에서의 음성 기능은 다양한 방법으로 사용될 수 있습니다. 예를 들어, 뮤직봇이나 녹음하거나 오디오를 스트리밍 할 수 있습니다.\n\ndiscord.js 에서 `음성채널(VoiceChannel)`에 연결하면 음성을 사용하여 오디오를 스트리밍하고 수신할 수 있는 `음성연결(VoiceConnection)`을 얻을 수 있습니다.\n\n시작하기 위해, 다음을 확인해주세요:\n\n- FFmpeg - `npm install ffmpeg-static`\n- opus 인코더, 다음 중에 골라주세요:\n  - `npm install @discordjs/opus` (더 나은 성능)\n  - `npm install opusscript`\n- 좋은 인터넷 연결 상태\n\n추천하는 opus 엔진은 @discordjs/opus입니다. opusscript보다 훨씬 원할하게 작동합니다. 만약 두 개 모두 사용이 가능할 경우, discord.js 는 자동적으로 @discordjs/opus 를 선택합니다.\nopusscript를 사용하는 경우에는 단지 @ discordjs/opus를 사용하기 힘든 개발환경에서만 권장됩니다.\n개발용 봇의 경우 @discordjs/opus 사용은 필수사항이여야 하며, 특히 여러 서버에서 실행될 경우 더욱 그러해야 합니다.\n\n## 음성 채널에 접속하기\n\n아래 예시는 메세지에 응답하여, 메세지 전송자의 음성 채널에 에러를 확인하지 않고 접속합니다. 이 사항은 중요합니다.\n오디오를 스트리밍할 수 있는 `음성연결(VoiceConnection)`을 얻을 수 있기 때문이다.\n\n```js\nconst Discord = require('discord.js');\nconst client = new Discord.Client();\n\nclient.login('토큰');\n\nclient.on('message', async message => {\n  // 음성 기능은 서버에서만 작동됩니다. 서버가 아닐 경우,\n  // 무시합니다.\n  if (!message.guild) return;\n\n  if (message.content === '/join') {\n    // 유저의 음성 채널이 있는 경우에만 음성채널에 접속을 시도합니다.\n    if (message.member.voice.channel) {\n      const connection = await message.member.voice.channel.join();\n    } else {\n      message.reply('음성 채널에 먼저 접속해주세요!');\n    }\n  }\n});\n```\n\n## 음성채널에 스트리밍하기\n\n위 예시에서, 어떻게 음성채널에 접속하여 `음성연결VoiceConnection`을 얻을 수 있는 지 알아보았습니다. 음성연결을 제공 받았다면,\n오디오 스트리밍을 시작할 수 있습니다.\n\n### Introduction to playing on voice connections\n\n음성연결을 통해 오디오를 재생하는 가장 일반적인 예시는 로컬파일입니다. \n\n```js\nconst dispatcher = connection.play('/home/discord/audio.mp3');\n```\n\n여기서의 `dispatcher`는 `StreamDispatcher` 입니다. - 이것으로 음성연결의 볼륨 및 재생상황 제어할 수 있습니다.\n\n```js\ndispatcher.pause();\ndispatcher.resume();\n\ndispatcher.setVolume(0.5); // 볼륨을 절반으로 줄입니다.\n\ndispatcher.on('finish', () => {\n  console.log('재생이 종료되었습니다!');\n});\n\ndispatcher.destroy(); // 재생을 종료합니다.\n```\n\n또한, 먼저 재생을 시작할 때, 옵션을 설정할 수도 있습니다.\n\n```js\nconst dispatcher = connection.play('/home/discord/audio.mp3', {\n  volume: 0.5,\n});\n```\n\n### 무엇을 재생할 수 있을까요?\n\nDiscord.js 는 다음을 재생하게 해줍니다.\n\n```js\n// 재생 가능한 스트림, 예를 들어 유튜브 오디오입니다.\nconst ytdl = require('ytdl-core');\nconnection.play(ytdl('https://www.youtube.com/watch?v=ZlAU_w7-Xp8', { filter: 'audioonly' }));\n\n// 인터넷에 있는 파일\nconnection.play('http://www.sample-videos.com/audio/mp3/wave.mp3');\n\n// 로컬 파일\nconnection.play('/home/discord/audio.mp3');\n```\n\nv12의 새로운 기능은 Ffmpeg 대신 훨씬 더 나은 성능으로 OggOpus와 WebmOpus 으로 스트림을 재생하는 기능입니다. 이는 스트림에 대한 볼륨 제어를 더 이상 지원하지 않는다는 점에 유의하십시오.\n\n```js\nconnection.play(fs.createReadStream('./media.webm'), {\n  type: 'webm/opus',\n});\n\nconnection.play(fs.createReadStream('./media.ogg'), {\n  type: 'ogg/opus',\n});\n```\n\n재생할 수 있는 모든 목록은 문서를 참조하십시오. 여기에는 더 쓸게 너무 많아서요!\n\n## Voice Broadcasts\n\n음성 방송은 여러 채널에서 동일한 오디오를 재생하는 \"라디오\" 봇에 매우 유용합니다. 오디오가 한 번만 변환되고, 성능이 훨씬 좋습니다.\n\n```js\nconst broadcast = client.voice.createBroadcast();\n\nbroadcast.on('subscribe', dispatcher => {\n  console.log('새로운 방송 구독자!');\n});\n\nbroadcast.on('unsubscribe', dispatcher => {\n  console.log('채널에서 방송 구독을 취소했습니다 :(');\n});\n```\n`broadcast`는 `VoiceBroadcast`의 한 예로서, `)`에 연결하면 음성을 사용하여 오디오를 스트리밍하고 수신할 수 있는 `음성연결(VoiceConnection)`을 얻을 수 있습니다.\n\n시작하기 위해, 다음을 확인해주세요:\n\n- FFmpeg - `npm install ffmpeg-static`\n- opus 인코더, 다음 중에 골라주세요:\n  - `npm install @discordjs/opus` (더 나은 성능)\n  - `npm install opusscript`\n- 좋은 인터넷 연결 상태\n\n추천하는 opus 엔진은 @discordjs/opus입니다. opusscript보다 훨씬 원할하게 작동합니다. 만약 두 개 모두 사용이 가능할 경우, discord.js 는 자동적으로 @discordjs/opus 를 선택합니다.\nopusscript를 사용하는 경우에는 단지 @ discordjs/opus를 사용하기 힘든 개발환경에서만 권장됩니다.\n개발용 봇의 경우 @discordjs/opus 사용은 필수사항이여야 하며, 특히 여러 서버에서 실행될 경우 더욱 그러해야 합니다.\n\n## 음성 채널에 접속하기\n\n아래 예시는 메세지에 응답하여, 메세지 전송자의 음성 채널에 에러를 확인하지 않고 접속합니다. 이 사항은 중요합니다.\n오디오를 스트리밍할 수 있는 `음성연결(VoiceConnection)`을 얻을 수 있기 때문이다.\n\n```js\nconst Discord = require('discord.js');\nconst client = new Discord.Client();\n\nclient.login('토큰');\n\nclient.on('message', async message => {\n  // 음성 기능은 서버에서만 작동됩니다. 서버가 아닐 경우,\n  // 무시합니다.\n  if (!message.guild) return;\n\n  if (message.content === '/join') {\n    // 유저의 음성 채널이 있는 경우에만 음성채널에 접속을 시도합니다.\n    if (message.member.voice.channel) {\n      const connection = await message.member.voice.channel.join();\n    } else {\n      message.reply('음성 채널에 먼저 접속해주세요!');\n    }\n  }\n});\n```\n\n## 음성채널에 스트리밍하기\n\n위 예시에서, 어떻게 음성채널에 접속하여 `음성연결VoiceConnection`을 얻을 수 있는 지 알아보았습니다. 음성연결을 제공 받았다면,\n오디오 스트리밍을 시작할 수 있습니다.\n\n### Introduction to playing on voice connections\n\n음성연결을 통해 오디오를 재생하는 가장 일반적인 예시는 로컬파일입니다. \n\n```js\nconst dispatcher = connection.play('/home/discord/audio.mp3');\n```\n\n여기서의 `dispatcher`는 `StreamDispatcher` 입니다. - 이것으로 음성연결의 볼륨 및 재생상황 제어할 수 있습니다.\n\n```js\ndispatcher.pause();\ndispatcher.resume();\n\ndispatcher.setVolume(0.5); // 볼륨을 절반으로 줄입니다.\n\ndispatcher.on('finish', () => {\n  console.log('재생이 종료되었습니다!');\n});\n\ndispatcher.destroy(); // 재생을 종료합니다.\n```\n\n또한, 먼저 재생을 시작할 때, 옵션을 설정할 수도 있습니다.\n\n```js\nconst dispatcher = connection.play('/home/discord/audio.mp3', {\n  volume: 0.5,\n});\n```\n\n### 무엇을 재생할 수 있을까요?\n\nDiscord.js 는 다음을 재생하게 해줍니다.\n\n```js\n// 재생 가능한 스트림, 예를 들어 유튜브 오디오입니다.\nconst ytdl = require('ytdl-core');\nconnection.play(ytdl('https://www.youtube.com/watch?v=ZlAU_w7-Xp8', { filter: 'audioonly' }));\n\n// 인터넷에 있는 파일\nconnection.play('http://www.sample-videos.com/audio/mp3/wave.mp3');\n\n// 로컬 파일\nconnection.play('/home/discord/audio.mp3');\n```\n\nv12의 새로운 기능은 Ffmpeg 대신 훨씬 더 나은 성능으로 OggOpus와 WebmOpus 으로 스트림을 재생하는 기능입니다. 이는 스트림에 대한 볼륨 제어를 더 이상 지원하지 않는다는 점에 유의하십시오.\n\n```js\nconnection.play(fs.createReadStream('./media.webm'), {\n  type: 'webm/opus',\n});\n\nconnection.play(fs.createReadStream('./media.ogg'), {\n  type: 'ogg/opus',\n});\n```\n\n재생할 수 있는 모든 목록은 문서를 참조하십시오. 여기에는 더 쓸게 너무 많아서요!\n\n## 음성 방송하기\n\n음성 방송은 여러 채널에서 동일한 오디오를 재생하는 \"라디오\" 봇에 매우 유용합니다. 오디오가 한 번만 변환되고, 성능이 훨씬 좋습니다.\n\n```js\nconst broadcast = client.voice.createBroadcast();\n\nbroadcast.on('subscribe', dispatcher => {\n  console.log('새로운 방송 구독자!');\n});\n\nbroadcast.on('unsubscribe', dispatcher => {\n  console.log('채널에서 방송 구독을 취소했습니다 :(');\n});\n```\n`broadcast`는 `VoiceBroadcast`의 한 예로서, 일반 VoiceConnections 과 같은 `play` 메서드를 사용합니다.\n\n```js\nconst dispatcher = broadcast.play('./audio.mp3');\n\nconnection.play(broadcast);\n```\n\n위에 저장된 `dispatcher`는 BroadcastDispatcher라는 점을 유의해야 한다. - 이것은 방송에 등록되어 있는 모든 음성을 통제한다. 예를 들어, 이 볼륨 설정은 모든 음성의 볼륨에 영향을 미친다.\n\n## 음성 수신\n\n곧 찾아뵙겠습니다! \ncoming soon&trade;\n\n",
                     "path": "docs/topics/voice.md"
                 },
                 "web": {
                     "name": "웹 빌드",
                     "type": "md",
-                    "content": "# Web builds\n\nIn addition to your usual Node applications, discord.js has special distributions available that are capable of running in web browsers.\nThis is useful for client-side web apps that need to interact with the Discord API.\n[Webpack 3](https://webpack.js.org/) is used to build these.\n\n## Restrictions\n\n- Any voice-related functionality is unavailable, as there is currently no audio encoding/decoding capabilities without external native libraries,\n  which web browsers do not support.\n- The ShardingManager cannot be used, since it relies on being able to spawn child processes for shards.\n- None of the native optional packages are usable.\n\n### Require Library\n\nIf you are making your own webpack project, you can require `discord.js/browser` wherever you need to use discord.js, like so:\n\n```js\nconst Discord = require('discord.js/browser');\n// do something with Discord like you normally would\n```\n\n### Webpack File\n\nYou can obtain your desired version of discord.js' web build from the [webpack branch](https://github.com/discordjs/discord.js/tree/webpack) of the GitHub repository.\nThere is a file for each branch and version of the library, and the ones ending in `.min.js` are minified to substantially reduce the size of the source code.\n\nInclude the file on the page just as you would any other JS library, like so:\n\n```html\n<script type=\"text/javascript\" src=\"discord.VERSION.min.js\"></script>\n```\n\nRather than importing discord.js with `require('discord.js')`, the entire `Discord` object is available as a global (on the `window`) object.\nThe usage of the API isn't any different from using it in Node.js.\n\n#### Example\n\n```html\n<script type=\"text/javascript\" src=\"discord.11.1.0.min.js\"></script>\n<script type=\"text/javascript\">\n  const client = new Discord.Client();\n\n  client.on('message', msg => {\n    const guildTag = msg.channel.type === 'text' ? `[${msg.guild.name}]` : '[DM]';\n    const channelTag = msg.channel.type === 'text' ? `[#${msg.channel.name}]` : '';\n    console.log(`${guildTag}${channelTag} ${msg.author.tag}: ${msg.content}`);\n  });\n\n  client.login('some crazy token');\n</script>\n```\n",
+                    "content": "# 웹 빌드\n일반적인 노드 애플리케이션 외에도 discord.js에는 웹 브라우저에서 실행할 수 있는 특별한 배포 버전이 있습니다..\n이것은 Discord API와 상호작용이 필요한 클라이언트측 웹 앱에 유용합니다.\n[Webpack 3](https://webpack.js.org/) 는 이걸 빌드할 때 필요합니다.\n\n## 제한\n\n- 웹 브라우저가 지원하지 않는 외부 기본 라이브러리 없이는 오디오 인코딩/디코딩 기능이 없기에 현재 보이스 관련 기능은 사용할 수 없습니다.\n-  ShardingManager도 사용할 수 없습니다. 왜냐하면 child process를 만드는것에만 의존하기 때문입니다.\n- 어떤 기본 패키지도 사용할 수 없습니다.\n\n### 필요한 라이브러리\n\n만약 웹팩 프로젝트를 개발할경우, discord.js를 사용하면 `discord.js/browser`를 사용할 수 있습니다. 다음처럼 말이죠:\n```js\nconst Discord = require('discord.js/browser');\n// 디스코드로 평소처럼 하세요\n```\n\n### 웹팩 파일\n\nGitHub 저장소의 [webpack branch](https://github.com/discordjs/discord.js/tree/webpack)  에서 원하는 버전의 discord.js 웹 빌드를 얻을 수 있다. 라이브러리의 각 지점과 버전에 대한 파일이 있으며, `.min.js`로 끝나는 파일은 소스코드의 크기를 실질적으로 줄이기 위해 압축된다.\n\n다른 JS 라이브러리와 마찬가지로 다음 코드를 포함하면 된다.\n```html\n<script type=\"text/javascript\" src=\"discord.VERSION.min.js\"></script>\n```\n`require('discord.js')`로 discord.js를 이용하면 전체 `디스코드`를 전역(window)으로 사용할 수 있다. API의 사용은 Node.js에서 사용하는 것과 조금도 다르지 않다.\n\n#### 예시\n\n```html\n<script type=\"text/javascript\" src=\"discord.11.1.0.min.js\"></script>\n<script type=\"text/javascript\">\n  const client = new Discord.Client();\n\n  client.on('message', msg => {\n    const guildTag = msg.channel.type === 'text' ? `[${msg.guild.name}]` : '[DM]';\n    const channelTag = msg.channel.type === 'text' ? `[#${msg.channel.name}]` : '';\n    console.log(`${guildTag}${channelTag} ${msg.author.tag}: ${msg.content}`);\n  });\n\n  client.login('토큰');\n</script>\n```\n",
                     "path": "docs/topics/web.md"
                 },
                 "partials": {
@@ -101,12 +101,12 @@
     },
     "classes": [
         {
-            "name": "기본 클라이언트",
+            "name": "BaseClient",
             "description": "모든 클라이언트를 위반 기본 클래스",
             "extends": [
                 [
                     [
-                        "이벤트 이미터"
+                        "EventEmitter"
                     ]
                 ]
             ],
@@ -135,7 +135,7 @@
                 },
                 {
                     "name": "_intervals",
-                    "description": "Intervals set by {@link BaseClient#setInterval} that are still active",
+                    "description": "{@link BaseClient#setInterval} 에서 설정된 간격은 계속 유지됩니다",
                     "access": "private",
                     "type": [
                         [
@@ -157,7 +157,7 @@
                 },
                 {
                     "name": "_immediates",
-                    "description": "Intervals set by {@link BaseClient#setImmediate} that are still active",
+                    "description": "{@link BaseClient#setImmediate} 에서 설정된 간격은 계속 유지됩니다",
                     "access": "private",
                     "type": [
                         [
@@ -178,8 +178,8 @@
                     }
                 },
                 {
-                    "name": "옵션",
-                    "description": "The options the client was instantiated with",
+                    "name": "options",
+                    "description": "클라이언트가 인스턴스화된 옵션",
                     "type": [
                         [
                             [
@@ -249,7 +249,7 @@
                             "type": [
                                 [
                                     [
-                                        "함수"
+                                        "function"
                                     ]
                                 ]
                             ]
@@ -260,14 +260,14 @@
                             "type": [
                                 [
                                     [
-                                        "숫자"
+                                        "number"
                                     ]
                                 ]
                             ]
                         },
                         {
-                            "name": "인자들",
-                            "description": "함수의 인자",
+                            "name": "args",
+                            "description": "함수의 인수",
                             "variable": true,
                             "type": [
                                 [
@@ -321,7 +321,7 @@
                             "type": [
                                 [
                                     [
-                                        "함수"
+                                        "function"
                                     ]
                                 ]
                             ]
@@ -338,8 +338,8 @@
                             ]
                         },
                         {
-                            "name": "인자들",
-                            "description": "Arguments for the function",
+                            "name": "args",
+                            "description": "함수의 인수",
                             "variable": true,
                             "type": [
                                 [
@@ -363,11 +363,11 @@
                 },
                 {
                     "name": "clearInterval",
-                    "description": "Clears an interval.",
+                    "description": "시간을 초기화합니다",
                     "params": [
                         {
                             "name": "interval",
-                            "description": "Interval to cancel",
+                            "description": "취소할 시간",
                             "type": [
                                 [
                                     [
@@ -385,10 +385,10 @@
                 },
                 {
                     "name": "setImmediate",
-                    "description": "Sets an immediate that will be automatically cancelled if the client is destroyed.",
+                    "description": "클라이언트가 파괴되면 자동으로 취소되는 즉시를 설정한다.",
                     "params": [
                         {
-                            "name": "함수",
+                            "name": "fn",
                             "description": "실행할 함수",
                             "type": [
                                 [
@@ -400,7 +400,7 @@
                         },
                         {
                             "name": "args",
-                            "description": "Arguments for the function",
+                            "description": "함수의 인수",
                             "variable": true,
                             "type": [
                                 [
@@ -424,11 +424,11 @@
                 },
                 {
                     "name": "clearImmediate",
-                    "description": "Clears an immediate.",
+                    "description": "값(Immediate) 을 초기화합니다.",
                     "params": [
                         {
                             "name": "immediate",
-                            "description": "Immediate to cancel",
+                            "description": "취소할 값(Immediate)",
                             "type": [
                                 [
                                     [
@@ -453,7 +453,7 @@
         },
         {
             "name": "Client",
-            "description": "The main hub for interacting with the Discord API, and the starting point for any bot.",
+            "description": "Discord API와 상호 작용하는 주요 허브 및 모든봇의 시작점.",
             "extends": [
                 [
                     [
@@ -465,8 +465,8 @@
                 "name": "클라이언트",
                 "params": [
                     {
-                        "name": "옵션",
-                        "description": "Options for the client",
+                        "name": "options",
+                        "description": "클라이언트의 옵션",
                         "optional": true,
                         "type": [
                             [
@@ -481,7 +481,7 @@
             "props": [
                 {
                     "name": "웹소킷",
-                    "description": "The WebSocket manager of the client",
+                    "description": "클라이언트의 웹소킷 매니저",
                     "type": [
                         [
                             [
@@ -531,7 +531,7 @@
                 },
                 {
                     "name": "샤드",
-                    "description": "Shard helpers for the client (only if the process was spawned from a {@link ShardingManager})",
+                    "description": "클라이언트에 대한 Shard 핼퍼 ({@link ShardingManager} 로 프로세스가 생성되었을 때만 해당됨)",
                     "nullable": true,
                     "type": [
                         [
@@ -548,7 +548,7 @@
                 },
                 {
                     "name": "users",
-                    "description": "All of the {@link User} objects that have been cached at any point, mapped by their IDs",
+                    "description": "ID로 매핑된, 모든 캐시된 {@link User} 오브젝트",
                     "type": [
                         [
                             [
@@ -564,7 +564,7 @@
                 },
                 {
                     "name": "guilds",
-                    "description": "All of the guilds the client is currently handling, mapped by their IDs -\nas long as sharding isn't being used, this will be *every* guild the bot is a member of",
+                    "description": "ID로 매핑된, 클라이언트가 현재 핸들링하고 있는 모든 서버 -\n만약 샤딩을 사용하고 있지 않다면, 봇이 멤버인 *모든* 서버에 해당합니다.",
                     "type": [
                         [
                             [
@@ -580,7 +580,7 @@
                 },
                 {
                     "name": "channels",
-                    "description": "All of the {@link Channel}s that the client is currently handling, mapped by their IDs -\nas long as sharding isn't being used, this will be *every* channel in *every* guild the bot\nis a member of. Note that DM channels will not be initially cached, and thus not be present\nin the Manager without their explicit fetching or use.",
+                    "description": "ID로 매핑된, 클라이언트가 현재 핸들링하고 있는 모든 {@link Channel} -\n만약 샤딩을 사용하고 있지 않다면, 봇이 멤버인 *모든* 서버에 있는 *모든* 채널에 해당합니다.\nDM 채널은 초기에 캐싱되지 않으므로 존재하지 않는다는 점에 유의하세요.\n매니저가 명시적으로 가져오거나 사용하지 않는 경우에 해당합니다.",
                     "type": [
                         [
                             [
@@ -596,7 +596,7 @@
                 },
                 {
                     "name": "presence",
-                    "description": "The presence of the Client",
+                    "description": "클라이언트의 프리센스(Presence)",
                     "access": "private",
                     "type": [
                         [
@@ -613,7 +613,7 @@
                 },
                 {
                     "name": "token",
-                    "description": "Authorization token for the logged in bot\n<warn>This should be kept private at all times.</warn>",
+                    "description": "로그인된 봇의 인증 토큰\n<warn>토큰은 언제나 비밀리 보관되어야합니다.</warn>",
                     "nullable": true,
                     "type": [
                         [
@@ -630,7 +630,7 @@
                 },
                 {
                     "name": "user",
-                    "description": "User that the client is logged in as",
+                    "description": "클라이언트가 로그인되어있는 유저",
                     "nullable": true,
                     "type": [
                         [
@@ -647,7 +647,7 @@
                 },
                 {
                     "name": "readyAt",
-                    "description": "Time at which the client was last regarded as being in the `READY` state\n(each time the client disconnects and successfully reconnects, this will be overwritten)",
+                    "description": "클라이언트가 마지막으로 `준비(READY)` 상태로 표시된 시간\n(클라이언트가 끊기고 성공적으로 다시 연결될때, 이것은 덮어써질 것입니다)",
                     "nullable": true,
                     "type": [
                         [
@@ -664,7 +664,7 @@
                 },
                 {
                     "name": "emojis",
-                    "description": "All custom emojis that the client has access to, mapped by their IDs",
+                    "description": "클라이언트가 접근할 수 있는 모든 커스텀 이모지들이 ID로 맵핑된다.",
                     "readonly": true,
                     "type": [
                         [
@@ -681,7 +681,7 @@
                 },
                 {
                     "name": "readyTimestamp",
-                    "description": "Timestamp of the time the client was last `READY` at",
+                    "description": "클라이언트가 마지막으로 `준비`되었던 시간의 타임스탬프",
                     "readonly": true,
                     "nullable": true,
                     "type": [
@@ -699,7 +699,7 @@
                 },
                 {
                     "name": "uptime",
-                    "description": "How long it has been since the client last entered the `READY` state in milliseconds",
+                    "description": "클라이언트가 마지막으로 `준비` 상태로 전환된 후 경과 시간(밀리초)",
                     "readonly": true,
                     "nullable": true,
                     "type": [
@@ -717,7 +717,7 @@
                 },
                 {
                     "name": "_timeouts",
-                    "description": "Timeouts set by {@link BaseClient#setTimeout} that are still active",
+                    "description": "{@link BaseClient#setTimeout} 에서 설정된 시간 제한은 계속 유지됩니다",
                     "access": "private",
                     "type": [
                         [
@@ -739,7 +739,7 @@
                 },
                 {
                     "name": "_intervals",
-                    "description": "Intervals set by {@link BaseClient#setInterval} that are still active",
+                    "description": "{@link BaseClient#setInterval} 에서 설정된 간격은 계속 유지됩니다",
                     "access": "private",
                     "type": [
                         [
@@ -761,7 +761,7 @@
                 },
                 {
                     "name": "_immediates",
-                    "description": "Intervals set by {@link BaseClient#setImmediate} that are still active",
+                    "description": "{@link BaseClient#setImmediate} 에서 설정된 간격은 계속 유지됩니다",
                     "access": "private",
                     "type": [
                         [
@@ -783,7 +783,7 @@
                 },
                 {
                     "name": "options",
-                    "description": "The options the client was instantiated with",
+                    "description": "클라이언트가 인스턴스화된 옵션",
                     "type": [
                         [
                             [
@@ -799,7 +799,7 @@
                 },
                 {
                     "name": "rest",
-                    "description": "The REST manager of the client",
+                    "description": "클라이언트의 REST 매니저",
                     "access": "private",
                     "type": [
                         [
@@ -816,7 +816,7 @@
                 },
                 {
                     "name": "api",
-                    "description": "API shortcut",
+                    "description": "API 단축키",
                     "access": "private",
                     "readonly": true,
                     "type": [
@@ -836,14 +836,14 @@
             "methods": [
                 {
                     "name": "login",
-                    "description": "Logs the client in, establishing a websocket connection to Discord.",
+                    "description": "클라이언트를 로그인하고 디스코드에 대한 웹 소켓 연결을 설정하세요",
                     "examples": [
-                        "client.login('my token');"
+                        "client.login('토큰');"
                     ],
                     "params": [
                         {
                             "name": "token",
-                            "description": "Token of the account to log in with",
+                            "description": "로그인할 계정의 토큰",
                             "type": [
                                 [
                                     [
@@ -867,7 +867,7 @@
                                 ]
                             ]
                         ],
-                        "description": "Token of the account used"
+                        "description": "계정에 사용된 토큰"
                     },
                     "meta": {
                         "line": 202,
@@ -877,7 +877,7 @@
                 },
                 {
                     "name": "destroy",
-                    "description": "Logs out, terminates the connection to Discord, and destroys the client.",
+                    "description": "로그아웃하여 디스코드와의 연결을 종료하고 클라이언트를 파괴합니다.",
                     "returns": [
                         [
                             [
@@ -893,14 +893,14 @@
                 },
                 {
                     "name": "fetchInvite",
-                    "description": "Obtains an invite from Discord.",
+                    "description": "디스코드에서 초대링크를 가져옵니다.",
                     "examples": [
-                        "client.fetchInvite('https://discord.gg/bRCvFy9')\n  .then(invite => console.log(`Obtained invite with code: ${invite.code}`))\n  .catch(console.error);"
+                        "client.fetchInvite('https://discord.gg/bRCvFy9')\n  .then(invite => console.log(`초대 정보를 코드로 가져왔습니다: ${invite.code}`))\n  .catch(console.error);"
                     ],
                     "params": [
                         {
                             "name": "invite",
-                            "description": "Invite code or URL",
+                            "description": "초대코드 또는 URL",
                             "type": [
                                 [
                                     [
@@ -930,14 +930,14 @@
                 },
                 {
                     "name": "fetchWebhook",
-                    "description": "Obtains a webhook from Discord.",
+                    "description": "디스코드에서 웹훅을 가져옵니다.",
                     "examples": [
-                        "client.fetchWebhook('id', 'token')\n  .then(webhook => console.log(`Obtained webhook with name: ${webhook.name}`))\n  .catch(console.error);"
+                        "client.fetchWebhook('아이디', '토큰')\n  .then(webhook => console.log(`${webhook.name} 이름의 웹훅을 가져옵니다`))\n  .catch(console.error);"
                     ],
                     "params": [
                         {
                             "name": "id",
-                            "description": "ID of the webhook",
+                            "description": "웹훅의 아이디",
                             "type": [
                                 [
                                     [
@@ -948,7 +948,7 @@
                         },
                         {
                             "name": "token",
-                            "description": "Token for the webhook",
+                            "description": "웹훅의 토큰",
                             "optional": true,
                             "type": [
                                 [
@@ -979,9 +979,9 @@
                 },
                 {
                     "name": "fetchVoiceRegions",
-                    "description": "Obtains the available voice regions from Discord.",
+                    "description": "디스코드에서 가능한 음성 서버위치를 가져옵니다.",
                     "examples": [
-                        "client.fetchVoiceRegions()\n  .then(regions => console.log(`Available regions are: ${regions.map(region => region.name).join(', ')}`))\n  .catch(console.error);"
+                        "client.fetchVoiceRegions()\n  .then(regions => console.log(`가능한 음성 서버위치는: ${regions.map(region => region.name).join(', ')}`))\n  .catch(console.error);"
                     ],
                     "returns": [
                         [
@@ -1011,14 +1011,14 @@
                 },
                 {
                     "name": "sweepMessages",
-                    "description": "Sweeps all text-based channels' messages and removes the ones older than the max message lifetime.\nIf the message has been edited, the time of the edit is used rather than the time of the original message.",
+                    "description": "모든 텍스트 기반 채널의 메시지를 스위프하고 최대 메시지 수명보다 오래된 메시지를 제거하세요.\n메시지가 수정된 경우, 원본 메시지의 시간이 아닌 메세지 수정 시간이 사용됩니다.",
                     "examples": [
-                        "// Remove all messages older than 1800 seconds from the messages cache\nconst amount = client.sweepMessages(1800);\nconsole.log(`Successfully removed ${amount} messages from the cache.`);"
+                        "// 1800초보다 오래된 모든 메세지를 메세지 캐시에서 삭제합니다.\nconst amount = client.sweepMessages(1800);\nconsole.log(`성공적으로 ${amount} 개의 메세지가 메세지 캐시에서 삭제되었습니다.`);"
                     ],
                     "params": [
                         {
                             "name": "lifetime",
-                            "description": "Messages that are older than this (in seconds)\nwill be removed from the caches. The default is based on {@link ClientOptions#messageCacheLifetime}",
+                            "description": "이것보다 오래된 메세지 (단위: 초)\n캐시에서 삭제될겁니다. 기본값은 {@link ClientOptions#messageCacheLifetime} 를 참고하세요",
                             "optional": true,
                             "default": "this.options.messageCacheLifetime",
                             "type": [
@@ -1038,7 +1038,7 @@
                                 ]
                             ]
                         ],
-                        "description": "Amount of messages that were removed from the caches,\nor -1 if the message cache lifetime is unlimited"
+                        "description": "캐시에서 삭제된 메세지의 양"
                     },
                     "meta": {
                         "line": 300,
@@ -1048,7 +1048,7 @@
                 },
                 {
                     "name": "fetchApplication",
-                    "description": "Obtains the OAuth Application of this bot from Discord.",
+                    "description": "해당 봇의 OAuth 애플리케이션을 디스코드에서 가져옵니다.",
                     "returns": [
                         [
                             [
@@ -1069,14 +1069,14 @@
                 },
                 {
                     "name": "generateInvite",
-                    "description": "Generates a link that can be used to invite the bot to a guild.",
+                    "description": "봇을 서버에 초대할 때 사용될 수 있는 링크를 생성합니다.",
                     "examples": [
-                        "client.generateInvite(['SEND_MESSAGES', 'MANAGE_GUILD', 'MENTION_EVERYONE'])\n  .then(link => console.log(`Generated bot invite link: ${link}`))\n  .catch(console.error);"
+                        "client.generateInvite(['SEND_MESSAGES', 'MANAGE_GUILD', 'MENTION_EVERYONE'])\n  .then(link => console.log(`봇 초대링크가 생성되었습니다: ${link}`))\n  .catch(console.error);"
                     ],
                     "params": [
                         {
                             "name": "permissions",
-                            "description": "Permissions to request",
+                            "description": "요청할 권한",
                             "optional": true,
                             "type": [
                                 [
@@ -1108,12 +1108,12 @@
                 },
                 {
                     "name": "_eval",
-                    "description": "Calls {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval} on a script\nwith the client as `this`.",
+                    "description": "{@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval} 를 실행합니다\n클라이언트는 `this`로 선언됩니다.",
                     "access": "private",
                     "params": [
                         {
                             "name": "script",
-                            "description": "Script to eval",
+                            "description": "실행할 스크립트",
                             "type": [
                                 [
                                     [
@@ -1136,12 +1136,12 @@
                 },
                 {
                     "name": "_validateOptions",
-                    "description": "Validates the client options.",
+                    "description": "클라이언트 옵션의 유효성을 검사합니다.",
                     "access": "private",
                     "params": [
                         {
                             "name": "options",
-                            "description": "Options to validate",
+                            "description": "유효성을 검사할 옵션",
                             "optional": true,
                             "default": "this.options",
                             "type": [
@@ -1161,13 +1161,13 @@
                 },
                 {
                     "name": "setTimeout",
-                    "description": "Sets a timeout that will be automatically cancelled if the client is destroyed.",
+                    "description": "클라이언트가 파괴되면 자동으로 취소되는 시간 초과를 설정하십시오.",
                     "inherits": "BaseClient#setTimeout",
                     "inherited": true,
                     "params": [
                         {
                             "name": "fn",
-                            "description": "Function to execute",
+                            "description": "실행할 함수",
                             "type": [
                                 [
                                     [
@@ -1178,7 +1178,7 @@
                         },
                         {
                             "name": "delay",
-                            "description": "Time to wait before executing (in milliseconds)",
+                            "description": "실행하기 전 기다릴 시간 (밀리초)",
                             "type": [
                                 [
                                     [
@@ -1189,7 +1189,7 @@
                         },
                         {
                             "name": "args",
-                            "description": "Arguments for the function",
+                            "description": "함수의 인수",
                             "variable": true,
                             "type": [
                                 [
@@ -1213,13 +1213,13 @@
                 },
                 {
                     "name": "clearTimeout",
-                    "description": "Clears a timeout.",
+                    "description": "타임아웃을 지웁니다.",
                     "inherits": "BaseClient#clearTimeout",
                     "inherited": true,
                     "params": [
                         {
                             "name": "timeout",
-                            "description": "Timeout to cancel",
+                            "description": "취소할 시간 초과",
                             "type": [
                                 [
                                     [
@@ -1237,13 +1237,13 @@
                 },
                 {
                     "name": "setInterval",
-                    "description": "Sets an interval that will be automatically cancelled if the client is destroyed.",
+                    "description": "클라이언트가 파괴되면 자동으로 취소되는 시간 초과를 설정하십시오.",
                     "inherits": "BaseClient#setInterval",
                     "inherited": true,
                     "params": [
                         {
                             "name": "fn",
-                            "description": "Function to execute",
+                            "description": "실행할 함수",
                             "type": [
                                 [
                                     [
@@ -1254,7 +1254,7 @@
                         },
                         {
                             "name": "delay",
-                            "description": "Time to wait between executions (in milliseconds)",
+                            "description": "실행하는 사이의 기다리는 시간 (밀리초)",
                             "type": [
                                 [
                                     [
@@ -1265,7 +1265,7 @@
                         },
                         {
                             "name": "args",
-                            "description": "Arguments for the function",
+                            "description": "함수의 인수",
                             "variable": true,
                             "type": [
                                 [
@@ -1289,13 +1289,13 @@
                 },
                 {
                     "name": "clearInterval",
-                    "description": "Clears an interval.",
+                    "description": "시간을 초기화합니다",
                     "inherits": "BaseClient#clearInterval",
                     "inherited": true,
                     "params": [
                         {
                             "name": "interval",
-                            "description": "Interval to cancel",
+                            "description": "취소할 시간",
                             "type": [
                                 [
                                     [
@@ -1313,13 +1313,13 @@
                 },
                 {
                     "name": "setImmediate",
-                    "description": "Sets an immediate that will be automatically cancelled if the client is destroyed.",
+                    "description": "클라이언트가 파괴되면 자동으로 취소되는 즉시를 설정한다.",
                     "inherits": "BaseClient#setImmediate",
                     "inherited": true,
                     "params": [
                         {
                             "name": "fn",
-                            "description": "Function to execute",
+                            "description": "실행할 함수",
                             "type": [
                                 [
                                     [
@@ -1330,7 +1330,7 @@
                         },
                         {
                             "name": "args",
-                            "description": "Arguments for the function",
+                            "description": "함수의 인수",
                             "variable": true,
                             "type": [
                                 [
@@ -1348,19 +1348,19 @@
                     ],
                     "meta": {
                         "line": 127,
-                        "file": "BaseClient.js",
+                        "file": "127",
                         "path": "src/client"
                     }
                 },
                 {
                     "name": "clearImmediate",
-                    "description": "Clears an immediate.",
+                    "description": "값(Immediate) 을 초기화합니다.",
                     "inherits": "BaseClient#clearImmediate",
                     "inherited": true,
                     "params": [
                         {
                             "name": "immediate",
-                            "description": "Immediate to cancel",
+                            "description": "취소할 값(Immediate)",
                             "type": [
                                 [
                                     [
@@ -1380,11 +1380,11 @@
             "events": [
                 {
                     "name": "channelCreate",
-                    "description": "Emitted whenever a channel is created.",
+                    "description": "채널이 생성될 때 실행됨.",
                     "params": [
                         {
                             "name": "channel",
-                            "description": "The channel that was created",
+                            "description": "생성된 채널",
                             "type": [
                                 [
                                     [
@@ -1407,11 +1407,11 @@
                 },
                 {
                     "name": "channelDelete",
-                    "description": "Emitted whenever a channel is deleted.",
+                    "description": "채널이 삭제될 때 실행됨.",
                     "params": [
                         {
                             "name": "channel",
-                            "description": "The channel that was deleted",
+                            "description": "삭제된 채널",
                             "type": [
                                 [
                                     [
@@ -1434,11 +1434,11 @@
                 },
                 {
                     "name": "guildBanRemove",
-                    "description": "Emitted whenever a member is unbanned from a guild.",
+                    "description": "유저가 서버에서 차단해제 될 때 실행됩니다.",
                     "params": [
                         {
                             "name": "guild",
-                            "description": "The guild that the unban occurred in",
+                            "description": "유저가 차단 해제된 서버",
                             "type": [
                                 [
                                     [
@@ -1449,7 +1449,7 @@
                         },
                         {
                             "name": "user",
-                            "description": "The user that was unbanned",
+                            "description": "차단 해제된 유저",
                             "type": [
                                 [
                                     [
@@ -1467,11 +1467,11 @@
                 },
                 {
                     "name": "guildUnavailable",
-                    "description": "Emitted whenever a guild becomes unavailable, likely due to a server outage.",
+                    "description": "서버가 사용 불가능 할 때 실행됩니다. 예를 들어, 서버가 복구 중일때",
                     "params": [
                         {
                             "name": "guild",
-                            "description": "The guild that has become unavailable",
+                            "description": "사용 불가능해진 서버",
                             "type": [
                                 [
                                     [
@@ -1489,11 +1489,11 @@
                 },
                 {
                     "name": "guildDelete",
-                    "description": "Emitted whenever a guild kicks the client or the guild is deleted/left.",
+                    "description": "서버가 고객을 추방하거나 서버를 삭제/나갈 때마다 실행됩니다.",
                     "params": [
                         {
                             "name": "guild",
-                            "description": "The guild that was deleted",
+                            "description": "삭제된 서버",
                             "type": [
                                 [
                                     [
@@ -1658,7 +1658,7 @@
                     "params": [
                         {
                             "name": "role",
-                            "description": "The role that was deleted",
+                            "description": "삭제된 역할",
                             "type": [
                                 [
                                     [
@@ -1676,11 +1676,11 @@
                 },
                 {
                     "name": "roleUpdate",
-                    "description": "Emitted whenever a guild role is updated.",
+                    "description": "역할이 삭제될 때 실행됨.",
                     "params": [
                         {
                             "name": "oldRole",
-                            "description": "The role before the update",
+                            "description": "업데이트 이전의 역할",
                             "type": [
                                 [
                                     [
@@ -1691,7 +1691,7 @@
                         },
                         {
                             "name": "newRole",
-                            "description": "The role after the update",
+                            "description": "업데이트 이후의 역할",
                             "type": [
                                 [
                                     [
@@ -1709,11 +1709,11 @@
                 },
                 {
                     "name": "guildUpdate",
-                    "description": "Emitted whenever a guild is updated - e.g. name change.",
+                    "description": "서버가 업데이트되었을 때 실행됨. - 예) 이름 변경",
                     "params": [
                         {
                             "name": "oldGuild",
-                            "description": "The guild before the update",
+                            "description": "업데이트 이전의 길드",
                             "type": [
                                 [
                                     [
@@ -1724,7 +1724,7 @@
                         },
                         {
                             "name": "newGuild",
-                            "description": "The guild after the update",
+                            "description": "업데이트 이후의 길드",
                             "type": [
                                 [
                                     [
@@ -1742,11 +1742,11 @@
                 },
                 {
                     "name": "inviteCreate",
-                    "description": "Emitted when an invite is created.\n<info> This event only triggers if the client has `MANAGE_GUILD` permissions for the guild,\nor `MANAGE_CHANNEL` permissions for the channel.</info>",
+                    "description": "초대링크가 생성될 때 실행됨.\n<info> 이 이벤트는 클라이언트가 `서버 관리(MANAGE_GUILD)` 또는 해당 채널에 `채널 관리 (MANAGE_CHANNEL)` 권한이 있을 때만 실행됩니다.</info>",
                     "params": [
                         {
                             "name": "invite",
-                            "description": "The invite that was created",
+                            "description": "생성된 초대 정보",
                             "type": [
                                 [
                                     [
@@ -1764,11 +1764,11 @@
                 },
                 {
                     "name": "inviteDelete",
-                    "description": "Emitted when an invite is deleted.\n<info> This event only triggers if the client has `MANAGE_GUILD` permissions for the guild,\nor `MANAGE_CHANNEL` permissions for the channel.</info>",
+                    "description": "초대링크가 삭제될 때 실행됨.\n<info> 이 이벤트는 클라이언트가 `서버 관리(MANAGE_GUILD)` 또는 해당 채널에 `채널 관리 (MANAGE_CHANNEL)` 권한이 있을 때만 실행됩니다.</info>",
                     "params": [
                         {
                             "name": "invite",
-                            "description": "The invite that was deleted",
+                            "description": "삭제된 초대 정보",
                             "type": [
                                 [
                                     [
@@ -1786,11 +1786,11 @@
                 },
                 {
                     "name": "message",
-                    "description": "Emitted whenever a message is created.",
+                    "description": "메세지가 생성될 때 실행됨.",
                     "params": [
                         {
                             "name": "message",
-                            "description": "The created message",
+                            "description": "생성된 메세지",
                             "type": [
                                 [
                                     [
@@ -1808,11 +1808,11 @@
                 },
                 {
                     "name": "messageDelete",
-                    "description": "Emitted whenever a message is deleted.",
+                    "description": "메세지가 삭제될 때 실행됨.",
                     "params": [
                         {
                             "name": "message",
-                            "description": "The deleted message",
+                            "description": "삭제된 메세지",
                             "type": [
                                 [
                                     [
@@ -1830,7 +1830,7 @@
                 },
                 {
                     "name": "messageDeleteBulk",
-                    "description": "Emitted whenever messages are deleted in bulk.",
+                    "description": "메세지 여러개가 삭제될 때 실행됨.",
                     "params": [
                         {
                             "name": "messages",
@@ -2020,7 +2020,7 @@
                         },
                         {
                             "name": "newUser",
-                            "description": "The user after the update",
+                            "description": "업데이트 이후의 유저",
                             "type": [
                                 [
                                     [
@@ -2038,11 +2038,11 @@
                 },
                 {
                     "name": "voiceStateUpdate",
-                    "description": "Emitted whenever a member changes voice state - e.g. joins/leaves a channel, mutes/unmutes.",
+                    "description": "유저가 음성 상태를 변경할 때 실행됨. - 예) 음성 채널에 접속/퇴장 하거나 마이크를 끄거나 킬때.",
                     "params": [
                         {
                             "name": "oldState",
-                            "description": "The voice state before the update",
+                            "description": "업데이트 이전의 음성 상태",
                             "type": [
                                 [
                                     [
@@ -2053,7 +2053,7 @@
                         },
                         {
                             "name": "newState",
-                            "description": "The voice state after the update",
+                            "description": "업데이트 이후의 음성 상태",
                             "type": [
                                 [
                                     [
@@ -2071,11 +2071,11 @@
                 },
                 {
                     "name": "webhookUpdate",
-                    "description": "Emitted whenever a guild text channel has its webhooks changed.",
+                    "description": "서버의 텍스트 채널이 웹훅을 변경할 때 실행됨.",
                     "params": [
                         {
                             "name": "channel",
-                            "description": "The channel that had a webhook update",
+                            "description": "웹훅이 업데이트된 채널",
                             "type": [
                                 [
                                     [
@@ -2093,11 +2093,11 @@
                 },
                 {
                     "name": "warn",
-                    "description": "Emitted for general warnings.",
+                    "description": "일반적인 경고가 발생할 때 실행됨.",
                     "params": [
                         {
                             "name": "info",
-                            "description": "The warning",
+                            "description": "경고",
                             "type": [
                                 [
                                     [
@@ -2115,11 +2115,11 @@
                 },
                 {
                     "name": "debug",
-                    "description": "Emitted for general debugging information.",
+                    "description": "일반적인 디버그 정보가 발생할 때 실행됨.",
                     "params": [
                         {
                             "name": "info",
-                            "description": "The debug information",
+                            "description": "디버그 정보",
                             "type": [
                                 [
                                     [
@@ -2137,11 +2137,11 @@
                 },
                 {
                     "name": "guildMemberSpeaking",
-                    "description": "Emitted once a guild member changes speaking state.",
+                    "description": "유저가 말하기 상태를 변경하면 실행됨.",
                     "params": [
                         {
                             "name": "member",
-                            "description": "The member that started/stopped speaking",
+                            "description": "말하기 상태가 변경된 유저",
                             "type": [
                                 [
                                     [
@@ -2152,7 +2152,7 @@
                         },
                         {
                             "name": "speaking",
-                            "description": "The speaking state of the member",
+                            "description": "유저의 말하기 상태",
                             "type": [
                                 [
                                     [
@@ -2175,11 +2175,11 @@
                 },
                 {
                     "name": "channelPinsUpdate",
-                    "description": "Emitted whenever the pins of a channel are updated. Due to the nature of the WebSocket event,\nnot much information can be provided easily here - you need to manually check the pins yourself.",
+                    "description": "채널의 고정된 메세지가 업데이트되었을 때 실행됨.\n웹소켓 이벤트의 특성상 여기서는 많은 정보를 쉽게 제공 받을 수 없습니다 - 직접 고정된 메세지를 확인할 필요가 있습니다.",
                     "params": [
                         {
                             "name": "channel",
-                            "description": "The channel that the pins update occurred in",
+                            "description": "고정된 메세지가 업데이트된 채널",
                             "type": [
                                 [
                                     [
@@ -2195,7 +2195,7 @@
                         },
                         {
                             "name": "time",
-                            "description": "The time of the pins update",
+                            "description": "고정된 메세지가 업데이트된 시간",
                             "type": [
                                 [
                                     [
@@ -2390,7 +2390,7 @@
                         },
                         {
                             "name": "guild",
-                            "description": "The guild related to the member chunk",
+                            "description": "청크에 관련된 서버",
                             "type": [
                                 [
                                     [
@@ -2408,11 +2408,11 @@
                 },
                 {
                     "name": "messageUpdate",
-                    "description": "Emitted whenever a message is updated - e.g. embed or content change.",
+                    "description": "메세지가 업데이트 될 때 실행됨. - 예) 엠베드 또는 내용이 변경될 때.",
                     "params": [
                         {
                             "name": "oldMessage",
-                            "description": "The message before the update",
+                            "description": "업데이트 이전의 메세지",
                             "type": [
                                 [
                                     [
@@ -2423,7 +2423,7 @@
                         },
                         {
                             "name": "newMessage",
-                            "description": "The message after the update",
+                            "description": "업데이트 이후의 메세지",
                             "type": [
                                 [
                                     [
@@ -2441,11 +2441,11 @@
                 },
                 {
                     "name": "shardResume",
-                    "description": "Emitted when a shard resumes successfully.",
+                    "description": "샤드가 다시 성공적으로 재개되면 실행됨.",
                     "params": [
                         {
                             "name": "id",
-                            "description": "The shard ID that resumed",
+                            "description": "다시 재개된 샤드 ID",
                             "type": [
                                 [
                                     [
@@ -2456,7 +2456,7 @@
                         },
                         {
                             "name": "replayedEvents",
-                            "description": "The amount of replayed events",
+                            "description": "다시 실행된 이벤트 개수",
                             "type": [
                                 [
                                     [
@@ -2474,11 +2474,11 @@
                 },
                 {
                     "name": "typingStart",
-                    "description": "Emitted whenever a user starts typing in a channel.",
+                    "description": "유저가 채널에서 메세지 작성을 시작할 때 실행됨.",
                     "params": [
                         {
                             "name": "channel",
-                            "description": "The channel the user started typing in",
+                            "description": "유저가 작성중인 채널",
                             "type": [
                                 [
                                     [
@@ -2489,7 +2489,7 @@
                         },
                         {
                             "name": "user",
-                            "description": "The user that started typing",
+                            "description": "작성을 시작한 유저",
                             "type": [
                                 [
                                     [
@@ -2507,11 +2507,11 @@
                 },
                 {
                     "name": "shardReady",
-                    "description": "Emitted when a shard turns ready.",
+                    "description": "샤드가 준비되었을 때 실행됨.",
                     "params": [
                         {
                             "name": "id",
-                            "description": "The shard ID that turned ready",
+                            "description": "준비된 샤드 ID",
                             "type": [
                                 [
                                     [
@@ -2522,7 +2522,7 @@
                         },
                         {
                             "name": "unavailableGuilds",
-                            "description": "Set of unavailable guild IDs, if any",
+                            "description": "사용 불가능한 서버 ID들 (존재하는 경우)",
                             "nullable": true,
                             "type": [
                                 [
@@ -2546,11 +2546,11 @@
                 },
                 {
                     "name": "shardDisconnect",
-                    "description": "Emitted when a shard's WebSocket disconnects and will no longer reconnect.",
+                    "description": "샤드의 웹소켓이 연결을 해제하고 다시 재연결을 하지 않을 때 실행됨.",
                     "params": [
                         {
                             "name": "event",
-                            "description": "The WebSocket close event",
+                            "description": "이벤트를 닫은 웹소킷",
                             "type": [
                                 [
                                     [
@@ -2729,11 +2729,11 @@
                 },
                 {
                     "name": "error",
-                    "description": "Emitted when the client encounters an error.",
+                    "description": "클라이언트에 오류가 발생했을 때 실행됨.",
                     "params": [
                         {
                             "name": "error",
-                            "description": "The error encountered",
+                            "description": "발생한 에러",
                             "type": [
                                 [
                                     [
@@ -2758,11 +2758,11 @@
         },
         {
             "name": "ClientVoiceManager",
-            "description": "Manages voice connections for the client",
+            "description": "서버의 음성 연결을 관리합니다",
             "props": [
                 {
                     "name": "client",
-                    "description": "The client that instantiated this voice manager",
+                    "description": "이 음성 관리자를 인스턴스화한 클라이언트",
                     "readonly": true,
                     "type": [
                         [
@@ -2779,7 +2779,7 @@
                 },
                 {
                     "name": "connections",
-                    "description": "A collection mapping connection IDs to the Connection objects",
+                    "description": "음성 연결을 ID로 매핑한 컬렉션",
                     "type": [
                         [
                             [
@@ -2843,12 +2843,12 @@
                 },
                 {
                     "name": "joinChannel",
-                    "description": "Sets up a request to join a voice channel.",
+                    "description": "음성채널 접속을 시도합니다",
                     "access": "private",
                     "params": [
                         {
                             "name": "channel",
-                            "description": "The voice channel to join",
+                            "description": "접속할 음성채널",
                             "type": [
                                 [
                                     [
@@ -3038,7 +3038,7 @@
                 },
                 {
                     "name": "volumeEditable",
-                    "description": "Whether or not the volume of this stream is editable",
+                    "description": "음성의 볼륨이 조절 가능한지",
                     "readonly": true,
                     "type": [
                         [
@@ -3055,7 +3055,7 @@
                 },
                 {
                     "name": "volume",
-                    "description": "The current volume of the stream",
+                    "description": "스트림의 현재 볼륨",
                     "readonly": true,
                     "type": [
                         [
@@ -3072,7 +3072,7 @@
                 },
                 {
                     "name": "volumeDecibels",
-                    "description": "The current volume of the stream in decibels",
+                    "description": "스트림의 현재 볼륨 (데시벨)",
                     "readonly": true,
                     "type": [
                         [
@@ -3089,7 +3089,7 @@
                 },
                 {
                     "name": "volumeLogarithmic",
-                    "description": "The current volume of the stream from a logarithmic scale",
+                    "description": "로그 스케일의 현재 스트림 볼륨",
                     "readonly": true,
                     "type": [
                         [
@@ -3108,11 +3108,11 @@
             "methods": [
                 {
                     "name": "setBitrate",
-                    "description": "Set the bitrate of the current Opus encoder if using a compatible Opus stream.",
+                    "description": "호환되는 Opus 스트림을 사용하는 경우 현재 Opus 인코더의 비트 전송률을 설정합니다.",
                     "params": [
                         {
                             "name": "value",
-                            "description": "New bitrate, in kbps\nIf set to 'auto', 48kbps will be used",
+                            "description": "새 비트 전송률(kbps)\n'auto'로 설정하면 48kbps가 사용됨",
                             "type": [
                                 [
                                     [
@@ -3130,7 +3130,7 @@
                                 ]
                             ]
                         ],
-                        "description": "true if the bitrate has been successfully changed."
+                        "description": "비트 전송률이 성공적으로 변경되었는지 여부"
                     },
                     "meta": {
                         "line": 38,
@@ -3140,7 +3140,7 @@
                 },
                 {
                     "name": "pause",
-                    "description": "Pauses playback",
+                    "description": "재생 일시 중지",
                     "inherits": "StreamDispatcher#pause",
                     "inherited": true,
                     "params": [
@@ -3166,7 +3166,7 @@
                 },
                 {
                     "name": "resume",
-                    "description": "Resumes playback",
+                    "description": "재생 다시 시작",
                     "inherits": "StreamDispatcher#resume",
                     "inherited": true,
                     "meta": {
@@ -3177,13 +3177,13 @@
                 },
                 {
                     "name": "setPLP",
-                    "description": "Sets the expected packet loss percentage if using a compatible Opus stream.",
+                    "description": "호환되는 Opus 스트림을 사용하는 경우 예상되는 패킷 손실 비율을 설정하세요.",
                     "inherits": "StreamDispatcher#setPLP",
                     "inherited": true,
                     "params": [
                         {
                             "name": "value",
-                            "description": "between 0 and 1",
+                            "description": "0 에서 1 사이",
                             "type": [
                                 [
                                     [
@@ -3201,7 +3201,7 @@
                                 ]
                             ]
                         ],
-                        "description": "Returns true if it was successfully set."
+                        "description": "성공적으로 설정된 경우 \"true\"를 반환합니다."
                     },
                     "meta": {
                         "line": 211,
@@ -3211,13 +3211,13 @@
                 },
                 {
                     "name": "setFEC",
-                    "description": "Enables or disables forward error correction if using a compatible Opus stream.",
+                    "description": "호환되는 Opus 스트림을 사용하는 경우 오류 전달 보정을 활성화하거나 비활성화하세요.",
                     "inherits": "StreamDispatcher#setFEC",
                     "inherited": true,
                     "params": [
                         {
                             "name": "enabled",
-                            "description": "true to enable",
+                            "description": "활성화하기 위해서는 \"true\" 를 사용하세요",
                             "type": [
                                 [
                                     [
@@ -3235,7 +3235,7 @@
                                 ]
                             ]
                         ],
-                        "description": "Returns true if it was successfully set."
+                        "description": "성공적으로 설정된 경우 \"true\"를 반환합니다."
                     },
                     "meta": {
                         "line": 222,
@@ -3245,7 +3245,7 @@
                 },
                 {
                     "name": "setVolume",
-                    "description": "Sets the volume relative to the input stream - i.e. 1 is normal, 0.5 is half, 2 is double.",
+                    "description": "입력 스트림에 상대적인 볼륨을 설정합니다. 즉, 1은 정상, 0.5는 절반, 2는 두배입니다.",
                     "inherits": "StreamDispatcher#setVolume",
                     "inherited": true,
                     "implements": [
@@ -3372,7 +3372,7 @@
                     "params": [
                         {
                             "name": "value",
-                            "description": "Whether or not the dispatcher is speaking",
+                            "description": "디스파처가 말하고 있는지 여부",
                             "type": [
                                 [
                                     [
@@ -3390,7 +3390,7 @@
                 },
                 {
                     "name": "volumeChange",
-                    "description": "Emitted when the volume of this dispatcher changes.",
+                    "description": "디스파처의 볼륨이 변경될 때 실행됨.",
                     "params": [
                         {
                             "name": "oldVolume",
@@ -10152,7 +10152,7 @@
             "methods": [
                 {
                     "name": "fetch",
-                    "description": "Gets a message, or messages, from this channel.\n<info>The returned Collection does not contain reaction users of the messages if they were not cached.\nThose need to be fetched separately in such a case.</info>",
+                    "description": "이 채널에서 메시지, 또는 메시지들을 불러옵니다\n<info>반송된 Collection에는 캐시되지 않은 메시지의 리액션 사용자가 포함되지 않습니다.\n이러한 경우에는 별도로 가져와야 합니다.</info>",
                     "examples": [
                         "// Get message\nchannel.messages.fetch('99539446449315840')\n  .then(message => console.log(message.content))\n  .catch(console.error);",
                         "// Get messages\nchannel.messages.fetch({ limit: 10 })\n  .then(messages => console.log(`Received ${messages.size} messages`))\n  .catch(console.error);",
@@ -10228,7 +10228,7 @@
                 },
                 {
                     "name": "fetchPinned",
-                    "description": "Fetches the pinned messages of this channel and returns a collection of them.\n<info>The returned Collection does not contain any reaction data of the messages.\nThose need to be fetched separately.</info>",
+                    "description": "이 채널의 고정된 메시지를 가져오고 해당 메시지들을 반환합니다.\n<info>반송된 Collection에는 캐시되지 않은 메시지의 리액션 사용자가 포함되지 않습니다.\n이러한 경우에는 별도로 가져와야 합니다.</info>",
                     "examples": [
                         "// Get pinned messages\nchannel.fetchPinned()\n  .then(messages => console.log(`Received ${messages.size} messages`))\n  .catch(console.error);"
                     ],
@@ -11307,7 +11307,7 @@
                 },
                 {
                     "name": "create",
-                    "description": "Creates a new role in the guild with given information.\n<warn>The position will silently reset to 1 if an invalid one is provided, or none.</warn>",
+                    "description": "주어진 정보를 사용하여 길드에서 새 역할을 생성합니다.\n<warn>잘못된 위치가 제공된 경우(또는 제공되지 않은 경우) 위치가 자동으로 1로 설정됩니다.</warn>",
                     "examples": [
                         "// Create a new role\nguild.roles.create()\n  .then(console.log)\n  .catch(console.error);",
                         "// Create a new role with data and a reason\nguild.roles.create({\n  data: {\n    name: 'Super Cool People',\n    color: 'BLUE',\n  },\n  reason: 'we needed a role for Super Cool People',\n})\n  .then(console.log)\n  .catch(console.error);"
@@ -12240,7 +12240,7 @@
             "methods": [
                 {
                     "name": "spawn",
-                    "description": "Forks a child process or creates a worker thread for the shard.\n<warn>You should not need to call this manually.</warn>",
+                    "description": "Child process를 포크로 만들거나 샤드용 worker thread를 만듭니다.\n<warn>메뉴얼대로 호출할 필요는 없습니다.</warn>",
                     "params": [
                         {
                             "name": "spawnTimeout",
@@ -13352,11 +13352,11 @@
             "methods": [
                 {
                     "name": "createShard",
-                    "description": "Creates a single shard.\n<warn>Using this method is usually not necessary if you use the spawn method.</warn>",
+                    "description": "단일 샤드르르 만듭니다.\n<warn>일반적으로 이 방법을 사용할 필요는 없습니다.</warn>",
                     "params": [
                         {
                             "name": "id",
-                            "description": "ID of the shard to create\n<info>This is usually not necessary to manually specify.</info>",
+                            "description": "생성할 샤드의 ID입니다.\n<info>매뉴얼대로 지정할 필요는 없습니다.</info>",
                             "optional": true,
                             "default": "this.shards.size",
                             "type": [
@@ -15663,7 +15663,7 @@
                     "inherits": "Channel#toString",
                     "inherited": true,
                     "examples": [
-                        "// Logs: Hello from <#123456789012345678>!\nconsole.log(`Hello from ${channel}!`);"
+                        "// 로그: Hello from <#123456789012345678>!\nconsole.log(`Hello from ${channel}!`);"
                     ],
                     "returns": [
                         [
@@ -15824,7 +15824,7 @@
                     "name": "toString",
                     "description": "When concatenated with a string, this automatically returns the channel's mention instead of the Channel object.",
                     "examples": [
-                        "// Logs: Hello from <#123456789012345678>!\nconsole.log(`Hello from ${channel}!`);"
+                        "// 로그: Hello from <#123456789012345678>!\nconsole.log(`Hello from ${channel}!`);"
                     ],
                     "returns": [
                         [
@@ -16622,7 +16622,7 @@
             "methods": [
                 {
                     "name": "setUsername",
-                    "description": "Sets the username of the logged in client.\n<info>Changing usernames in Discord is heavily rate limited, with only 2 requests\nevery hour. Use this sparingly!</info>",
+                    "description": "로그인한 클라이언트의 사용자 이름을 설정합니다.\n<info>Discord에서 사용자 이름을 변경하는 작업은 1시간당 2개의 요청만 할 수 있습니다.(속도가 매우 제한됩니다.)</info>",
                     "examples": [
                         "// Set username\nclient.user.setUsername('discordjs')\n  .then(user => console.log(`My new username is ${user.username}`))\n  .catch(console.error);"
                     ],
@@ -17158,7 +17158,7 @@
                     "inherits": "User#toString",
                     "inherited": true,
                     "examples": [
-                        "// Logs: Hello from <@123456789012345678>!\nconsole.log(`Hello from ${user}!`);"
+                        "// 로그: Hello from <@123456789012345678>!\nconsole.log(`Hello from ${user}!`);"
                     ],
                     "returns": [
                         [
@@ -17583,7 +17583,7 @@
                     "name": "toString",
                     "description": "When concatenated with a string, this automatically returns the recipient's mention instead of the\nDMChannel object.",
                     "examples": [
-                        "// Logs: Hello from <@123456789012345678>!\nconsole.log(`Hello from ${channel}!`);"
+                        "// 로그: Hello from <@123456789012345678>!\nconsole.log(`Hello from ${channel}!`);"
                     ],
                     "returns": [
                         [
@@ -18084,7 +18084,7 @@
         },
         {
             "name": "Guild",
-            "description": "Represents a guild (or a server) on Discord.\n<info>It's recommended to see if a guild is available before performing operations or reading data from it. You can\ncheck this with `guild.available`.</info>",
+            "description": "Discord에 길드(또는 서버)를 나타냅니다.\n<info>작업을 수행하거나 길드에서 데이터를 읽기 전에 길드를 사용할 수 있는지 확인하는 것이 좋습니다. \n이것을 `guild.available`로 확인할 수 있습니다.</info>",
             "extends": [
                 [
                     [
@@ -22583,7 +22583,7 @@
                     "inherits": "Channel#toString",
                     "inherited": true,
                     "examples": [
-                        "// Logs: Hello from <#123456789012345678>!\nconsole.log(`Hello from ${channel}!`);"
+                        "// 로그: Hello from <#123456789012345678>!\nconsole.log(`Hello from ${channel}!`);"
                     ],
                     "returns": [
                         [
@@ -23976,7 +23976,7 @@
                     "name": "toString",
                     "description": "When concatenated with a string, this automatically returns the user's mention instead of the GuildMember object.",
                     "examples": [
-                        "// Logs: Hello from <@123456789012345678>!\nconsole.log(`Hello from ${member}!`);"
+                        "// 로그: Hello from <@123456789012345678>!\nconsole.log(`Hello from ${member}!`);"
                     ],
                     "returns": [
                         [
@@ -25018,7 +25018,7 @@
                 },
                 {
                     "name": "stopTyping",
-                    "description": "Stops the typing indicator in the channel.\nThe indicator will only stop if this is called as many times as startTyping().\n<info>It can take a few seconds for the client user to stop typing.</info>",
+                    "description": "타이핑 인디케이터를 채널에서 중지합니다.\n이 인디케이터는 startTyping()이 많이 호출되었을 때 중지합니다.\n<info>클라이언트 유저가 입력을 중지하는 데 몇 초 정도 걸릴 수 있습니다.</info>",
                     "examples": [
                         "// Reduce the typing count by one and stop typing if it reached 0\nchannel.stopTyping();",
                         "// Force typing to fully stop regardless of typing count\nchannel.stopTyping(true);"
@@ -25252,7 +25252,7 @@
         },
         {
             "name": "Invite",
-            "description": "Represents an invitation to a guild channel.\n<warn>The only guaranteed properties are `code`, `channel`, and `url`. Other properties can be missing.</warn>",
+            "description": "길드 채널에 대한 초대를 나타냅니다.\n<warn>보장된 속성은 `code`, `channel`, and `url`밖에 없습니다. 다른 속성이 누락될 수 있습니다.</warn>",
             "extends": [
                 [
                     [
@@ -25838,7 +25838,7 @@
                 },
                 {
                     "name": "nonce",
-                    "description": "A random number or string used for checking message delivery\n<warn>This is only received after the message was sent successfully, and\nlost if re-fetched</warn>",
+                    "description": "메시지 전달을 확인하는 데 사용되는 임의의 숫자 또는 문자열입니다.\n<warn>메시지가 성공적으로 전송된 후에만 수신되고, 다시 검색된 경우 손실됩니다.</warn>",
                     "nullable": true,
                     "type": [
                         [
@@ -28678,7 +28678,7 @@
                 },
                 {
                     "name": "users",
-                    "description": "Any users that were mentioned\n<info>Order as received from the API, not as they appear in the message content</info>",
+                    "description": "언급된 모든 사용자입니다.\n<info>메시지 컨텐츠에 나타나지 않는 API에서 받은 대로 나타납니다.</info>",
                     "type": [
                         [
                             [
@@ -28703,7 +28703,7 @@
                 },
                 {
                     "name": "roles",
-                    "description": "Any roles that were mentioned\n<info>Order as received from the API, not as they appear in the message content</info>",
+                    "description": "언급된 모든 역할입니다.\n<info>메시지 컨텐츠에 나타나지 않는 API에서 받은 대로 나타납니다.</info>",
                     "type": [
                         [
                             [
@@ -28782,7 +28782,7 @@
                 },
                 {
                     "name": "crosspostedChannels",
-                    "description": "A collection of crossposted channels\n<info>Order as received from the API, not as they appear in the message content</info>",
+                    "description": "게시된 채널의 집합입니다.\n<info>메시지 컨텐츠에 나타나지 않는 API에서 받은 대로 나타납니다.</info>",
                     "type": [
                         [
                             [
@@ -28807,7 +28807,7 @@
                 },
                 {
                     "name": "members",
-                    "description": "Any members that were mentioned (only in {@link TextChannel}s)\n<info>Order as received from the API, not as they appear in the message content</info>",
+                    "description": "언급된 멤버입니다({@link TextChannel}에만 해당).\n<info>메시지 컨텐츠에 나타나지 않는 API에서 받은 대로 나타납니다.</info>",
                     "readonly": true,
                     "nullable": true,
                     "type": [
@@ -28834,7 +28834,7 @@
                 },
                 {
                     "name": "channels",
-                    "description": "Any channels that were mentioned\n<info>Order as they appear first in the message content</info>",
+                    "description": "언급된 모든 채널입니다.\n<info>메시지 내용에 맨 먼저 나타나는 대로 정렬합니다.</info>",
                     "readonly": true,
                     "type": [
                         [
@@ -28877,7 +28877,7 @@
                 },
                 {
                     "name": "USERS_PATTERN",
-                    "description": "Regular expression that globally matches user mentions like `<@81440962496172032>`",
+                    "description": "`<@81440962496172032>`와 같은 사용자 언급과 전체적으로 일치하는 정규식입니다.",
                     "scope": "static",
                     "type": [
                         [
@@ -28894,7 +28894,7 @@
                 },
                 {
                     "name": "ROLES_PATTERN",
-                    "description": "Regular expression that globally matches role mentions like `<@&297577916114403338>`",
+                    "description": "`<@&297577916114403338>`과 같은 역할 언급과 전체적으로 일치하는 정규식입니다.",
                     "scope": "static",
                     "type": [
                         [
@@ -28911,7 +28911,7 @@
                 },
                 {
                     "name": "CHANNELS_PATTERN",
-                    "description": "Regular expression that globally matches channel mentions like `<#222079895583457280>`",
+                    "description": "`<#222079895583457280>`과 같은 채널의 언급과 전체적으로 일치하는 정규식입니다.",
                     "scope": "static",
                     "type": [
                         [
@@ -30068,7 +30068,7 @@
                 },
                 {
                     "name": "stopTyping",
-                    "description": "Stops the typing indicator in the channel.\nThe indicator will only stop if this is called as many times as startTyping().\n<info>It can take a few seconds for the client user to stop typing.</info>",
+                    "description": "타이핑 인디케이터를 채널에서 중지합니다.\n이 인디케이터는 startTyping()이 많이 호출되었을 때 중지합니다.\n<info>클라이언트 유저가 입력을 중지하는 데 몇 초 정도 걸릴 수 있습니다.</info>",
                     "inherits": "TextChannel#stopTyping",
                     "inherited": true,
                     "implements": [
@@ -38607,7 +38607,7 @@
                     "inherits": "Channel#toString",
                     "inherited": true,
                     "examples": [
-                        "// Logs: Hello from <#123456789012345678>!\nconsole.log(`Hello from ${channel}!`);"
+                        "// 로그: Hello from <#123456789012345678>!\nconsole.log(`Hello from ${channel}!`);"
                     ],
                     "returns": [
                         [
@@ -39256,7 +39256,7 @@
                     "name": "toString",
                     "description": "When concatenated with a string, this automatically returns the user's mention instead of the User object.",
                     "examples": [
-                        "// Logs: Hello from <@123456789012345678>!\nconsole.log(`Hello from ${user}!`);"
+                        "// 로그: Hello from <@123456789012345678>!\nconsole.log(`Hello from ${user}!`);"
                     ],
                     "returns": [
                         [
@@ -51197,7 +51197,7 @@
         },
         {
             "name": "ActivityType",
-            "description": "<info>Bots cannot set a `CUSTOM_STATUS`, it is only for custom statuses received from users</info>\nThe type of an activity of a users presence, e.g. `PLAYING`. Here are the available types:\n* PLAYING\n* STREAMING\n* LISTENING\n* WATCHING\n* CUSTOM_STATUS",
+            "description": "<info>봇은 `CUSTOM_STATUS`를 설정할 수 없으며, 사용자로부터 수신된 사용자 지정 상태에만 해당됩니다.</info>\n사용자 상태의 활동 유형(예: `PLAYING`)입니다. 사용 가능한 유형은 다음과 같습니다:\n* PLAYING\n* STREAMING\n* LISTENING\n* WATCHING\n* CUSTOM_STATUS",
             "type": [
                 [
                     [
