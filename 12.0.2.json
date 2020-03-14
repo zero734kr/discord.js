@@ -23,7 +23,7 @@
                 "faq": {
                     "name": "자주 물어보는 질문",
                     "type": "md",
-                    "content": "# 자주 물어보는 질문\n\n이 질문들은 가장 자주 물어보는 것들입니다.\n\n## `SyntaxError: Block-scoped declarations (let, const, function, class) not yet supported outside strict mode` 에러를 신경쓰지마세요‽\n\nNode.js 12.0.0 또는 더 최신 버전으로 업데이트하세요\n\n## 보이스는 어떻게 작동하게 하나요?\n\n- FFMPEG를 설치합니다.\n- `@discordjs/opus` 패키지 또는 `opusscript` 패키지를 설치합니다.\n @discordjs/opus는 성능이 현저하게 향상되었기 때문에 크게 선호된다.\n\n## FFMPEG는 어떻게 설치하나요?\n\n- **npm:** `npm install ffmpeg-static`\n- **Ubuntu 16.04:** `sudo apt install ffmpeg`\n- **Ubuntu 14.04:** `sudo apt-get install libav-tools`\n- **Windows:** `npm install ffmpeg-static` 또는 [AoDude의 가이드에서 FFMPEG 섹션(영문)](https://github.com/bdistin/OhGodMusicBot/blob/master/README.md#download-ffmpeg)을 확인해보세요.\n\n## @discordjs/opus를 어떻게 설정하나요?\n\n- **Ubuntu:** 간단하게 `npm install @discordjs/opus`, 를 실행하고 끝입니다. 축하합니다!\n- **Windows:**  `npm install --global --production windows-build-tools` 를 관리자 명령어 프롬포트 또는 PowerShell 에서 실행하세요.\n  그리고 `npm install @discordjs/opus` 를 실행하면 봇 디랙토리는 성공적으로 빌드할것입니다.  우후!\n\n다른 질문들은 [공식 Discord.js 가이드(영문)](https://discordjs.guide/popular-topics/common-questions.html) 에서 찾을 수 있습니다.\n만약 이곳에 써있지 않은 이슈가 있다면, 편하게  [공식 Discord.js 서버(영문)](https://discord.gg/bRCvFy9) 방문해보세요.\n항상  [문서](https://discord.js.org/#/docs/main/stable/general/welcome)를 먼저 읽어보도록하세요.\n(한국어 도움이 필요하시다면 [한국어 비공식 Discord.js 서버](https://discord.gg/TwZeg6z) 에서 도와드릴게요!)",
+                    "content": "# 자주 물어보는 질문\n\n이 질문들은 가장 자주 물어보는 것들입니다.\n\n## `SyntaxError: Block-scoped declarations (let, const, function, class) not yet supported outside strict mode` 에러를 신경쓰지마세요‽\n\nNode.js 12.0.0 또는 더 최신 버전으로 업데이트하세요\n\n## 보이스는 어떻게 작동하게 하나요?\n\n- FFMPEG를 설치합니다.\n- `@discordjs/opus` 패키지 또는 `opusscript` 패키지를 설치합니다.\n @discordjs/opus는 성능이 현저하게 향상되었기 때문에 크게 선호된다.\n\n## FFMPEG는 어떻게 설치하나요?\n\n- **npm:** `npm install ffmpeg-static`\n- **Ubuntu 16.04:** `sudo apt install ffmpeg`\n- **Ubuntu 14.04:** `sudo apt-get install libav-tools`\n- **Windows:** `npm install ffmpeg-static` 또는 [AoDude의 가이드에서 FFMPEG 섹션(영문)](https://github.com/bdistin/OhGodMusicBot/blob/master/README.md#download-ffmpeg)을 확인해보세요.\n\n## @discordjs/opus를 어떻게 설정하나요?\n\n- **Ubuntu:** 간단하게 `npm install @discordjs/opus`, 를 실행하고 끝입니다. 축하합니다!\n- **Windows:**  `npm install --global --production windows-build-tools` 를 매니저 명령어 프롬포트 또는 PowerShell 에서 실행하세요.\n  그리고 `npm install @discordjs/opus` 를 실행하면 봇 디랙토리는 성공적으로 빌드할것입니다.  우후!\n\n다른 질문들은 [공식 Discord.js 가이드(영문)](https://discordjs.guide/popular-topics/common-questions.html) 에서 찾을 수 있습니다.\n만약 이곳에 써있지 않은 이슈가 있다면, 편하게  [공식 Discord.js 서버(영문)](https://discord.gg/bRCvFy9) 방문해보세요.\n항상  [문서](https://discord.js.org/#/docs/main/stable/general/welcome)를 먼저 읽어보도록하세요.\n(한국어 도움이 필요하시다면 [한국어 비공식 Discord.js 서버](https://discord.gg/TwZeg6z) 에서 도와드릴게요!)",
                     "path": "docs/general/faq.md"
                 }
             }
@@ -34,7 +34,7 @@
                 "voice": {
                     "name": "음성",
                     "type": "md",
-                    "content": "# 음성 기능 소개\n\ndiscord.js 에서의 음성 기능은 다양한 방법으로 사용될 수 있습니다. 예를 들어, 뮤직봇이나 녹음하거나 오디오를 스트리밍 할 수 있습니다.\n\ndiscord.js 에서 `음성채널(VoiceChannel)`에 연결하면 음성을 사용하여 오디오를 스트리밍하고 수신할 수 있는 `음성연결(VoiceConnection)`을 얻을 수 있습니다.\n\n시작하기 위해, 다음을 확인해주세요:\n\n- FFmpeg - `npm install ffmpeg-static`\n- opus 인코더, 다음 중에 골라주세요:\n  - `npm install @discordjs/opus` (더 나은 성능)\n  - `npm install opusscript`\n- 좋은 인터넷 연결 상태\n\n추천하는 opus 엔진은 @discordjs/opus입니다. opusscript보다 훨씬 원할하게 작동합니다. 만약 두 개 모두 사용이 가능할 경우, discord.js 는 자동적으로 @discordjs/opus 를 선택합니다.\nopusscript를 사용하는 경우에는 단지 @ discordjs/opus를 사용하기 힘든 개발환경에서만 권장됩니다.\n개발용 봇의 경우 @discordjs/opus 사용은 필수사항이여야 하며, 특히 여러 서버에서 실행될 경우 더욱 그러해야 합니다.\n\n## 음성 채널에 접속하기\n\n아래 예시는 메세지에 응답하여, 메세지 전송자의 음성 채널에 에러를 확인하지 않고 접속합니다. 이 사항은 중요합니다.\n오디오를 스트리밍할 수 있는 `음성연결(VoiceConnection)`을 얻을 수 있기 때문이다.\n\n```js\nconst Discord = require('discord.js');\nconst client = new Discord.Client();\n\nclient.login('토큰');\n\nclient.on('message', async message => {\n  // 음성 기능은 서버에서만 작동됩니다. 서버가 아닐 경우,\n  // 무시합니다.\n  if (!message.guild) return;\n\n  if (message.content === '/join') {\n    // 유저의 음성 채널이 있는 경우에만 음성채널에 접속을 시도합니다.\n    if (message.member.voice.channel) {\n      const connection = await message.member.voice.channel.join();\n    } else {\n      message.reply('음성 채널에 먼저 접속해주세요!');\n    }\n  }\n});\n```\n\n## 음성채널에 스트리밍하기\n\n위 예시에서, 어떻게 음성채널에 접속하여 `음성연결VoiceConnection`을 얻을 수 있는 지 알아보았습니다. 음성연결을 제공 받았다면,\n오디오 스트리밍을 시작할 수 있습니다.\n\n### 음성연결에 플레이하기\n\n음성연결을 통해 오디오를 재생하는 가장 일반적인 예시는 로컬파일입니다. \n\n```js\nconst dispatcher = connection.play('/home/discord/audio.mp3');\n```\n\n여기서의 `dispatcher`는 `StreamDispatcher` 입니다. - 이것으로 음성연결의 볼륨 및 재생상황 제어할 수 있습니다.\n\n```js\ndispatcher.pause();\ndispatcher.resume();\n\ndispatcher.setVolume(0.5); // 볼륨을 절반으로 줄입니다.\n\ndispatcher.on('finish', () => {\n  console.log('재생이 종료되었습니다!');\n});\n\ndispatcher.destroy(); // 재생을 종료합니다.\n```\n\n또한, 먼저 재생을 시작할 때, 옵션을 설정할 수도 있습니다.\n\n```js\nconst dispatcher = connection.play('/home/discord/audio.mp3', {\n  volume: 0.5,\n});\n```\n\n### 무엇을 재생할 수 있을까요?\n\nDiscord.js 는 다음을 재생하게 해줍니다.\n\n```js\n// 재생 가능한 스트림, 예를 들어 유튜브 오디오입니다.\nconst ytdl = require('ytdl-core');\nconnection.play(ytdl('https://www.youtube.com/watch?v=ZlAU_w7-Xp8', { filter: 'audioonly' }));\n\n// 인터넷에 있는 파일\nconnection.play('http://www.sample-videos.com/audio/mp3/wave.mp3');\n\n// 로컬 파일\nconnection.play('/home/discord/audio.mp3');\n```\n\nv12의 새로운 기능은 Ffmpeg 대신 훨씬 더 나은 성능으로 OggOpus와 WebmOpus 으로 스트림을 재생하는 기능입니다. 이는 스트림에 대한 볼륨 제어를 더 이상 지원하지 않는다는 점에 유의하십시오.\n\n```js\nconnection.play(fs.createReadStream('./media.webm'), {\n  type: 'webm/opus',\n});\n\nconnection.play(fs.createReadStream('./media.ogg'), {\n  type: 'ogg/opus',\n});\n```\n\n재생할 수 있는 모든 목록은 문서를 참조하십시오. 여기에는 더 쓸게 너무 많아서요!\n\n## 음성 보르드케스트\n\n음성 보르드케스트은 여러 채널에서 동일한 오디오를 재생하는 \"라디오\" 봇에 매우 유용합니다. 오디오가 한 번만 변환되고, 성능이 훨씬 좋습니다.\n\n```js\nconst broadcast = client.voice.createBroadcast();\n\nbroadcast.on('subscribe', dispatcher => {\n  console.log('새로운 보르드케스트 구독자!');\n});\n\nbroadcast.on('unsubscribe', dispatcher => {\n  console.log('채널에서 보르드케스트 구독을 취소했습니다 :(');\n});\n```\n`broadcast`는 `VoiceBroadcast`의 한 예로서, `)`에 연결하면 음성을 사용하여 오디오를 스트리밍하고 수신할 수 있는 `음성연결(VoiceConnection)`을 얻을 수 있습니다.\n\n시작하기 위해, 다음을 확인해주세요:\n\n- FFmpeg - `npm install ffmpeg-static`\n- opus 인코더, 다음 중에 골라주세요:\n  - `npm install @discordjs/opus` (더 나은 성능)\n  - `npm install opusscript`\n- 좋은 인터넷 연결 상태\n\n추천하는 opus 엔진은 @discordjs/opus입니다. opusscript보다 훨씬 원할하게 작동합니다. 만약 두 개 모두 사용이 가능할 경우, discord.js 는 자동적으로 @discordjs/opus 를 선택합니다.\nopusscript를 사용하는 경우에는 단지 @ discordjs/opus를 사용하기 힘든 개발환경에서만 권장됩니다.\n개발용 봇의 경우 @discordjs/opus 사용은 필수사항이여야 하며, 특히 여러 서버에서 실행될 경우 더욱 그러해야 합니다.\n\n## 음성 채널에 접속하기\n\n아래 예시는 메세지에 응답하여, 메세지 전송자의 음성 채널에 에러를 확인하지 않고 접속합니다. 이 사항은 중요합니다.\n오디오를 스트리밍할 수 있는 `음성연결(VoiceConnection)`을 얻을 수 있기 때문이다.\n\n```js\nconst Discord = require('discord.js');\nconst client = new Discord.Client();\n\nclient.login('토큰');\n\nclient.on('message', async message => {\n  // 음성 기능은 서버에서만 작동됩니다. 서버가 아닐 경우,\n  // 무시합니다.\n  if (!message.guild) return;\n\n  if (message.content === '/join') {\n    // 유저의 음성 채널이 있는 경우에만 음성채널에 접속을 시도합니다.\n    if (message.member.voice.channel) {\n      const connection = await message.member.voice.channel.join();\n    } else {\n      message.reply('음성 채널에 먼저 접속해주세요!');\n    }\n  }\n});\n```\n\n## 음성채널에 스트리밍하기\n\n위 예시에서, 어떻게 음성채널에 접속하여 `음성연결VoiceConnection`을 얻을 수 있는 지 알아보았습니다. 음성연결을 제공 받았다면,\n오디오 스트리밍을 시작할 수 있습니다.\n\n### 음성연결에 플레이하는 방법\n\n음성연결을 통해 오디오를 재생하는 가장 일반적인 예시는 로컬파일입니다. \n\n```js\nconst dispatcher = connection.play('/home/discord/audio.mp3');\n```\n\n여기서의 `dispatcher`는 `StreamDispatcher` 입니다. - 이것으로 음성연결의 볼륨 및 재생상황 제어할 수 있습니다.\n\n```js\ndispatcher.pause();\ndispatcher.resume();\n\ndispatcher.setVolume(0.5); // 볼륨을 절반으로 줄입니다.\n\ndispatcher.on('finish', () => {\n  console.log('재생이 종료되었습니다!');\n});\n\ndispatcher.destroy(); // 재생을 종료합니다.\n```\n\n또한, 먼저 재생을 시작할 때, 옵션을 설정할 수도 있습니다.\n\n```js\nconst dispatcher = connection.play('/home/discord/audio.mp3', {\n  volume: 0.5,\n});\n```\n\n### 무엇을 재생할 수 있을까요?\n\nDiscord.js 는 다음을 재생하게 해줍니다.\n\n```js\n// 재생 가능한 스트림, 예를 들어 유튜브 오디오입니다.\nconst ytdl = require('ytdl-core');\nconnection.play(ytdl('https://www.youtube.com/watch?v=ZlAU_w7-Xp8', { filter: 'audioonly' }));\n\n// 인터넷에 있는 파일\nconnection.play('http://www.sample-videos.com/audio/mp3/wave.mp3');\n\n// 로컬 파일\nconnection.play('/home/discord/audio.mp3');\n```\n\nv12의 새로운 기능은 Ffmpeg 대신 훨씬 더 나은 성능으로 OggOpus와 WebmOpus 으로 스트림을 재생하는 기능입니다. 이는 스트림에 대한 볼륨 제어를 더 이상 지원하지 않는다는 점에 유의하십시오.\n\n```js\nconnection.play(fs.createReadStream('./media.webm'), {\n  type: 'webm/opus',\n});\n\nconnection.play(fs.createReadStream('./media.ogg'), {\n  type: 'ogg/opus',\n});\n```\n\n재생할 수 있는 모든 목록은 문서를 참조하십시오. 여기에는 더 쓸게 너무 많아서요!\n\n## 음성 보르드케스트하기\n\n음성 보르드케스트은 여러 채널에서 동일한 오디오를 재생하는 \"라디오\" 봇에 매우 유용합니다. 오디오가 한 번만 변환되고, 성능이 훨씬 좋습니다.\n\n```js\nconst broadcast = client.voice.createBroadcast();\n\nbroadcast.on('subscribe', dispatcher => {\n  console.log('새로운 보르드케스트 구독자!');\n});\n\nbroadcast.on('unsubscribe', dispatcher => {\n  console.log('채널에서 보르드케스트 구독을 취소했습니다 :(');\n});\n```\n`broadcast`는 `VoiceBroadcast`의 한 예로서, 일반 VoiceConnections 과 같은 `play` 메서드를 사용합니다.\n\n```js\nconst dispatcher = broadcast.play('./audio.mp3');\n\nconnection.play(broadcast);\n```\n\n위에 저장된 `dispatcher`는 BroadcastDispatcher라는 점을 유의해야 한다. - 이것은 보르드케스트에 등록되어 있는 모든 음성을 통제한다. 예를 들어, 이 볼륨 설정은 모든 음성의 볼륨에 영향을 미친다.\n\n## 음성 수신\n\n곧 찾아뵙겠습니다! \ncoming soon&trade;\n",
+                    "content": "# 음성 기능 소개\n\ndiscord.js 에서의 음성 기능은 다양한 방법으로 사용될 수 있습니다. 예를 들어, 뮤직봇이나 녹음하거나 오디오를 스트리밍 할 수 있습니다.\n\ndiscord.js 에서 `음성채널(VoiceChannel)`에 연결하면 음성을 사용하여 오디오를 스트리밍하고 수신할 수 있는 `음성연결(VoiceConnection)`을 얻을 수 있습니다.\n\n시작하기 위해, 다음을 확인해주세요:\n\n- FFmpeg - `npm install ffmpeg-static`\n- opus 인코더, 다음 중에 골라주세요:\n  - `npm install @discordjs/opus` (더 나은 성능)\n  - `npm install opusscript`\n- 좋은 인터넷 연결 상태\n\n추천하는 opus 엔진은 @discordjs/opus입니다. opusscript보다 훨씬 원할하게 작동합니다. 만약 두 개 모두 사용이 가능할 경우, discord.js 는 자동적으로 @discordjs/opus 를 선택합니다.\nopusscript를 사용하는 경우에는 단지 @ discordjs/opus를 사용하기 힘든 개발환경에서만 권장됩니다.\n개발용 봇의 경우 @discordjs/opus 사용은 필수사항이여야 하며, 특히 여러 서버에서 실행될 경우 더욱 그러해야 합니다.\n\n## 음성 채널에 접속하기\n\n아래 예시는 메세지에 응답하여, 메세지 전송자의 음성 채널에 에러를 확인하지 않고 접속합니다. 이 사항은 중요합니다.\n오디오를 스트리밍할 수 있는 `음성연결(VoiceConnection)`을 얻을 수 있기 때문이다.\n\n```js\nconst Discord = require('discord.js');\nconst client = new Discord.Client();\n\nclient.login('토큰');\n\nclient.on('message', async message => {\n  // 음성 기능은 서버에서만 작동됩니다. 서버가 아닐 경우,\n  // 무시합니다.\n  if (!message.guild) return;\n\n  if (message.content === '/join') {\n    // 유저의 음성 채널이 존재하는 경우에만 음성채널에 접속을 시도합니다.\n    if (message.member.voice.channel) {\n      const connection = await message.member.voice.channel.join();\n    } else {\n      message.reply('음성 채널에 먼저 접속해주세요!');\n    }\n  }\n});\n```\n\n## 음성채널에 스트리밍하기\n\n위 예시에서, 어떻게 음성채널에 접속하여 `음성연결VoiceConnection`을 얻을 수 있는 지 알아보았습니다. 음성연결을 제공 받았다면,\n오디오 스트리밍을 시작할 수 있습니다.\n\n### 음성연결에 플레이하기\n\n음성연결을 통해 오디오를 재생하는 가장 일반적인 예시는 로컬파일입니다. \n\n```js\nconst dispatcher = connection.play('/home/discord/audio.mp3');\n```\n\n여기서의 `dispatcher`는 `StreamDispatcher` 입니다. - 이것으로 음성연결의 볼륨 및 재생상황 제어할 수 있습니다.\n\n```js\ndispatcher.pause();\ndispatcher.resume();\n\ndispatcher.setVolume(0.5); // 볼륨을 절반으로 줄입니다.\n\ndispatcher.on('finish', () => {\n  console.log('재생이 종료되었습니다!');\n});\n\ndispatcher.destroy(); // 재생을 종료합니다.\n```\n\n또한, 먼저 재생을 시작할 때, 옵션을 설정할 수도 있습니다.\n\n```js\nconst dispatcher = connection.play('/home/discord/audio.mp3', {\n  volume: 0.5,\n});\n```\n\n### 무엇을 재생할 수 있을까요?\n\nDiscord.js 는 다음을 재생하게 해줍니다.\n\n```js\n// 재생 가능한 스트림, 예를 들어 유튜브 오디오입니다.\nconst ytdl = require('ytdl-core');\nconnection.play(ytdl('https://www.youtube.com/watch?v=ZlAU_w7-Xp8', { filter: 'audioonly' }));\n\n// 인터넷에 있는 파일\nconnection.play('http://www.sample-videos.com/audio/mp3/wave.mp3');\n\n// 로컬 파일\nconnection.play('/home/discord/audio.mp3');\n```\n\nv12의 새로운 기능은 Ffmpeg 대신 훨씬 더 나은 성능으로 OggOpus와 WebmOpus 으로 스트림을 재생하는 기능입니다. 이는 스트림에 대한 볼륨 제어를 더 이상 지원하지 않는다는 점에 유의하십시오.\n\n```js\nconnection.play(fs.createReadStream('./media.webm'), {\n  type: 'webm/opus',\n});\n\nconnection.play(fs.createReadStream('./media.ogg'), {\n  type: 'ogg/opus',\n});\n```\n\n재생할 수 있는 모든 목록은 문서를 참조하십시오. 여기에는 더 쓸게 너무 많아서요!\n\n## 음성 보르드케스트\n\n음성 보르드케스트은 여러 채널에서 동일한 오디오를 재생하는 \"라디오\" 봇에 매우 유용합니다. 오디오가 한 번만 변환되고, 성능이 훨씬 좋습니다.\n\n```js\nconst broadcast = client.voice.createBroadcast();\n\nbroadcast.on('subscribe', dispatcher => {\n  console.log('새로운 보르드케스트 구독자!');\n});\n\nbroadcast.on('unsubscribe', dispatcher => {\n  console.log('채널에서 보르드케스트 구독을 취소했습니다 :(');\n});\n```\n`broadcast`는 `VoiceBroadcast`의 한 예로서, `)`에 연결하면 음성을 사용하여 오디오를 스트리밍하고 수신할 수 있는 `음성연결(VoiceConnection)`을 얻을 수 있습니다.\n\n시작하기 위해, 다음을 확인해주세요:\n\n- FFmpeg - `npm install ffmpeg-static`\n- opus 인코더, 다음 중에 골라주세요:\n  - `npm install @discordjs/opus` (더 나은 성능)\n  - `npm install opusscript`\n- 좋은 인터넷 연결 상태\n\n추천하는 opus 엔진은 @discordjs/opus입니다. opusscript보다 훨씬 원할하게 작동합니다. 만약 두 개 모두 사용이 가능할 경우, discord.js 는 자동적으로 @discordjs/opus 를 선택합니다.\nopusscript를 사용하는 경우에는 단지 @ discordjs/opus를 사용하기 힘든 개발환경에서만 권장됩니다.\n개발용 봇의 경우 @discordjs/opus 사용은 필수사항이여야 하며, 특히 여러 서버에서 실행될 경우 더욱 그러해야 합니다.\n\n## 음성 채널에 접속하기\n\n아래 예시는 메세지에 응답하여, 메세지 전송자의 음성 채널에 에러를 확인하지 않고 접속합니다. 이 사항은 중요합니다.\n오디오를 스트리밍할 수 있는 `음성연결(VoiceConnection)`을 얻을 수 있기 때문이다.\n\n```js\nconst Discord = require('discord.js');\nconst client = new Discord.Client();\n\nclient.login('토큰');\n\nclient.on('message', async message => {\n  // 음성 기능은 서버에서만 작동됩니다. 서버가 아닐 경우,\n  // 무시합니다.\n  if (!message.guild) return;\n\n  if (message.content === '/join') {\n    // 유저의 음성 채널이 존재하는 경우에만 음성채널에 접속을 시도합니다.\n    if (message.member.voice.channel) {\n      const connection = await message.member.voice.channel.join();\n    } else {\n      message.reply('음성 채널에 먼저 접속해주세요!');\n    }\n  }\n});\n```\n\n## 음성채널에 스트리밍하기\n\n위 예시에서, 어떻게 음성채널에 접속하여 `음성연결VoiceConnection`을 얻을 수 있는 지 알아보았습니다. 음성연결을 제공 받았다면,\n오디오 스트리밍을 시작할 수 있습니다.\n\n### 음성연결에 플레이하는 방법\n\n음성연결을 통해 오디오를 재생하는 가장 일반적인 예시는 로컬파일입니다. \n\n```js\nconst dispatcher = connection.play('/home/discord/audio.mp3');\n```\n\n여기서의 `dispatcher`는 `StreamDispatcher` 입니다. - 이것으로 음성연결의 볼륨 및 재생상황 제어할 수 있습니다.\n\n```js\ndispatcher.pause();\ndispatcher.resume();\n\ndispatcher.setVolume(0.5); // 볼륨을 절반으로 줄입니다.\n\ndispatcher.on('finish', () => {\n  console.log('재생이 종료되었습니다!');\n});\n\ndispatcher.destroy(); // 재생을 종료합니다.\n```\n\n또한, 먼저 재생을 시작할 때, 옵션을 설정할 수도 있습니다.\n\n```js\nconst dispatcher = connection.play('/home/discord/audio.mp3', {\n  volume: 0.5,\n});\n```\n\n### 무엇을 재생할 수 있을까요?\n\nDiscord.js 는 다음을 재생하게 해줍니다.\n\n```js\n// 재생 가능한 스트림, 예를 들어 유튜브 오디오입니다.\nconst ytdl = require('ytdl-core');\nconnection.play(ytdl('https://www.youtube.com/watch?v=ZlAU_w7-Xp8', { filter: 'audioonly' }));\n\n// 인터넷에 있는 파일\nconnection.play('http://www.sample-videos.com/audio/mp3/wave.mp3');\n\n// 로컬 파일\nconnection.play('/home/discord/audio.mp3');\n```\n\nv12의 새로운 기능은 Ffmpeg 대신 훨씬 더 나은 성능으로 OggOpus와 WebmOpus 으로 스트림을 재생하는 기능입니다. 이는 스트림에 대한 볼륨 제어를 더 이상 지원하지 않는다는 점에 유의하십시오.\n\n```js\nconnection.play(fs.createReadStream('./media.webm'), {\n  type: 'webm/opus',\n});\n\nconnection.play(fs.createReadStream('./media.ogg'), {\n  type: 'ogg/opus',\n});\n```\n\n재생할 수 있는 모든 목록은 문서를 참조하십시오. 여기에는 더 쓸게 너무 많아서요!\n\n## 음성 보르드케스트하기\n\n음성 보르드케스트은 여러 채널에서 동일한 오디오를 재생하는 \"라디오\" 봇에 매우 유용합니다. 오디오가 한 번만 변환되고, 성능이 훨씬 좋습니다.\n\n```js\nconst broadcast = client.voice.createBroadcast();\n\nbroadcast.on('subscribe', dispatcher => {\n  console.log('새로운 보르드케스트 구독자!');\n});\n\nbroadcast.on('unsubscribe', dispatcher => {\n  console.log('채널에서 보르드케스트 구독을 취소했습니다 :(');\n});\n```\n`broadcast`는 `VoiceBroadcast`의 한 예로서, 일반 VoiceConnections 과 같은 `play` 메서드를 사용합니다.\n\n```js\nconst dispatcher = broadcast.play('./audio.mp3');\n\nconnection.play(broadcast);\n```\n\n위에 저장된 `dispatcher`는 BroadcastDispatcher라는 점을 유의해야 한다. - 이것은 보르드케스트에 등록되어 있는 모든 음성을 통제한다. 예를 들어, 이 볼륨 설정은 모든 음성의 볼륨에 영향을 미친다.\n\n## 음성 수신\n\n곧 찾아뵙겠습니다! \ncoming soon&trade;\n",
                     "path": "docs/topics/voice.md"
                 },
                 "web": {
@@ -87,7 +87,7 @@
                 "moderation": {
                     "name": "관리",
                     "type": "md",
-                    "content": "# 관리\n\n이곳에서는, 유저를 추방하거나 차단하는 예시를 확인하실 수 있습니다!\n\n## 유저 추방하기\n\n추방하고 싶다는 유저가 있다고 가정해봅시다. 여기 어떻게 __할 수 있는지__ 예시가 있습니다\n\n```js\n// discord.js 모듈을 인포트합니다\nconst Discord = require('discord.js');\n\n// Discord 클라이언트의 인스턴스 생성\nconst client = new Discord.Client();\n\n/**\n * ready 이벤트는 중요하며, 이 이벤트만이 봇이 정보에 반응을 시작된다는 것을 의미합니다.\n * 디스코드로 부터 정보가 전달됩니다.\n */\nclient.on('ready', () => {\n  console.log('준비되었습니다!');\n});\n\nclient.on('message', message => {\n  // 서버에서 오지 않은 메세지는 무시합니다.\n  if (!message.guild) return;\n\n  // 만약 메세지가 \"!kick\"으로 시작한다면\n  if (message.content.startsWith('!kick')) {\n  // 메시지에서 누군가를 언급한다고 가정하면, 사용자가 반환됩니다.\n  // https://discord-kr.js.org/#/docs/main/master/class/messageMentions 에서 언급된 내용을 자세히 읽어보십시오.\n    const user = message.mentions.users.first();\n    // 만약 유저가 언급되었다면\n    if (user) {\n      // 유저에서 멤버 객체를 가져옵니다.\n      const member = message.guild.member(user);\n      // 만약 해당 유저가 서버에 있다면\n      if (member) {\n        /**\n         * 유저를 추방합니다.\n         * 길드 멤버에 실행하도록 하세요! \n         * 이건 아주 중요한 사항입니다!\n         */\n        member\n          .kick('감사로그에 표시될 사유를 입력해주세요 (선택) ')\n          .then(() => {\n            // 메세지 전송자에게 성공적으로 추방했다고 알려줍니다.\n            message.reply(`${user.tag}를 성공적으로 추방했습니다.`);\n          })\n          .catch(err => {\n            // 에러가 발생하였습니다.\n            // 이 에러는 보통 봇이 유저를 추방할 수 없을 때 발생합니다.\n            // 권한이 부족하거나, 역할의 낮을 때\n            message.reply('유저 추방에 실패하였습니다.');\n            // 에러를 출력합니다.\n            console.error(err);\n          });\n      } else {\n        // 언급된 유저가 서버에 존재하지 않을 때\n        message.reply(\"해당 유저는 서버에 존재하지 않습니다!\");\n      }\n      // 유저가 언급되지 않았을 때\n    } else {\n      message.reply(\"추방할 유저를 언급하지 않았습니다!\");\n    }\n  }\n});\n\n// https://discordapp.com/developers/applications/me 에 있는 토큰을 이용하여 봇에로그인하세요\nclient.login('토큰');\n```\n\n결과:\n\n![결과 이미지](/static/kick-example.png)\n\n## 유저 차단하기\n\n차단은 추방과 같은 방식으로 작동하지만, 바꿀 수 있는 옵션이 약간 더 많다.\n\n```js\n// 서버에서 오지 않은 메세지는 무시합니다.\nconst Discord = require('discord.js');\n\n// Discord 클라이언트의 인스턴스 생성\nconst client = new Discord.Client();\n\n/**\n * ready 이벤트는 중요하며, 이 이벤트만이 봇이 정보에 반응을 시작된다는 것을 의미합니다.\n * 디스코드로 부터 정보가 전달됩니다.\n */\nclient.on('ready', () => {\n  console.log('준비되었습니다.');\n});\n\nclient.on('message', message => {\n  // 언급된 유저가 서버에 존재하지 않을 때\n  if (!message.guild) return;\n\n  // 만약 메세지가 \"!ban\"으로 시작한다면\n  if (message.content.startsWith('!ban')) {\n  // 메시지에서 누군가를 언급한다고 가정하면, 사용자가 반환됩니다.\n  // https://discord-kr.js.org/#/docs/main/master/class/messageMentions 에서 언급된 내용을 자세히 읽어보십시오.\n    const user = message.mentions.users.first();\n    // 만약 해당 유저가 서버에 있다면\n    if (user) {\n      // 유저에서 멤버 객체를 가져옵니다.\n      const member = message.guild.member(user);\n      // 만약 해당 유저가 서버에 있다면\n      if (member) {\n        /**\n         * 유저를 차단합니다.\n         * 길드 멤버에 실행하도록 하세요! \n         * 이건 아주 중요한 사항입니다!\n         * 옵션에 대해 더 알아보고 싶다면\n         * https://discord-kr.js.org/#/docs/main/master/class/GuildMember?scrollTo=ban 를 참고하세요\n         */\n    \n        member\n          .ban({\n            reason: '나빠요!?',\n          })\n          .then(() => {\n            // 메세지 전송자에게 성공적으로 차단했다고 알려줍니다.\n            message.reply(`${user.tag}를 성공적으로 차단했습니다.`);\n          })\n          .catch(err => {\n            // 에러가 발생하였습니다.\n            // 이 에러는 보통 봇이 유저를 차단할 수 없을 때 발생합니다.\n            // 권한이 부족하거나, 역할의 낮을 때\n            message.reply('유저 추방에 실패하였습니다.');\n            // 에러를 출력합니다.\n            console.error(err);\n          });\n      } else {\n        // 언급된 유저가 서버에 존재하지 않을 때\n        message.reply(\"That user isn't in this guild!\");\n      }\n    } else {\n      // 유저가 언급되지 않았을 때\n      message.reply(\"추방할 유저를 언급하지 않았습니다!\");\n    }\n  }\n});\n\n// https://discordapp.com/developers/applications/me 에 있는 토큰을 이용하여 봇에로그인하세요\nclient.login('토큰');\n```\n\nAnd the result is:\n\n![Image showing the result](/static/ban-example.png)\n",
+                    "content": "# 관리\n\n이곳에서는, 유저를 추방하거나 차단하는 예시를 확인하실 수 있습니다!\n\n## 유저 추방하기\n\n추방하고 싶다는 유저가 있다고 가정해봅시다. 여기 어떻게 __할 수 있는지__ 예시가 있습니다\n\n```js\n// discord.js 모듈을 인포트합니다\nconst Discord = require('discord.js');\n\n// Discord 클라이언트의 인스턴스 생성\nconst client = new Discord.Client();\n\n/**\n * ready 이벤트는 중요하며, 이 이벤트만이 봇이 정보에 반응을 시작된다는 것을 의미합니다.\n * 디스코드로 부터 정보가 전달됩니다.\n */\nclient.on('ready', () => {\n  console.log('준비되었습니다!');\n});\n\nclient.on('message', message => {\n  // 서버에서 오지 않은 메세지는 무시합니다.\n  if (!message.guild) return;\n\n  // 만약 메세지가 \"!kick\"으로 시작한다면\n  if (message.content.startsWith('!kick')) {\n  // 메시지에서 누군가를 언급한다고 가정하면, 유저가 반환됩니다.\n  // https://discord-kr.js.org/#/docs/main/master/class/messageMentions 에서 언급된 내용을 자세히 읽어보십시오.\n    const user = message.mentions.users.first();\n    // 만약 유저가 언급되었다면\n    if (user) {\n      // 유저에서 멤버 객체를 가져옵니다.\n      const member = message.guild.member(user);\n      // 만약 해당 유저가 서버에 있다면\n      if (member) {\n        /**\n         * 유저를 추방합니다.\n         * 서버 멤버에 실행하도록 하세요! \n         * 이건 아주 중요한 사항입니다!\n         */\n        member\n          .kick('감사로그에 표시될 사유를 입력해주세요 (선택) ')\n          .then(() => {\n            // 메세지 전송자에게 성공적으로 추방했다고 알려줍니다.\n            message.reply(`${user.tag}를 성공적으로 추방했습니다.`);\n          })\n          .catch(err => {\n            // 에러가 발생하였습니다.\n            // 이 에러는 보통 봇이 유저를 추방할 수 없을 때 발생합니다.\n            // 권한이 부족하거나, 역할의 낮을 때\n            message.reply('유저 추방에 실패하였습니다.');\n            // 에러를 출력합니다.\n            console.error(err);\n          });\n      } else {\n        // 언급된 유저가 서버에 존재하지 않을 때\n        message.reply(\"해당 유저는 서버에 존재하지 않습니다!\");\n      }\n      // 유저가 언급되지 않았을 때\n    } else {\n      message.reply(\"추방할 유저를 언급하지 않았습니다!\");\n    }\n  }\n});\n\n// https://discordapp.com/developers/applications/me 에 있는 토큰을 이용하여 봇에로그인하세요\nclient.login('토큰');\n```\n\n결과:\n\n![결과 이미지](/static/kick-example.png)\n\n## 유저 차단하기\n\n차단은 추방과 같은 방식으로 작동하지만, 바꿀 수 있는 옵션이 약간 더 많다.\n\n```js\n// 서버에서 오지 않은 메세지는 무시합니다.\nconst Discord = require('discord.js');\n\n// Discord 클라이언트의 인스턴스 생성\nconst client = new Discord.Client();\n\n/**\n * ready 이벤트는 중요하며, 이 이벤트만이 봇이 정보에 반응을 시작된다는 것을 의미합니다.\n * 디스코드로 부터 정보가 전달됩니다.\n */\nclient.on('ready', () => {\n  console.log('준비되었습니다.');\n});\n\nclient.on('message', message => {\n  // 언급된 유저가 서버에 존재하지 않을 때\n  if (!message.guild) return;\n\n  // 만약 메세지가 \"!ban\"으로 시작한다면\n  if (message.content.startsWith('!ban')) {\n  // 메시지에서 누군가를 언급한다고 가정하면, 유저가 반환됩니다.\n  // https://discord-kr.js.org/#/docs/main/master/class/messageMentions 에서 언급된 내용을 자세히 읽어보십시오.\n    const user = message.mentions.users.first();\n    // 만약 해당 유저가 서버에 있다면\n    if (user) {\n      // 유저에서 멤버 객체를 가져옵니다.\n      const member = message.guild.member(user);\n      // 만약 해당 유저가 서버에 있다면\n      if (member) {\n        /**\n         * 유저를 차단합니다.\n         * 서버 멤버에 실행하도록 하세요! \n         * 이건 아주 중요한 사항입니다!\n         * 옵션에 대해 더 알아보고 싶다면\n         * https://discord-kr.js.org/#/docs/main/master/class/GuildMember?scrollTo=ban 를 참고하세요\n         */\n    \n        member\n          .ban({\n            reason: '나빠요!?',\n          })\n          .then(() => {\n            // 메세지 전송자에게 성공적으로 차단했다고 알려줍니다.\n            message.reply(`${user.tag}를 성공적으로 차단했습니다.`);\n          })\n          .catch(err => {\n            // 에러가 발생하였습니다.\n            // 이 에러는 보통 봇이 유저를 차단할 수 없을 때 발생합니다.\n            // 권한이 부족하거나, 역할의 낮을 때\n            message.reply('유저 추방에 실패하였습니다.');\n            // 에러를 출력합니다.\n            console.error(err);\n          });\n      } else {\n        // 언급된 유저가 서버에 존재하지 않을 때\n        message.reply(\"That user isn't in this guild!\");\n      }\n    } else {\n      // 유저가 언급되지 않았을 때\n      message.reply(\"추방할 유저를 언급하지 않았습니다!\");\n    }\n  }\n});\n\n// https://discordapp.com/developers/applications/me 에 있는 토큰을 이용하여 봇에로그인하세요\nclient.login('토큰');\n```\n\nAnd the result is:\n\n![Image showing the result](/static/ban-example.png)\n",
                     "path": "docs/examples/moderation.md"
                 },
                 "webhook": {
@@ -1713,7 +1713,7 @@
                     "params": [
                         {
                             "name": "oldGuild",
-                            "description": "업데이트 이전의 길드",
+                            "description": "업데이트 이전의 서버",
                             "type": [
                                 [
                                     [
@@ -1724,7 +1724,7 @@
                         },
                         {
                             "name": "newGuild",
-                            "description": "업데이트 이후의 길드",
+                            "description": "업데이트 이후의 서버",
                             "type": [
                                 [
                                     [
@@ -1971,7 +1971,7 @@
                 },
                 {
                     "name": "presenceUpdate",
-                    "description": "서버 유저의 상태 ( 예) 상태, 게임)이 변경 되었을 때 실행됩니다.",
+                    "description": "서버 유저의 프리센스 ( 예) 상태, 게임)이 변경 되었을 때 실행됩니다.",
                     "params": [
                         {
                             "name": "oldPresence",
@@ -2936,7 +2936,7 @@
                 },
                 {
                     "name": "broadcast",
-                    "description": "이 디스파처(dispatcher)를 제어하는 브로드캐스트(있는 경우)",
+                    "description": "이 디스파처(dispatcher)를 제어하는 브로드캐스트(존재하는 경우)",
                     "nullable": true,
                     "type": [
                         [
@@ -3350,7 +3350,7 @@
                     "params": [
                         {
                             "name": "info",
-                            "description": "The debug info",
+                            "description": "디버그 이벤트를 전송합니다.",
                             "type": [
                                 [
                                     [
@@ -3368,7 +3368,7 @@
                 },
                 {
                     "name": "speaking",
-                    "description": "Emitted when the dispatcher starts/stops speaking.",
+                    "description": "디스파처가 말하기 시작할 때 실행됩니다.",
                     "params": [
                         {
                             "name": "value",
@@ -3481,7 +3481,7 @@
                 },
                 {
                     "name": "broadcast",
-                    "description": "이 디스파처(dispatcher)를 제어하는 브로드캐스트(있는 경우)",
+                    "description": "이 디스파처(dispatcher)를 제어하는 브로드캐스트(존재하는 경우)",
                     "nullable": true,
                     "type": [
                         [
@@ -3789,11 +3789,11 @@
                     "params": [
                         {
                             "name": "volume",
-                            "description": "The volume that you want to set",
+                            "description": "볼륨 값",
                             "type": [
                                 [
                                     [
-                                        "볼륨 값"
+                                        "number"
                                     ]
                                 ]
                             ]
@@ -3881,7 +3881,7 @@
                     "params": [
                         {
                             "name": "info",
-                            "description": "The debug info",
+                            "description": "디버그 정보",
                             "type": [
                                 [
                                     [
@@ -3899,7 +3899,7 @@
                 },
                 {
                     "name": "speaking",
-                    "description": "Emitted when the dispatcher starts/stops speaking.",
+                    "description": "디스파처가 말하기 시작하거나, 그만 둘 때 실행됩니다.",
                     "params": [
                         {
                             "name": "value",
@@ -4377,7 +4377,7 @@
                     "params": [
                         {
                             "name": "interval",
-                            "description": "The interval at which to send a heartbeat packet",
+                            "description": "하트비트 패킷을 보내는 간격입니다.",
                             "type": [
                                 [
                                     [
@@ -4395,7 +4395,7 @@
                 },
                 {
                     "name": "clearHeartbeat",
-                    "description": "하트비트 간격 있는 경우을 삭제합니다.",
+                    "description": "하트비트 간격 존재하는 경우을 삭제합니다.",
                     "meta": {
                         "line": 244,
                         "file": "VoiceWebSocket.js",
@@ -4602,7 +4602,7 @@
             "methods": [
                 {
                     "name": "createStream",
-                    "description": "새 오디오 수신 스트림을 생성합니다. 사용자를 위한 스트림이 이미 존재하는 경우, 새로 생성하지 않고 존재하던 스트림을 반환한다.",
+                    "description": "새 오디오 수신 스트림을 생성합니다. 유저를 위한 스트림이 이미 존재하는 경우, 새로 생성하지 않고 존재하던 스트림을 반환한다.",
                     "params": [
                         {
                             "name": "user",
@@ -4983,7 +4983,7 @@
                 },
                 {
                     "name": "dispatcher",
-                    "description": "현재 마스터 디스파처(있는 경우). 이 디스파처는 가입된 디스파처가 하는 모든 것을 관리한다.",
+                    "description": "현재 마스터 디스파처(존재하는 경우). 이 디스파처는 가입된 디스파처가 하는 모든 것을 관리한다.",
                     "readonly": true,
                     "nullable": true,
                     "type": [
@@ -5239,7 +5239,7 @@
                 },
                 {
                     "name": "ssrcMap",
-                    "description": "사용자 ID에 SSRC 값 매핑",
+                    "description": "유저 ID에 SSRC 값 매핑",
                     "access": "private",
                     "type": [
                         [
@@ -5265,7 +5265,7 @@
                 },
                 {
                     "name": "_speaking",
-                    "description": "어떤 사용자가 말하고 있는지 알아냅니다.",
+                    "description": "어떤 유저가 말하고 있는지 알아냅니다.",
                     "access": "private",
                     "type": [
                         [
@@ -5519,7 +5519,7 @@
                     "params": [
                         {
                             "name": "reason",
-                            "description": "The reason for failure",
+                            "description": "실패한 이유",
                             "type": [
                                 [
                                     [
@@ -5537,7 +5537,7 @@
                 },
                 {
                     "name": "updateChannel",
-                    "description": "같은 길드의 다른 음성 채널로 이동합니다.",
+                    "description": "같은 서버의 다른 음성 채널로 이동합니다.",
                     "access": "private",
                     "params": [
                         {
@@ -6074,7 +6074,7 @@
                 },
                 {
                     "name": "_immediates",
-                    "description": "Intervals set by {@link BaseClient#setImmediate} that are still active",
+                    "description": "{@link BaseClient#setImmediate} 에서 설정된 간격은 계속 유지됩니다",
                     "access": "private",
                     "type": [
                         [
@@ -6395,7 +6395,7 @@
             "props": [
                 {
                     "name": "client",
-                    "description": "The client that instantiated this WebSocketManager",
+                    "description": "이 웹소켓 매니저를 인스턴스화한 클라이언트",
                     "readonly": true,
                     "type": [
                         [
@@ -6412,7 +6412,7 @@
                 },
                 {
                     "name": "gateway",
-                    "description": "The gateway this manager uses",
+                    "description": "이 매니저가 사용하는 게이트웨이",
                     "nullable": true,
                     "type": [
                         [
@@ -6429,7 +6429,7 @@
                 },
                 {
                     "name": "totalShards",
-                    "description": "The amount of shards this manager handles",
+                    "description": "매니저가 핸들하는 샤드의 개수",
                     "access": "private",
                     "type": [
                         [
@@ -6446,7 +6446,7 @@
                 },
                 {
                     "name": "shards",
-                    "description": "A collection of all shards this manager handles",
+                    "description": "매니저가 핸들하는 모든 샤드 모음",
                     "type": [
                         [
                             [
@@ -6471,7 +6471,7 @@
                 },
                 {
                     "name": "shardQueue",
-                    "description": "An array of shards to be connected or that need to reconnect",
+                    "description": "연결하거나, 재연결해야하는 샤드의 배열",
                     "access": "private",
                     "type": [
                         [
@@ -6493,7 +6493,7 @@
                 },
                 {
                     "name": "packetQueue",
-                    "description": "An array of queued events before this WebSocketManager became ready",
+                    "description": "이 웹소켓 매니저가 준비되기 전에 대기열에 있는 이벤트의 배열입니다.",
                     "access": "private",
                     "type": [
                         [
@@ -6515,7 +6515,7 @@
                 },
                 {
                     "name": "status",
-                    "description": "The current status of this WebSocketManager",
+                    "description": "현재 웹소켓 매니저의 상태",
                     "type": [
                         [
                             [
@@ -6531,7 +6531,7 @@
                 },
                 {
                     "name": "destroyed",
-                    "description": "If this manager was destroyed. It will prevent shards from reconnecting",
+                    "description": "만약 매니저가 파괴되었다면, 샤드가 다시 연결되는걸 방지할 수 있습니다.",
                     "access": "private",
                     "type": [
                         [
@@ -6548,7 +6548,7 @@
                 },
                 {
                     "name": "reconnecting",
-                    "description": "If this manager is currently reconnecting one or multiple shards",
+                    "description": "이 매니저가 현재 하나 이상의 샤드에 다시 연결하는 경우입니다.",
                     "access": "private",
                     "type": [
                         [
@@ -6565,7 +6565,7 @@
                 },
                 {
                     "name": "sessionStartLimit",
-                    "description": "The current session limit of the client",
+                    "description": "클라이언트의 현재 세션 제한입니다.",
                     "access": "private",
                     "nullable": true,
                     "type": [
@@ -6578,7 +6578,7 @@
                     "props": [
                         {
                             "name": "total",
-                            "description": "Total number of identifies available",
+                            "description": "사용 가능한 총 개수",
                             "type": [
                                 [
                                     [
@@ -6589,7 +6589,7 @@
                         },
                         {
                             "name": "remaining",
-                            "description": "Number of identifies remaining",
+                            "description": "남은 개수",
                             "type": [
                                 [
                                     [
@@ -6600,7 +6600,7 @@
                         },
                         {
                             "name": "reset_after",
-                            "description": "Number of milliseconds after which the limit resets",
+                            "description": "제한이 재설정되는 시간(ms)",
                             "type": [
                                 [
                                     [
@@ -6618,7 +6618,7 @@
                 },
                 {
                     "name": "ping",
-                    "description": "The average ping of all WebSocketShards",
+                    "description": "웹소켓 샤드들의 평균 지연시간",
                     "readonly": true,
                     "type": [
                         [
@@ -6637,12 +6637,12 @@
             "methods": [
                 {
                     "name": "debug",
-                    "description": "Emits a debug message.",
+                    "description": "디버그 메세지를 전송합니다.",
                     "access": "private",
                     "params": [
                         {
                             "name": "message",
-                            "description": "The debug message",
+                            "description": "디버그 메세지",
                             "type": [
                                 [
                                     [
@@ -6653,7 +6653,7 @@
                         },
                         {
                             "name": "shard",
-                            "description": "The shard that emitted this message, if any",
+                            "description": "이 메세지를 보낸 샤드(존재하는 경우)",
                             "optional": true,
                             "nullable": true,
                             "type": [
@@ -6673,7 +6673,7 @@
                 },
                 {
                     "name": "connect",
-                    "description": "Connects this manager to the gateway.",
+                    "description": "매니저를 게이트웨이에 연결합니다.",
                     "access": "private",
                     "async": true,
                     "meta": {
@@ -6684,7 +6684,7 @@
                 },
                 {
                     "name": "createShards",
-                    "description": "Handles the creation of a shard.",
+                    "description": "샤드의 생성을 핸들합니다.",
                     "access": "private",
                     "async": true,
                     "returns": [
@@ -6707,12 +6707,12 @@
                 },
                 {
                     "name": "reconnect",
-                    "description": "Handles reconnects for this manager.",
+                    "description": "샤드의 재연결을 핸들합니다.",
                     "access": "private",
                     "params": [
                         {
                             "name": "skipLimit",
-                            "description": "IF this reconnect should skip checking the session limit",
+                            "description": "이 경우 다시 연결하면 세션 제한 확인을 건너뛰어야 합니다.",
                             "optional": true,
                             "default": false,
                             "type": [
@@ -6745,12 +6745,12 @@
                 },
                 {
                     "name": "broadcast",
-                    "description": "Broadcasts a packet to every shard this manager handles.",
+                    "description": "이 매니저가 처리하는 모든 샤드에 패킷을 브로드캐스트합니다.",
                     "access": "private",
                     "params": [
                         {
                             "name": "packet",
-                            "description": "The packet to send",
+                            "description": "전송할 패킷",
                             "type": [
                                 [
                                     [
@@ -6768,7 +6768,7 @@
                 },
                 {
                     "name": "destroy",
-                    "description": "Destroys this manager and all its shards.",
+                    "description": "이 매니저와 모든 샤드들을 파괴합니다.",
                     "access": "private",
                     "meta": {
                         "line": 333,
@@ -6778,12 +6778,12 @@
                 },
                 {
                     "name": "_handleSessionLimit",
-                    "description": "Handles the timeout required if we cannot identify anymore.",
+                    "description": "더 이상 식별할 수 없는 경우 요구된 timeout을 핸들한다.",
                     "access": "private",
                     "params": [
                         {
                             "name": "remaining",
-                            "description": "The amount of remaining identify sessions that can be done today",
+                            "description": "현재 수행할 수 있는 남은 세션의 양입니다.",
                             "optional": true,
                             "type": [
                                 [
@@ -6795,7 +6795,7 @@
                         },
                         {
                             "name": "resetAfter",
-                            "description": "The amount of time in which the identify counter resets",
+                            "description": "식별 카운터가 재설정되는 시간입니다.",
                             "optional": true,
                             "type": [
                                 [
@@ -6815,12 +6815,12 @@
                 },
                 {
                     "name": "handlePacket",
-                    "description": "Processes a packet and queues it if this WebSocketManager is not ready.",
+                    "description": "이 웹소켓 매니저가 준비되지 않은 경우 패킷을 처리하고 대기열에 넣습니다.",
                     "access": "private",
                     "params": [
                         {
                             "name": "packet",
-                            "description": "The packet to be handled",
+                            "description": "핸들해야하는 패킷",
                             "optional": true,
                             "type": [
                                 [
@@ -6832,7 +6832,7 @@
                         },
                         {
                             "name": "shard",
-                            "description": "The shard that will handle this packet",
+                            "description": "이 패킷을 처리할 샤드입니다.",
                             "optional": true,
                             "type": [
                                 [
@@ -6858,7 +6858,7 @@
                 },
                 {
                     "name": "checkShardsReady",
-                    "description": "Checks whether the client is ready to be marked as ready.",
+                    "description": "클라이언트가 준비됨으로 표시될 준비가 되었는지 확인합니다.",
                     "access": "private",
                     "async": true,
                     "meta": {
@@ -6869,7 +6869,7 @@
                 },
                 {
                     "name": "triggerClientReady",
-                    "description": "Causes the client to be marked as ready and emits the ready event.",
+                    "description": "클라이언트가 준비됨으로 표시되고 준비 이벤트를 전송합니다.",
                     "access": "private",
                     "meta": {
                         "line": 424,
@@ -6886,11 +6886,11 @@
         },
         {
             "name": "WebSocketShard",
-            "description": "Represents a Shard's WebSocket connection",
+            "description": "샤드의 웹소켓 연결을 나타냅니다.",
             "props": [
                 {
                     "name": "manager",
-                    "description": "The WebSocketManager of the shard",
+                    "description": "샤드의 웹소켓 매니저입니다.",
                     "type": [
                         [
                             [
@@ -6906,7 +6906,7 @@
                 },
                 {
                     "name": "id",
-                    "description": "The ID of the shard",
+                    "description": "샤드의 ID",
                     "type": [
                         [
                             [
@@ -6922,7 +6922,7 @@
                 },
                 {
                     "name": "status",
-                    "description": "The current status of the shard",
+                    "description": "샤드의 현재 상태",
                     "type": [
                         [
                             [
@@ -6938,7 +6938,7 @@
                 },
                 {
                     "name": "sequence",
-                    "description": "The current sequence of the shard",
+                    "description": "샤드의 현재 시퀀스",
                     "access": "private",
                     "type": [
                         [
@@ -6955,7 +6955,7 @@
                 },
                 {
                     "name": "closeSequence",
-                    "description": "The sequence of the shard after close",
+                    "description": "닫힌 뒤 샤드의 시퀀스입니다.",
                     "access": "private",
                     "type": [
                         [
@@ -6972,7 +6972,7 @@
                 },
                 {
                     "name": "sessionID",
-                    "description": "The current session ID of the shard",
+                    "description": "샤드의 현재 세션 ID입니다.",
                     "access": "private",
                     "type": [
                         [
@@ -6989,7 +6989,7 @@
                 },
                 {
                     "name": "ping",
-                    "description": "The previous heartbeat ping of the shard",
+                    "description": "샤드의 이전 하트비트 지연시간입니다.",
                     "type": [
                         [
                             [
@@ -7005,7 +7005,7 @@
                 },
                 {
                     "name": "lastPingTimestamp",
-                    "description": "The last time a ping was sent (a timestamp)",
+                    "description": "지연시간이 마지막으로 전송된 시간입니다(타임 스탬프).",
                     "access": "private",
                     "type": [
                         [
@@ -7041,12 +7041,12 @@
             "methods": [
                 {
                     "name": "debug",
-                    "description": "Emits a debug event.",
+                    "description": "디버그",
                     "access": "private",
                     "params": [
                         {
                             "name": "message",
-                            "description": "The debug message",
+                            "description": "디버그 메세지",
                             "type": [
                                 [
                                     [
@@ -7064,7 +7064,7 @@
                 },
                 {
                     "name": "connect",
-                    "description": "Connects the shard to the gateway.",
+                    "description": "샤드를 게이트웨이에 연결합니다.",
                     "access": "private",
                     "returns": {
                         "types": [
@@ -7332,11 +7332,11 @@
                 },
                 {
                     "name": "send",
-                    "description": "Adds a packet to the queue to be sent to the gateway.\n<warn>If you use this method, make sure you understand that you need to provide\na full [Payload](https://discordapp.com/developers/docs/topics/gateway#commands-and-events-gateway-commands).\nDo not use this method if you don't know what you're doing.</warn>",
+                    "description": "게이트웨이로 보낼 대기열에 패킷을 추가합니다.n<warn>이 메서드를 사용한다면, \n모든 [Payload](https://discordapp.com/developers/docs/topics/gateway#commands-and-events-gateway-commands)를 포함하도록 합니다.\n만약 당신이 무엇을 하고 있는지 모른다면 이 메서드를 사용하지 마세요.</warn>",
                     "params": [
                         {
                             "name": "data",
-                            "description": "The full packet to send",
+                            "description": "전송할 전체 패킷",
                             "type": [
                                 [
                                     [
@@ -7347,7 +7347,7 @@
                         },
                         {
                             "name": "important",
-                            "description": "If this packet should be added first in queue",
+                            "description": "이 패킷을 대기열에 먼저 추가해야 하는 경우입니다.",
                             "optional": true,
                             "default": false,
                             "type": [
@@ -7461,11 +7461,11 @@
             "events": [
                 {
                     "name": "close",
-                    "description": "Emitted when a shard's WebSocket closes.",
+                    "description": "샤드의 웹소켓이 닫히면 실행됩니다.",
                     "params": [
                         {
                             "name": "event",
-                            "description": "The received event",
+                            "description": "수신된 이벤트",
                             "type": [
                                 [
                                     [
@@ -7483,7 +7483,7 @@
                 },
                 {
                     "name": "ready",
-                    "description": "Emitted when the shard receives the READY payload and is now waiting for guilds",
+                    "description": "샤드가 준비 페이로드(READY Payload)를 수신하고 현재 서버를 기다리고 있을 때 실행됩니다.",
                     "meta": {
                         "line": 372,
                         "file": "WebSocketShard.js",
@@ -7492,7 +7492,7 @@
                 },
                 {
                     "name": "resumed",
-                    "description": "Emitted when the shard resumes successfully",
+                    "description": "샤드가 다시 성공적으로 연결되면 실행됩니다.",
                     "meta": {
                         "line": 386,
                         "file": "WebSocketShard.js",
@@ -7501,11 +7501,11 @@
                 },
                 {
                     "name": "allReady",
-                    "description": "Emitted when the shard is fully ready.\nThis event is emitted if:\n* all guilds were received by this shard\n* the ready timeout expired, and some guilds are unavailable",
+                    "description": "샤드가 완전히 준비되면 실행됩니다.\n이 이벤트는 다음과 같은 경우 발생합니다. \n*모든 서버가 이 샤드에 의해 수신되었으며*\n, 준비 시간이 초과 되었으며 일부 서버를 사용할 수 없는 경우입니다.",
                     "params": [
                         {
                             "name": "unavailableGuilds",
-                            "description": "Set of unavailable guilds, if any",
+                            "description": "사용 불가능한 서버들의 셋 (존재하는 경우)",
                             "nullable": true,
                             "type": [
                                 [
@@ -7529,7 +7529,7 @@
                 },
                 {
                     "name": "destroyed",
-                    "description": "Emitted when a shard is destroyed, but no WebSocket connection was present.",
+                    "description": "샤드가 파괴될 때 실행되지만 WebSocket 연결이 없습니다.",
                     "meta": {
                         "line": 753,
                         "file": "WebSocketShard.js",
@@ -7545,7 +7545,7 @@
         },
         {
             "name": "BaseManager",
-            "description": "Manages the API methods of a data model and holds its cache.",
+            "description": "데이터 모델의 API 메서드를 관리하고 캐시를 보관합니다.",
             "abstract": true,
             "props": [
                 {
@@ -7568,7 +7568,7 @@
                 },
                 {
                     "name": "client",
-                    "description": "The client that instantiated this Manager",
+                    "description": "이 매니저를 인스턴스화한 클라이언트입니다.",
                     "readonly": true,
                     "type": [
                         [
@@ -7585,7 +7585,7 @@
                 },
                 {
                     "name": "cacheType",
-                    "description": "The type of Collection of the Manager",
+                    "description": "매니저의 컬렉션 유형입니다.",
                     "type": [
                         [
                             [
@@ -7601,7 +7601,7 @@
                 },
                 {
                     "name": "cache",
-                    "description": "Holds the cache for the data model",
+                    "description": "데이터 모델의 캐시를 보관합니다.",
                     "type": [
                         [
                             [
@@ -7619,11 +7619,11 @@
             "methods": [
                 {
                     "name": "resolve",
-                    "description": "Resolves a data entry to a data Object.",
+                    "description": "데이터 개체에 대한 데이터 항목을 리졸브(Resolve)합니다.",
                     "params": [
                         {
                             "name": "idOrInstance",
-                            "description": "The id or instance of something in this Manager",
+                            "description": "이 매니저에 있는 항목의 ID 또는 인스턴스입니다.",
                             "type": [
                                 [
                                     [
@@ -7646,7 +7646,7 @@
                                 ]
                             ]
                         ],
-                        "description": "An instance from this Manager",
+                        "description": "이 매니저의 인스턴스",
                         "nullable": true
                     },
                     "meta": {
@@ -7657,11 +7657,11 @@
                 },
                 {
                     "name": "resolveID",
-                    "description": "Resolves a data entry to a instance ID.",
+                    "description": "데이터 항목을 인스턴스 ID로 리졸브(Resolve)합니다.",
                     "params": [
                         {
                             "name": "idOrInstance",
-                            "description": "The id or instance of something in this Manager",
+                            "description": "이 매니저에 있는 항목의 ID 또는 인스턴스입니다.",
                             "type": [
                                 [
                                     [
@@ -7701,7 +7701,7 @@
         },
         {
             "name": "ChannelManager",
-            "description": "A manager of channels belonging to a client",
+            "description": "클라이언트에 속한 채널의 매니저입니다.",
             "extends": [
                 [
                     [
@@ -7712,7 +7712,7 @@
             "props": [
                 {
                     "name": "cache",
-                    "description": "The cache of Channels",
+                    "description": "채널의 캐시입니다.",
                     "type": [
                         [
                             [
@@ -7737,7 +7737,7 @@
                 },
                 {
                     "name": "holds",
-                    "description": "The data structure belonging to this manager",
+                    "description": "이 매니저에 속한 데이터 구조입니다.",
                     "access": "private",
                     "readonly": true,
                     "type": [
@@ -7755,7 +7755,7 @@
                 },
                 {
                     "name": "client",
-                    "description": "The client that instantiated this Manager",
+                    "description": "이 매니저를 인스턴스화한 클라이언트입니다.",
                     "readonly": true,
                     "type": [
                         [
@@ -7772,7 +7772,7 @@
                 },
                 {
                     "name": "cacheType",
-                    "description": "The type of Collection of the Manager",
+                    "description": "매니저의 컬렉션 유형입니다.",
                     "type": [
                         [
                             [
@@ -7790,11 +7790,11 @@
             "methods": [
                 {
                     "name": "resolve",
-                    "description": "Resolves a ChannelResolvable to a Channel object.",
+                    "description": "채널 객체에 대한 ChannelResolvable를 리졸브(Resolve)합니다.",
                     "params": [
                         {
                             "name": "channel",
-                            "description": "The channel resolvable to resolve",
+                            "description": "리졸브(Resolve)할 수 있는 채널",
                             "type": [
                                 [
                                     [
@@ -7822,11 +7822,11 @@
                 },
                 {
                     "name": "resolveID",
-                    "description": "Resolves a ChannelResolvable to a channel ID string.",
+                    "description": "채널 ID 문자열에 대해 ChannelResolvable를 리졸브(Resolve)합니다..",
                     "params": [
                         {
                             "name": "channel",
-                            "description": "The channel resolvable to resolve",
+                            "description": "리졸브(Resolve)할 수 있는 채널",
                             "type": [
                                 [
                                     [
@@ -7854,9 +7854,9 @@
                 },
                 {
                     "name": "fetch",
-                    "description": "Obtains a channel from Discord, or the channel cache if it's already available.",
+                    "description": "디스코드에서 채널을 가져오거나 이미 사용 가능한 경우 채널 캐시를 가져옵니다.",
                     "examples": [
-                        "// Fetch a channel by its id\nclient.channels.fetch('222109930545610754')\n  .then(channel => console.log(channel.name))\n  .catch(console.error);"
+                        "// 아이디로 채널을 가져옵니다.\nclient.channels.fetch('222109930545610754')\n  .then(channel => console.log(channel.name))\n  .catch(console.error);"
                     ],
                     "params": [
                         {
@@ -7872,7 +7872,7 @@
                         },
                         {
                             "name": "cache",
-                            "description": "Whether to cache the new channel object if it isn't already",
+                            "description": "새 채널 객체가 아직 없는 경우 캐시할지 여부입니다.",
                             "optional": true,
                             "default": true,
                             "type": [
@@ -7912,7 +7912,7 @@
         },
         {
             "name": "GuildChannelManager",
-            "description": "Manages API methods for GuildChannels and stores their cache.",
+            "description": "서버채널의 API 메서드를 관리하고 캐시를 저장합니다.",
             "extends": [
                 [
                     [
@@ -7923,7 +7923,7 @@
             "props": [
                 {
                     "name": "guild",
-                    "description": "The guild this Manager belongs to",
+                    "description": "이 매니저가 속한 서버입니다.",
                     "type": [
                         [
                             [
@@ -7939,7 +7939,7 @@
                 },
                 {
                     "name": "cache",
-                    "description": "The cache of this Manager",
+                    "description": "이 매니저의 캐시",
                     "type": [
                         [
                             [
@@ -7982,7 +7982,7 @@
                 },
                 {
                     "name": "client",
-                    "description": "The client that instantiated this Manager",
+                    "description": "이 매니저를 인스턴스화한 클라이언트입니다.",
                     "readonly": true,
                     "type": [
                         [
@@ -7999,7 +7999,7 @@
                 },
                 {
                     "name": "cacheType",
-                    "description": "The type of Collection of the Manager",
+                    "description": "매니저의 컬렉션 유형입니다.",
                     "type": [
                         [
                             [
@@ -8017,11 +8017,11 @@
             "methods": [
                 {
                     "name": "resolve",
-                    "description": "Resolves a GuildChannelResolvable to a Channel object.",
+                    "description": "채널 객체로 GuildChannelResolvable를 리졸브(Resolve)합니다.",
                     "params": [
                         {
                             "name": "channel",
-                            "description": "The GuildChannel resolvable to resolve",
+                            "description": "리졸브(Resolve)할 수 있는 서버 채널",
                             "type": [
                                 [
                                     [
@@ -8049,11 +8049,11 @@
                 },
                 {
                     "name": "resolveID",
-                    "description": "Resolves a GuildChannelResolvable to a channel ID string.",
+                    "description": "채널 ID 문자열에 대해 GuildChannelResolvable를 리졸브(Resolve)합니다.",
                     "params": [
                         {
                             "name": "channel",
-                            "description": "The GuildChannel resolvable to resolve",
+                            "description": "리졸브(Resolve)할 수 있는 서버 채널",
                             "type": [
                                 [
                                     [
@@ -8081,15 +8081,15 @@
                 },
                 {
                     "name": "create",
-                    "description": "Creates a new channel in the guild.",
+                    "description": "서버에 새로운 서버를 생성합니다.",
                     "examples": [
-                        "// Create a new text channel\nguild.channels.create('new-general', { reason: 'Needed a cool new channel' })\n  .then(console.log)\n  .catch(console.error);",
-                        "// Create a new channel with permission overwrites\nguild.channels.create('new-voice', {\n  type: 'voice',\n  permissionOverwrites: [\n     {\n       id: message.author.id,\n       deny: ['VIEW_CHANNEL'],\n    },\n  ],\n})"
+                        "// 새로운 텍스트 채널을 생성합니다.\nguild.channels.create('new-general', { reason: '새로운 멋진 채널' })\n  .then(console.log)\n  .catch(console.error);",
+                        "// 사용 권한을 덮어씌워 새 채널을 생성합니다.\nguild.channels.create('new-voice', {\n  type: 'voice',\n  permissionOverwrites: [\n     {\n       id: message.author.id,\n       deny: ['VIEW_CHANNEL'],\n    },\n  ],\n})"
                     ],
                     "params": [
                         {
                             "name": "name",
-                            "description": "The name of the new channel",
+                            "description": "새로운 채널 이름",
                             "type": [
                                 [
                                     [
@@ -8112,7 +8112,7 @@
                         },
                         {
                             "name": "options.type",
-                            "description": "The type of the new channel, either `text`, `voice`, or `category`",
+                            "description": "새 채널의 유형은 `text`, `voice` 또는 `category` 입니다.`",
                             "optional": true,
                             "default": "'text'",
                             "type": [
@@ -8125,7 +8125,7 @@
                         },
                         {
                             "name": "options.topic",
-                            "description": "The topic for the new channel",
+                            "description": "새 채널의 주제입니다.",
                             "optional": true,
                             "type": [
                                 [
@@ -8137,7 +8137,7 @@
                         },
                         {
                             "name": "options.nsfw",
-                            "description": "Whether the new channel is nsfw",
+                            "description": "새 채널이 nsfw인지 여부입니다.",
                             "optional": true,
                             "type": [
                                 [
@@ -8149,7 +8149,7 @@
                         },
                         {
                             "name": "options.bitrate",
-                            "description": "Bitrate of the new channel in bits (only voice)",
+                            "description": "새 채널의 비트 전송률(비트)(음성만)입니다.",
                             "optional": true,
                             "type": [
                                 [
@@ -8161,7 +8161,7 @@
                         },
                         {
                             "name": "options.userLimit",
-                            "description": "Maximum amount of users allowed in the new channel (only voice)",
+                            "description": "새 채널에서 허용되는 최대 유저 수입니다(음성만).",
                             "optional": true,
                             "type": [
                                 [
@@ -8173,7 +8173,7 @@
                         },
                         {
                             "name": "options.parent",
-                            "description": "Parent of the new channel",
+                            "description": "새 채널의 상위 항목입니다.",
                             "optional": true,
                             "type": [
                                 [
@@ -8185,7 +8185,7 @@
                         },
                         {
                             "name": "options.permissionOverwrites",
-                            "description": "Permission overwrites of the new channel",
+                            "description": "새 채널의 사용 권한을 덮어씁니다.",
                             "optional": true,
                             "type": [
                                 [
@@ -8216,7 +8216,7 @@
                         },
                         {
                             "name": "options.position",
-                            "description": "Position of the new channel",
+                            "description": "새로운 채널의 위치",
                             "optional": true,
                             "type": [
                                 [
@@ -8228,7 +8228,7 @@
                         },
                         {
                             "name": "options.rateLimitPerUser",
-                            "description": "The ratelimit per user for the channel",
+                            "description": "채널에 대한 사용자당 레이트 리밋",
                             "optional": true,
                             "type": [
                                 [
@@ -8240,7 +8240,7 @@
                         },
                         {
                             "name": "options.reason",
-                            "description": "Reason for creating the channel",
+                            "description": "채널을 생성하는 이유",
                             "optional": true,
                             "type": [
                                 [
@@ -8349,7 +8349,7 @@
                 },
                 {
                     "name": "client",
-                    "description": "The client that instantiated this Manager",
+                    "description": "이 매니저를 인스턴스화한 클라이언트입니다.",
                     "readonly": true,
                     "type": [
                         [
@@ -8366,7 +8366,7 @@
                 },
                 {
                     "name": "cacheType",
-                    "description": "The type of Collection of the Manager",
+                    "description": "매니저의 컬렉션 유형입니다.",
                     "type": [
                         [
                             [
@@ -8909,7 +8909,7 @@
             "props": [
                 {
                     "name": "cache",
-                    "description": "The cache of this Manager",
+                    "description": "이 매니저의 캐시",
                     "type": [
                         [
                             [
@@ -8952,7 +8952,7 @@
                 },
                 {
                     "name": "client",
-                    "description": "The client that instantiated this Manager",
+                    "description": "이 매니저를 인스턴스화한 클라이언트입니다.",
                     "readonly": true,
                     "type": [
                         [
@@ -8969,7 +8969,7 @@
                 },
                 {
                     "name": "cacheType",
-                    "description": "The type of Collection of the Manager",
+                    "description": "매니저의 컬렉션 유형입니다.",
                     "type": [
                         [
                             [
@@ -9235,7 +9235,7 @@
                 },
                 {
                     "name": "cache",
-                    "description": "The cache of this Manager",
+                    "description": "이 매니저의 캐시",
                     "type": [
                         [
                             [
@@ -9278,7 +9278,7 @@
                 },
                 {
                     "name": "client",
-                    "description": "The client that instantiated this Manager",
+                    "description": "이 매니저를 인스턴스화한 클라이언트입니다.",
                     "readonly": true,
                     "type": [
                         [
@@ -9295,7 +9295,7 @@
                 },
                 {
                     "name": "cacheType",
-                    "description": "The type of Collection of the Manager",
+                    "description": "매니저의 컬렉션 유형입니다.",
                     "type": [
                         [
                             [
@@ -9313,11 +9313,11 @@
             "methods": [
                 {
                     "name": "resolve",
-                    "description": "Resolves a GuildMemberResolvable to a GuildMember object.",
+                    "description": "서버 유저 객체에 대한 GuildMemberResolvable를 리졸브(Resolve)합니다.",
                     "params": [
                         {
                             "name": "member",
-                            "description": "The user that is part of the guild",
+                            "description": "서버의 일부인 유저입니다.",
                             "type": [
                                 [
                                     [
@@ -9345,11 +9345,11 @@
                 },
                 {
                     "name": "resolveID",
-                    "description": "Resolves a GuildMemberResolvable to a member ID string.",
+                    "description": "채널 객체에 대한 GuildMemberResolvable를 리졸브(Resolve)합니다.",
                     "params": [
                         {
                             "name": "member",
-                            "description": "The user that is part of the guild",
+                            "description": "서버의 일부인 유저입니다.",
                             "type": [
                                 [
                                     [
@@ -9377,18 +9377,18 @@
                 },
                 {
                     "name": "fetch",
-                    "description": "Fetches member(s) from Discord, even if they're offline.",
+                    "description": "디스코드에서 유저를 가져옵니다. 오프라인이어도 말이죠.",
                     "examples": [
-                        "// Fetch all members from a guild\nguild.members.fetch()\n  .then(console.log)\n  .catch(console.error);",
-                        "// Fetch a single member\nguild.members.fetch('66564597481480192')\n  .then(console.log)\n  .catch(console.error);",
-                        "// Fetch a single member without caching\nguild.members.fetch({ user, cache: false })\n  .then(console.log)\n  .catch(console.error);",
-                        "// Fetch by an array of users including their presences\nguild.members.fetch({ user: ['66564597481480192', '191615925336670208'], withPresences: true })\n  .then(console.log)\n  .catch(console.error);",
-                        "// Fetch by query\nguild.members.fetch({ query: 'hydra', limit: 1 })\n  .then(console.log)\n  .catch(console.error);"
+                        "// 서버에서 모든 유저를 가져옵니다.\nguild.members.fetch()\n  .then(console.log)\n  .catch(console.error);",
+                        "// 서버에서 유저 한 명을 가져옵니다.\nguild.members.fetch('66564597481480192')\n  .then(console.log)\n  .catch(console.error);",
+                        "// 캐싱없이 킬드에서 유저 한 명을 가져옵니다.\nguild.members.fetch({ user, cache: false })\n  .then(console.log)\n  .catch(console.error);",
+                        "// 상태를 배열에 포함한 여러 유저를 가져옵니다.\nguild.members.fetch({ user: ['66564597481480192', '191615925336670208'], withPresences: true })\n  .then(console.log)\n  .catch(console.error);",
+                        "// 쿼리로 가져옵니다.\nguild.members.fetch({ query: 'hydra', limit: 1 })\n  .then(console.log)\n  .catch(console.error);"
                     ],
                     "params": [
                         {
                             "name": "options",
-                            "description": "If a UserResolvable, the user to fetch.\nIf undefined, fetches all members.\nIf a query, it limits the results to users with similar usernames.",
+                            "description": "UserResolvable인 경우 가져올 유저입니다.\n만약 undefined일 경우, 모든 유저를 가져옵니다\nIf a query, it limits the results to users with similar usernames.",
                             "optional": true,
                             "type": [
                                 [
@@ -9447,15 +9447,15 @@
                 },
                 {
                     "name": "prune",
-                    "description": "Prunes members from the guild based on how long they have been inactive.\n<info>It's recommended to set options.count to `false` for large guilds.</info>",
+                    "description": "서버의 멤버들을 얼마나 오랫동안 활동하지 않았는지를 기준으로 유저를 정리합니다.\n<info>대형서버는 options.count 를 `false`로 두는 것을 권장합니다.</info>",
                     "examples": [
-                        "// See how many members will be pruned\nguild.members.prune({ dry: true })\n  .then(pruned => console.log(`This will prune ${pruned} people!`))\n  .catch(console.error);",
-                        "// Actually prune the members\nguild.members.prune({ days: 1, reason: 'too many people!' })\n  .then(pruned => console.log(`I just pruned ${pruned} people!`))\n  .catch(console.error);"
+                        "// 정리되는 유저 수를 확인해봅니다.\nguild.members.prune({ dry: true })\n  .then(pruned => console.log(`${pruned}명의 사람을 정리할겁니다!`))\n  .catch(console.error);",
+                        "// 실제로 유저를 정리합니다.\nguild.members.prune({ days: 1, reason: '사람이 너무 많군요!' })\n  .then(pruned => console.log(`${pruned}명의 사람을 정라했습니다!`))\n  .catch(console.error);"
                     ],
                     "params": [
                         {
                             "name": "options",
-                            "description": "Prune options",
+                            "description": "정리 옵션",
                             "optional": true,
                             "type": [
                                 [
@@ -9467,7 +9467,7 @@
                         },
                         {
                             "name": "options.days",
-                            "description": "Number of days of inactivity required to kick",
+                            "description": "마지막으로 접속한 일 수",
                             "optional": true,
                             "default": 7,
                             "type": [
@@ -9480,7 +9480,7 @@
                         },
                         {
                             "name": "options.dry",
-                            "description": "Get number of users that will be kicked, without actually kicking them",
+                            "description": "실제로 추방하지 않고, 추방될 유저를 가져옵니다.",
                             "optional": true,
                             "default": false,
                             "type": [
@@ -9493,7 +9493,7 @@
                         },
                         {
                             "name": "options.count",
-                            "description": "Whether or not to return the number of users that have been kicked.",
+                            "description": "추방된 유저 수를 반환할지 여부입니다.",
                             "optional": true,
                             "default": true,
                             "type": [
@@ -9506,7 +9506,7 @@
                         },
                         {
                             "name": "options.reason",
-                            "description": "Reason for this prune",
+                            "description": "정리 사유",
                             "optional": true,
                             "type": [
                                 [
@@ -9534,7 +9534,7 @@
                                 ]
                             ]
                         ],
-                        "description": "The number of members that were/will be kicked"
+                        "description": "추방되는 유저 수"
                     },
                     "meta": {
                         "line": 149,
@@ -9544,9 +9544,9 @@
                 },
                 {
                     "name": "ban",
-                    "description": "Bans a user from the guild.",
+                    "description": "유저를 서버에서 차단합니다.",
                     "examples": [
-                        "// Ban a user by ID (or with a user/guild member object)\nguild.members.ban('84484653687267328')\n  .then(user => console.log(`Banned ${user.username || user.id || user} from ${guild.name}`))\n  .catch(console.error);"
+                        "// ID를 이용하여 유저를 차단합니다. (유저/서버 유저 오브젝트)\nguild.members.ban('84484653687267328')\n  .then(user => console.log(`Banned ${user.username || user.id || user} from ${guild.name}`))\n  .catch(console.error);"
                     ],
                     "params": [
                         {
@@ -10117,7 +10117,7 @@
                 },
                 {
                     "name": "client",
-                    "description": "The client that instantiated this Manager",
+                    "description": "이 매니저를 인스턴스화한 클라이언트입니다.",
                     "readonly": true,
                     "type": [
                         [
@@ -10134,7 +10134,7 @@
                 },
                 {
                     "name": "cacheType",
-                    "description": "The type of Collection of the Manager",
+                    "description": "매니저의 컬렉션 유형입니다.",
                     "type": [
                         [
                             [
@@ -10152,7 +10152,7 @@
             "methods": [
                 {
                     "name": "fetch",
-                    "description": "이 채널에서 메시지, 또는 메시지들을 불러옵니다\n<info>반송된 Collection에는 캐시되지 않은 메시지의 리액션 사용자가 포함되지 않습니다.\n이러한 경우에는 별도로 가져와야 합니다.</info>",
+                    "description": "이 채널에서 메시지, 또는 메시지들을 불러옵니다\n<info>반송된 Collection에는 캐시되지 않은 메시지의 리액션 유저가 포함되지 않습니다.\n이러한 경우에는 별도로 가져와야 합니다.</info>",
                     "examples": [
                         "// Get message\nchannel.messages.fetch('99539446449315840')\n  .then(message => console.log(message.content))\n  .catch(console.error);",
                         "// Get messages\nchannel.messages.fetch({ limit: 10 })\n  .then(messages => console.log(`Received ${messages.size} messages`))\n  .catch(console.error);",
@@ -10228,7 +10228,7 @@
                 },
                 {
                     "name": "fetchPinned",
-                    "description": "이 채널의 고정된 메시지를 가져오고 해당 메시지들을 반환합니다.\n<info>반송된 Collection에는 캐시되지 않은 메시지의 리액션 사용자가 포함되지 않습니다.\n이러한 경우에는 별도로 가져와야 합니다.</info>",
+                    "description": "이 채널의 고정된 메시지를 가져오고 해당 메시지들을 반환합니다.\n<info>반송된 Collection에는 캐시되지 않은 메시지의 리액션 유저가 포함되지 않습니다.\n이러한 경우에는 별도로 가져와야 합니다.</info>",
                     "examples": [
                         "// Get pinned messages\nchannel.fetchPinned()\n  .then(messages => console.log(`Received ${messages.size} messages`))\n  .catch(console.error);"
                     ],
@@ -10435,7 +10435,7 @@
                 },
                 {
                     "name": "client",
-                    "description": "The client that instantiated this Manager",
+                    "description": "이 매니저를 인스턴스화한 클라이언트입니다.",
                     "readonly": true,
                     "type": [
                         [
@@ -10452,7 +10452,7 @@
                 },
                 {
                     "name": "cacheType",
-                    "description": "The type of Collection of the Manager",
+                    "description": "매니저의 컬렉션 유형입니다.",
                     "type": [
                         [
                             [
@@ -10611,7 +10611,7 @@
                 },
                 {
                     "name": "client",
-                    "description": "The client that instantiated this Manager",
+                    "description": "이 매니저를 인스턴스화한 클라이언트입니다.",
                     "readonly": true,
                     "type": [
                         [
@@ -10628,7 +10628,7 @@
                 },
                 {
                     "name": "cacheType",
-                    "description": "The type of Collection of the Manager",
+                    "description": "매니저의 컬렉션 유형입니다.",
                     "type": [
                         [
                             [
@@ -10808,7 +10808,7 @@
                 },
                 {
                     "name": "client",
-                    "description": "The client that instantiated this Manager",
+                    "description": "이 매니저를 인스턴스화한 클라이언트입니다.",
                     "readonly": true,
                     "type": [
                         [
@@ -10825,7 +10825,7 @@
                 },
                 {
                     "name": "cacheType",
-                    "description": "The type of Collection of the Manager",
+                    "description": "매니저의 컬렉션 유형입니다.",
                     "type": [
                         [
                             [
@@ -11151,7 +11151,7 @@
                 },
                 {
                     "name": "client",
-                    "description": "The client that instantiated this Manager",
+                    "description": "이 매니저를 인스턴스화한 클라이언트입니다.",
                     "readonly": true,
                     "type": [
                         [
@@ -11168,7 +11168,7 @@
                 },
                 {
                     "name": "cacheType",
-                    "description": "The type of Collection of the Manager",
+                    "description": "매니저의 컬렉션 유형입니다.",
                     "type": [
                         [
                             [
@@ -11307,7 +11307,7 @@
                 },
                 {
                     "name": "create",
-                    "description": "주어진 정보를 사용하여 길드에서 새 역할을 생성합니다.\n<warn>잘못된 위치가 제공된 경우(또는 제공되지 않은 경우) 위치가 자동으로 1로 설정됩니다.</warn>",
+                    "description": "주어진 정보를 사용하여 서버에서 새 역할을 생성합니다.\n<warn>잘못된 위치가 제공된 경우(또는 제공되지 않은 경우) 위치가 자동으로 1로 설정됩니다.</warn>",
                     "examples": [
                         "// Create a new role\nguild.roles.create()\n  .then(console.log)\n  .catch(console.error);",
                         "// Create a new role with data and a reason\nguild.roles.create({\n  data: {\n    name: 'Super Cool People',\n    color: 'BLUE',\n  },\n  reason: 'we needed a role for Super Cool People',\n})\n  .then(console.log)\n  .catch(console.error);"
@@ -11431,7 +11431,7 @@
                 },
                 {
                     "name": "client",
-                    "description": "The client that instantiated this Manager",
+                    "description": "이 매니저를 인스턴스화한 클라이언트입니다.",
                     "readonly": true,
                     "type": [
                         [
@@ -11448,7 +11448,7 @@
                 },
                 {
                     "name": "cacheType",
-                    "description": "The type of Collection of the Manager",
+                    "description": "매니저의 컬렉션 유형입니다.",
                     "type": [
                         [
                             [
@@ -11655,7 +11655,7 @@
                 },
                 {
                     "name": "client",
-                    "description": "The client that instantiated this Manager",
+                    "description": "이 매니저를 인스턴스화한 클라이언트입니다.",
                     "readonly": true,
                     "type": [
                         [
@@ -11672,7 +11672,7 @@
                 },
                 {
                     "name": "cacheType",
-                    "description": "The type of Collection of the Manager",
+                    "description": "매니저의 컬렉션 유형입니다.",
                     "type": [
                         [
                             [
@@ -13352,7 +13352,7 @@
             "methods": [
                 {
                     "name": "createShard",
-                    "description": "단일 샤드르르 만듭니다.\n<warn>일반적으로 이 방법을 사용할 필요는 없습니다.</warn>",
+                    "description": "단일 샤드를 만듭니다.\n<warn>일반적으로 이 방법을 사용할 필요는 없습니다.</warn>",
                     "params": [
                         {
                             "name": "id",
@@ -15434,7 +15434,7 @@
                         },
                         {
                             "name": "options.permissionOverwrites",
-                            "description": "Permission overwrites of the new channel",
+                            "description": "새 채널의 사용 권한을 덮어씁니다.",
                             "optional": true,
                             "default": "this.permissionOverwrites",
                             "type": [
@@ -15492,7 +15492,7 @@
                         },
                         {
                             "name": "options.nsfw",
-                            "description": "Whether the new channel is nsfw (only text)",
+                            "description": "새 채널이 nsfw인지 여부입니다. (only text)",
                             "optional": true,
                             "default": "this.nsfw",
                             "type": [
@@ -15505,7 +15505,7 @@
                         },
                         {
                             "name": "options.bitrate",
-                            "description": "Bitrate of the new channel in bits (only voice)",
+                            "description": "새 채널의 비트 전송률(비트)(음성만)입니다.",
                             "optional": true,
                             "default": "this.bitrate",
                             "type": [
@@ -15518,7 +15518,7 @@
                         },
                         {
                             "name": "options.userLimit",
-                            "description": "Maximum amount of users allowed in the new channel (only voice)",
+                            "description": "새 채널에서 허용되는 최대 유저 수입니다(음성만).",
                             "optional": true,
                             "default": "this.userLimit",
                             "type": [
@@ -15531,7 +15531,7 @@
                         },
                         {
                             "name": "options.rateLimitPerUser",
-                            "description": "Ratelimit per user for the new channel (only text)",
+                            "description": "새 채널에 대한 유저당 레이트 리밋(텍스트만 해당)입니다.",
                             "optional": true,
                             "default": "ThisType.rateLimitPerUser",
                             "type": [
@@ -15544,7 +15544,7 @@
                         },
                         {
                             "name": "options.parent",
-                            "description": "Parent of the new channel",
+                            "description": "새 채널의 상위 항목입니다.",
                             "optional": true,
                             "default": "this.parent",
                             "type": [
@@ -15557,7 +15557,7 @@
                         },
                         {
                             "name": "options.reason",
-                            "description": "Reason for cloning this channel",
+                            "description": "이 채널을 복제하는 이유",
                             "optional": true,
                             "type": [
                                 [
@@ -16622,7 +16622,7 @@
             "methods": [
                 {
                     "name": "setUsername",
-                    "description": "로그인한 클라이언트의 사용자 이름을 설정합니다.\n<info>Discord에서 사용자 이름을 변경하는 작업은 1시간당 2개의 요청만 할 수 있습니다.(속도가 매우 제한됩니다.)</info>",
+                    "description": "로그인한 클라이언트의 유저 이름을 설정합니다.\n<info>Discord에서 유저 이름을 변경하는 작업은 1시간당 2개의 요청만 할 수 있습니다.(속도가 매우 제한됩니다.)</info>",
                     "examples": [
                         "// Set username\nclient.user.setUsername('discordjs')\n  .then(user => console.log(`My new username is ${user.username}`))\n  .catch(console.error);"
                     ],
@@ -17261,7 +17261,7 @@
         },
         {
             "name": "DMChannel",
-            "description": "두 사용자 간의 DM 채널을 나타냅니다.",
+            "description": "두 유저 간의 DM 채널을 나타냅니다.",
             "extends": [
                 [
                     [
@@ -18084,7 +18084,7 @@
         },
         {
             "name": "Guild",
-            "description": "Discord에 길드(또는 서버)를 나타냅니다.\n<info>작업을 수행하거나 길드에서 데이터를 읽기 전에 길드를 사용할 수 있는지 확인하는 것이 좋습니다. \n이것을 `guild.available`로 확인할 수 있습니다.</info>",
+            "description": "Discord에 서버(또는 서버)를 나타냅니다.\n<info>작업을 수행하거나 서버에서 데이터를 읽기 전에 서버를 사용할 수 있는지 확인하는 것이 좋습니다. \n이것을 `guild.available`로 확인할 수 있습니다.</info>",
             "extends": [
                 [
                     [
@@ -18108,7 +18108,7 @@
                     },
                     {
                         "name": "data",
-                        "description": "길드에 대한 데이터",
+                        "description": "서버에 대한 데이터",
                         "type": [
                             [
                                 [
@@ -18122,7 +18122,7 @@
             "props": [
                 {
                     "name": "members",
-                    "description": "이 길드에 속한 멤버의 매니저입니다.",
+                    "description": "이 서버에 속한 멤버의 매니저입니다.",
                     "type": [
                         [
                             [
@@ -21228,7 +21228,7 @@
                     },
                     {
                         "name": "data",
-                        "description": "길드에 대한 데이터 channel",
+                        "description": "서버에 대한 데이터 channel",
                         "type": [
                             [
                                 [
@@ -22358,7 +22358,7 @@
                         },
                         {
                             "name": "options.permissionOverwrites",
-                            "description": "Permission overwrites of the new channel",
+                            "description": "새 채널의 사용 권한을 덮어씁니다.",
                             "optional": true,
                             "default": "this.permissionOverwrites",
                             "type": [
@@ -22416,7 +22416,7 @@
                         },
                         {
                             "name": "options.nsfw",
-                            "description": "Whether the new channel is nsfw (only text)",
+                            "description": "새 채널이 nsfw인지 여부입니다. (only text)",
                             "optional": true,
                             "default": "this.nsfw",
                             "type": [
@@ -22429,7 +22429,7 @@
                         },
                         {
                             "name": "options.bitrate",
-                            "description": "Bitrate of the new channel in bits (only voice)",
+                            "description": "새 채널의 비트 전송률(비트)(음성만)입니다.",
                             "optional": true,
                             "default": "this.bitrate",
                             "type": [
@@ -22442,7 +22442,7 @@
                         },
                         {
                             "name": "options.userLimit",
-                            "description": "Maximum amount of users allowed in the new channel (only voice)",
+                            "description": "새 채널에서 허용되는 최대 유저 수입니다(음성만).",
                             "optional": true,
                             "default": "this.userLimit",
                             "type": [
@@ -22455,7 +22455,7 @@
                         },
                         {
                             "name": "options.rateLimitPerUser",
-                            "description": "Ratelimit per user for the new channel (only text)",
+                            "description": "새 채널에 대한 유저당 속도 제한(텍스트만 해당)입니다.",
                             "optional": true,
                             "default": "ThisType.rateLimitPerUser",
                             "type": [
@@ -22468,7 +22468,7 @@
                         },
                         {
                             "name": "options.parent",
-                            "description": "Parent of the new channel",
+                            "description": "새 채널의 상위 항목입니다.",
                             "optional": true,
                             "default": "this.parent",
                             "type": [
@@ -22481,7 +22481,7 @@
                         },
                         {
                             "name": "options.reason",
-                            "description": "Reason for cloning this channel",
+                            "description": "이 채널을 복제하는 이유",
                             "optional": true,
                             "type": [
                                 [
@@ -22654,7 +22654,7 @@
                     },
                     {
                         "name": "data",
-                        "description": "길드에 대한 데이터 emoji",
+                        "description": "서버에 대한 데이터 emoji",
                         "type": [
                             [
                                 [
@@ -23179,7 +23179,7 @@
                     },
                     {
                         "name": "data",
-                        "description": "길드에 대한 데이터 member",
+                        "description": "서버에 대한 데이터 member",
                         "type": [
                             [
                                 [
@@ -25252,7 +25252,7 @@
         },
         {
             "name": "Invite",
-            "description": "길드 채널에 대한 초대를 나타냅니다.\n<warn>보장된 속성은 `code`, `channel`, and `url`밖에 없습니다. 다른 속성이 누락될 수 있습니다.</warn>",
+            "description": "서버 채널에 대한 초대를 나타냅니다.\n<warn>보장된 속성은 `code`, `channel`, and `url`밖에 없습니다. 다른 속성이 누락될 수 있습니다.</warn>",
             "extends": [
                 [
                     [
@@ -28678,7 +28678,7 @@
                 },
                 {
                     "name": "users",
-                    "description": "언급된 모든 사용자입니다.\n<info>메시지 컨텐츠에 나타나지 않는 API에서 받은 대로 나타납니다.</info>",
+                    "description": "언급된 모든 유저입니다.\n<info>메시지 컨텐츠에 나타나지 않는 API에서 받은 대로 나타납니다.</info>",
                     "type": [
                         [
                             [
@@ -28877,7 +28877,7 @@
                 },
                 {
                     "name": "USERS_PATTERN",
-                    "description": "`<@81440962496172032>`와 같은 사용자 언급과 전체적으로 일치하는 정규식입니다.",
+                    "description": "`<@81440962496172032>`와 같은 유저 언급과 전체적으로 일치하는 정규식입니다.",
                     "scope": "static",
                     "type": [
                         [
@@ -31140,7 +31140,7 @@
                         },
                         {
                             "name": "options.permissionOverwrites",
-                            "description": "Permission overwrites of the new channel",
+                            "description": "새 채널의 사용 권한을 덮어씁니다.",
                             "optional": true,
                             "default": "this.permissionOverwrites",
                             "type": [
@@ -31198,7 +31198,7 @@
                         },
                         {
                             "name": "options.nsfw",
-                            "description": "Whether the new channel is nsfw (only text)",
+                            "description": "새 채널이 nsfw인지 여부입니다. (only text)",
                             "optional": true,
                             "default": "this.nsfw",
                             "type": [
@@ -31211,7 +31211,7 @@
                         },
                         {
                             "name": "options.bitrate",
-                            "description": "Bitrate of the new channel in bits (only voice)",
+                            "description": "새 채널의 비트 전송률(비트)(음성만)입니다.",
                             "optional": true,
                             "default": "this.bitrate",
                             "type": [
@@ -31224,7 +31224,7 @@
                         },
                         {
                             "name": "options.userLimit",
-                            "description": "Maximum amount of users allowed in the new channel (only voice)",
+                            "description": "새 채널에서 허용되는 최대 유저 수입니다(음성만).",
                             "optional": true,
                             "default": "this.userLimit",
                             "type": [
@@ -31237,7 +31237,7 @@
                         },
                         {
                             "name": "options.rateLimitPerUser",
-                            "description": "Ratelimit per user for the new channel (only text)",
+                            "description": "새 채널에 대한 유저당 속도 제한(텍스트만 해당)입니다.",
                             "optional": true,
                             "default": "ThisType.rateLimitPerUser",
                             "type": [
@@ -31250,7 +31250,7 @@
                         },
                         {
                             "name": "options.parent",
-                            "description": "Parent of the new channel",
+                            "description": "새 채널의 상위 항목입니다.",
                             "optional": true,
                             "default": "this.parent",
                             "type": [
@@ -31263,7 +31263,7 @@
                         },
                         {
                             "name": "options.reason",
-                            "description": "Reason for cloning this channel",
+                            "description": "이 채널을 복제하는 이유",
                             "optional": true,
                             "type": [
                                 [
@@ -35802,7 +35802,7 @@
                         },
                         {
                             "name": "options.permissionOverwrites",
-                            "description": "Permission overwrites of the new channel",
+                            "description": "새 채널의 사용 권한을 덮어씁니다.",
                             "optional": true,
                             "default": "this.permissionOverwrites",
                             "type": [
@@ -35860,7 +35860,7 @@
                         },
                         {
                             "name": "options.nsfw",
-                            "description": "Whether the new channel is nsfw (only text)",
+                            "description": "새 채널이 nsfw인지 여부입니다. (only text)",
                             "optional": true,
                             "default": "this.nsfw",
                             "type": [
@@ -35873,7 +35873,7 @@
                         },
                         {
                             "name": "options.bitrate",
-                            "description": "Bitrate of the new channel in bits (only voice)",
+                            "description": "새 채널의 비트 전송률(비트)(음성만)입니다.",
                             "optional": true,
                             "default": "this.bitrate",
                             "type": [
@@ -35886,7 +35886,7 @@
                         },
                         {
                             "name": "options.userLimit",
-                            "description": "Maximum amount of users allowed in the new channel (only voice)",
+                            "description": "새 채널에서 허용되는 최대 유저 수입니다(음성만).",
                             "optional": true,
                             "default": "this.userLimit",
                             "type": [
@@ -35899,7 +35899,7 @@
                         },
                         {
                             "name": "options.rateLimitPerUser",
-                            "description": "Ratelimit per user for the new channel (only text)",
+                            "description": "새 채널에 대한 유저당 속도 제한(텍스트만 해당)입니다.",
                             "optional": true,
                             "default": "ThisType.rateLimitPerUser",
                             "type": [
@@ -35912,7 +35912,7 @@
                         },
                         {
                             "name": "options.parent",
-                            "description": "Parent of the new channel",
+                            "description": "새 채널의 상위 항목입니다.",
                             "optional": true,
                             "default": "this.parent",
                             "type": [
@@ -35925,7 +35925,7 @@
                         },
                         {
                             "name": "options.reason",
-                            "description": "Reason for cloning this channel",
+                            "description": "이 채널을 복제하는 이유",
                             "optional": true,
                             "type": [
                                 [
@@ -38378,7 +38378,7 @@
                         },
                         {
                             "name": "options.permissionOverwrites",
-                            "description": "Permission overwrites of the new channel",
+                            "description": "새 채널의 사용 권한을 덮어씁니다.",
                             "optional": true,
                             "default": "this.permissionOverwrites",
                             "type": [
@@ -38436,7 +38436,7 @@
                         },
                         {
                             "name": "options.nsfw",
-                            "description": "Whether the new channel is nsfw (only text)",
+                            "description": "새 채널이 nsfw인지 여부입니다. (only text)",
                             "optional": true,
                             "default": "this.nsfw",
                             "type": [
@@ -38449,7 +38449,7 @@
                         },
                         {
                             "name": "options.bitrate",
-                            "description": "Bitrate of the new channel in bits (only voice)",
+                            "description": "새 채널의 비트 전송률(비트)(음성만)입니다.",
                             "optional": true,
                             "default": "this.bitrate",
                             "type": [
@@ -38462,7 +38462,7 @@
                         },
                         {
                             "name": "options.userLimit",
-                            "description": "Maximum amount of users allowed in the new channel (only voice)",
+                            "description": "새 채널에서 허용되는 최대 유저 수입니다(음성만).",
                             "optional": true,
                             "default": "this.userLimit",
                             "type": [
@@ -38475,7 +38475,7 @@
                         },
                         {
                             "name": "options.rateLimitPerUser",
-                            "description": "Ratelimit per user for the new channel (only text)",
+                            "description": "새 채널에 대한 유저당 속도 제한(텍스트만 해당)입니다.",
                             "optional": true,
                             "default": "ThisType.rateLimitPerUser",
                             "type": [
@@ -38488,7 +38488,7 @@
                         },
                         {
                             "name": "options.parent",
-                            "description": "Parent of the new channel",
+                            "description": "새 채널의 상위 항목입니다.",
                             "optional": true,
                             "default": "this.parent",
                             "type": [
@@ -38501,7 +38501,7 @@
                         },
                         {
                             "name": "options.reason",
-                            "description": "Reason for cloning this channel",
+                            "description": "이 채널을 복제하는 이유",
                             "optional": true,
                             "type": [
                                 [
@@ -40748,7 +40748,7 @@
                         },
                         {
                             "name": "options.permissionOverwrites",
-                            "description": "Permission overwrites of the new channel",
+                            "description": "새 채널의 사용 권한을 덮어씁니다.",
                             "optional": true,
                             "default": "this.permissionOverwrites",
                             "type": [
@@ -40806,7 +40806,7 @@
                         },
                         {
                             "name": "options.nsfw",
-                            "description": "Whether the new channel is nsfw (only text)",
+                            "description": "새 채널이 nsfw인지 여부입니다. (only text)",
                             "optional": true,
                             "default": "this.nsfw",
                             "type": [
@@ -40819,7 +40819,7 @@
                         },
                         {
                             "name": "options.bitrate",
-                            "description": "Bitrate of the new channel in bits (only voice)",
+                            "description": "새 채널의 비트 전송률(비트)(음성만)입니다.",
                             "optional": true,
                             "default": "this.bitrate",
                             "type": [
@@ -40832,7 +40832,7 @@
                         },
                         {
                             "name": "options.userLimit",
-                            "description": "Maximum amount of users allowed in the new channel (only voice)",
+                            "description": "새 채널에서 허용되는 최대 유저 수입니다(음성만).",
                             "optional": true,
                             "default": "this.userLimit",
                             "type": [
@@ -40845,7 +40845,7 @@
                         },
                         {
                             "name": "options.rateLimitPerUser",
-                            "description": "Ratelimit per user for the new channel (only text)",
+                            "description": "새 채널에 대한 유저당 속도 제한(텍스트만 해당)입니다.",
                             "optional": true,
                             "default": "ThisType.rateLimitPerUser",
                             "type": [
@@ -40858,7 +40858,7 @@
                         },
                         {
                             "name": "options.parent",
-                            "description": "Parent of the new channel",
+                            "description": "새 채널의 상위 항목입니다.",
                             "optional": true,
                             "default": "this.parent",
                             "type": [
@@ -40871,7 +40871,7 @@
                         },
                         {
                             "name": "options.reason",
-                            "description": "Reason for cloning this channel",
+                            "description": "이 채널을 복제하는 이유",
                             "optional": true,
                             "type": [
                                 [
@@ -48665,7 +48665,7 @@
                 },
                 {
                     "name": "rateLimitPerUser",
-                    "description": "The ratelimit per user for the channel in seconds",
+                    "description": "채널에 대한 사용자당 레이트 리밋 in seconds",
                     "optional": true,
                     "type": [
                         [
@@ -51197,7 +51197,7 @@
         },
         {
             "name": "ActivityType",
-            "description": "<info>봇은 `CUSTOM_STATUS`를 설정할 수 없으며, 사용자로부터 수신된 사용자 지정 상태에만 해당됩니다.</info>\n사용자 상태의 활동 유형(예: `PLAYING`)입니다. 사용 가능한 유형은 다음과 같습니다:\n* PLAYING\n* STREAMING\n* LISTENING\n* WATCHING\n* CUSTOM_STATUS",
+            "description": "<info>봇은 `CUSTOM_STATUS`를 설정할 수 없으며, 유저로부터 수신된 유저 지정 상태에만 해당됩니다.</info>\n유저 상태의 활동 유형(예: `PLAYING`)입니다. 사용 가능한 유형은 다음과 같습니다:\n* PLAYING\n* STREAMING\n* LISTENING\n* WATCHING\n* CUSTOM_STATUS",
             "type": [
                 [
                     [
