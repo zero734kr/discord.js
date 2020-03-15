@@ -13035,7 +13035,7 @@
                 "params": [
                     {
                         "name": "file",
-                        "description": "Path to your shard script file",
+                        "description": "샤드 스크립트 파일의 경로",
                         "type": [
                             [
                                 [
@@ -13046,7 +13046,7 @@
                     },
                     {
                         "name": "options",
-                        "description": "Options for the sharding manager",
+                        "description": "sharding manager 옵션",
                         "optional": true,
                         "type": [
                             [
@@ -13058,7 +13058,7 @@
                     },
                     {
                         "name": "options.totalShards",
-                        "description": "Number of total shards of all shard managers or \"auto\"",
+                        "description": "모든 샤드 관리자의 전체 샤드 수 또는 \"auto\".",
                         "optional": true,
                         "default": "'auto'",
                         "type": [
@@ -13076,7 +13076,7 @@
                     },
                     {
                         "name": "options.shardList",
-                        "description": "List of shards to spawn or \"auto\"",
+                        "description": "스폰할 샤드의 목록 또는 \"auto\"",
                         "optional": true,
                         "default": "'auto'",
                         "type": [
@@ -13099,7 +13099,7 @@
                     },
                     {
                         "name": "options.mode",
-                        "description": "Which mode to use for shards",
+                        "description": "샤드에 사용할 모드",
                         "optional": true,
                         "default": "'process'",
                         "type": [
@@ -13112,7 +13112,7 @@
                     },
                     {
                         "name": "options.respawn",
-                        "description": "Whether shards should automatically respawn upon exiting",
+                        "description": "종료 시 샤드가 자동으로 다시 생성되어야 하는지 여부",
                         "optional": true,
                         "default": true,
                         "type": [
@@ -13125,7 +13125,7 @@
                     },
                     {
                         "name": "options.shardArgs",
-                        "description": "Arguments to pass to the shard script when spawning\n(only available when using the `process` mode)",
+                        "description": "샤드 스폰 시 샤드 스크립트로 전달해야 하는 arguments\n(`process` 모드 사용 시에만 사용 가능)",
                         "optional": true,
                         "default": "[]",
                         "type": [
@@ -13143,7 +13143,7 @@
                     },
                     {
                         "name": "options.execArgv",
-                        "description": "Arguments to pass to the shard script executable when spawning\n(only available when using the `process` mode)",
+                        "description": "샤드 스폰 시 샤드 스크립트 실행 파일로 전달되는 arguments\n(`process` 모드 사용 시에만 사용 가능)",
                         "optional": true,
                         "default": "[]",
                         "type": [
@@ -13161,7 +13161,7 @@
                     },
                     {
                         "name": "options.token",
-                        "description": "Token to use for automatic shard count and passing to shards",
+                        "description": "자동 샤드 수 및 샤드로 전달하는 데 사용되는 토큰",
                         "optional": true,
                         "type": [
                             [
@@ -13176,7 +13176,7 @@
             "props": [
                 {
                     "name": "file",
-                    "description": "Path to the shard script file",
+                    "description": "샤드 스크립트 파일의 경로",
                     "type": [
                         [
                             [
@@ -13192,7 +13192,7 @@
                 },
                 {
                     "name": "shardList",
-                    "description": "List of shards this sharding manager spawns",
+                    "description": "이 샤딩 매니저가 생성 한 샤드 목록",
                     "type": [
                         [
                             [
@@ -13218,7 +13218,7 @@
                 },
                 {
                     "name": "totalShards",
-                    "description": "Amount of shards that all sharding managers spawn in total",
+                    "description": "모든 샤딩 관리자가 생성 한 모든 샤드의 양",
                     "type": [
                         [
                             [
@@ -13234,7 +13234,7 @@
                 },
                 {
                     "name": "mode",
-                    "description": "Mode for shards to spawn with",
+                    "description": "샤드 생성 모드",
                     "type": [
                         [
                             [
@@ -13250,7 +13250,7 @@
                 },
                 {
                     "name": "respawn",
-                    "description": "Whether shards should automatically respawn upon exiting",
+                    "description": "종료시 샤드가 자동으로 다시 생성되어야하는지 여부",
                     "type": [
                         [
                             [
@@ -13266,7 +13266,7 @@
                 },
                 {
                     "name": "shardArgs",
-                    "description": "An array of arguments to pass to shards (only when {@link ShardingManager#mode} is `process`)",
+                    "description": "샤드에 전달할 인수 배열 ({@link ShardingManager#mode}가`process` 인 경우에만)",
                     "type": [
                         [
                             [
@@ -13287,7 +13287,7 @@
                 },
                 {
                     "name": "execArgv",
-                    "description": "An array of arguments to pass to the executable (only when {@link ShardingManager#mode} is `process`)",
+                    "description": "실행 파일로 전달할 인수 배열 ({@link ShardingManager#mode}가`process` 인 경우에만)",
                     "type": [
                         [
                             [
@@ -13308,7 +13308,7 @@
                 },
                 {
                     "name": "token",
-                    "description": "Token to use for obtaining the automatic shard count, and passing to shards",
+                    "description": "자동 샤드 수를 확보하고 샤드로 전달하는 데 사용하는 토큰",
                     "nullable": true,
                     "type": [
                         [
@@ -13325,7 +13325,7 @@
                 },
                 {
                     "name": "shards",
-                    "description": "A collection of shards that this manager has spawned",
+                    "description": "샤드 매니저가 생성 한 샤드 collection",
                     "type": [
                         [
                             [
@@ -13376,7 +13376,7 @@
                                 ]
                             ]
                         ],
-                        "description": "Note that the created shard needs to be explicitly spawned using its spawn method."
+                        "description": "생성된 샤드는 해당 스폰 메소드(method)을(를) 사용하여 명시적(explicitly)으로 생성해야 합니다."
                     },
                     "meta": {
                         "line": 152,
@@ -13386,11 +13386,11 @@
                 },
                 {
                     "name": "spawn",
-                    "description": "Spawns multiple shards.",
+                    "description": "여러 개의 샤드를 만듭니다",
                     "params": [
                         {
                             "name": "amount",
-                            "description": "Number of shards to spawn",
+                            "description": "스폰 할 샤드 수",
                             "optional": true,
                             "default": "this.totalShards",
                             "type": [
@@ -13408,7 +13408,7 @@
                         },
                         {
                             "name": "delay",
-                            "description": "How long to wait in between spawning each shard (in milliseconds)",
+                            "description": "각 샤드 생성 사이의 대기 시간 (밀리 초)",
                             "optional": true,
                             "default": 5500,
                             "type": [
@@ -13421,7 +13421,7 @@
                         },
                         {
                             "name": "spawnTimeout",
-                            "description": "The amount in milliseconds to wait until the {@link Client} has become ready\nbefore resolving. (-1 or Infinity for no wait)",
+                            "description": "resolving하기 전에 {@link Client}가 준비 될 때까지 기다리는 시간 (밀리 초) (-1 or Infinity for no wait)",
                             "optional": true,
                             "default": 30000,
                             "type": [
@@ -13462,11 +13462,11 @@
                 },
                 {
                     "name": "broadcast",
-                    "description": "Sends a message to all shards.",
+                    "description": "모든 샤드에 메시지를 보냅니다.",
                     "params": [
                         {
                             "name": "message",
-                            "description": "Message to be sent to the shards",
+                            "description": "샤드로 보낼 메시지",
                             "type": [
                                 [
                                     "*"
@@ -13498,11 +13498,11 @@
                 },
                 {
                     "name": "broadcastEval",
-                    "description": "Evaluates a script on all shards, in the context of the {@link Client}s.",
+                    "description": "{@link Client}와 관련하여 모든 샤드에서 스크립트를 Evaluate합니다.",
                     "params": [
                         {
                             "name": "script",
-                            "description": "JavaScript to run on each shard",
+                            "description": "각 샤드에서 실행할 JavaScript",
                             "type": [
                                 [
                                     [
@@ -13529,7 +13529,7 @@
                                 ]
                             ]
                         ],
-                        "description": "Results of the script execution"
+                        "description": "스크립트 실행 결과"
                     },
                     "meta": {
                         "line": 231,
@@ -13539,14 +13539,14 @@
                 },
                 {
                     "name": "fetchClientValues",
-                    "description": "Fetches a client property value of each shard.",
+                    "description": "각 샤드의 클라이언트 속성 값을 가져옵니다.",
                     "examples": [
                         "manager.fetchClientValues('guilds.cache.size')\n  .then(results => console.log(`${results.reduce((prev, val) => prev + val, 0)} total guilds`))\n  .catch(console.error);"
                     ],
                     "params": [
                         {
                             "name": "prop",
-                            "description": "Name of the client property to get, using periods for nesting",
+                            "description": "Peridos을(를) 사용하여 가져올 클라이언트 특성의 이름",
                             "type": [
                                 [
                                     [
@@ -13580,11 +13580,11 @@
                 },
                 {
                     "name": "respawnAll",
-                    "description": "Kills all running shards and respawns them.",
+                    "description": "실행되고 있는 모든 샤드를 중단하고 다시 생성(respawn)합니다.",
                     "params": [
                         {
                             "name": "shardDelay",
-                            "description": "How long to wait between shards (in milliseconds)",
+                            "description": "샤드 간 대기 시간 (밀리 초)",
                             "optional": true,
                             "default": 5000,
                             "type": [
@@ -13597,7 +13597,7 @@
                         },
                         {
                             "name": "respawnDelay",
-                            "description": "How long to wait between killing a shard's process and restarting it\n(in milliseconds)",
+                            "description": "샤드 프로세스 종료 후 다시 시작하기까지 대기하는 시간\n(밀리 초)",
                             "optional": true,
                             "default": 500,
                             "type": [
@@ -13610,7 +13610,7 @@
                         },
                         {
                             "name": "spawnTimeout",
-                            "description": "The amount in milliseconds to wait for a shard to become ready before\ncontinuing to another. (-1 or Infinity for no wait)",
+                            "description": "샤드가 다른 것을 계속하기 전에 준비 될 때까지 기다리는 시간 (밀리 초). (-1 or Infinity for no wait)",
                             "optional": true,
                             "default": 30000,
                             "type": [
@@ -13653,11 +13653,11 @@
             "events": [
                 {
                     "name": "shardCreate",
-                    "description": "Emitted upon creating a shard.",
+                    "description": "샤드 생성시 발생합니다.",
                     "params": [
                         {
                             "name": "shard",
-                            "description": "Shard that was created",
+                            "description": "만들어진 샤드",
                             "type": [
                                 [
                                     [
@@ -13682,13 +13682,13 @@
         },
         {
             "name": "APIMessage",
-            "description": "Represents a message to be sent to the API.",
+            "description": "API로 전송 될 메시지를 나타냅니다.",
             "construct": {
                 "name": "APIMessage",
                 "params": [
                     {
                         "name": "target",
-                        "description": "The target for this message to be sent to",
+                        "description": "이 메시지가 전송 될 대상",
                         "type": [
                             [
                                 [
@@ -13699,7 +13699,7 @@
                     },
                     {
                         "name": "options",
-                        "description": "Options passed in from send",
+                        "description": "send에서 전달 된 옵션",
                         "type": [
                             [
                                 [
@@ -13718,7 +13718,7 @@
             "props": [
                 {
                     "name": "target",
-                    "description": "The target for this message to be sent to",
+                    "description": "이 메시지가 전송 될 대상",
                     "type": [
                         [
                             [
@@ -13734,7 +13734,7 @@
                 },
                 {
                     "name": "options",
-                    "description": "Options passed in from send",
+                    "description": "보내기에서 전달 된 옵션",
                     "type": [
                         [
                             [
@@ -13755,7 +13755,7 @@
                 },
                 {
                     "name": "data",
-                    "description": "Data sendable to the API",
+                    "description": "API로 전송 가능한 데이터",
                     "nullable": true,
                     "type": [
                         [
@@ -13772,7 +13772,7 @@
                 },
                 {
                     "name": "files",
-                    "description": "Files sendable to the API",
+                    "description": "API로 보낼 수있는 파일",
                     "nullable": true,
                     "type": [
                         [
@@ -13794,7 +13794,7 @@
                 },
                 {
                     "name": "isWebhook",
-                    "description": "Whether or not the target is a webhook",
+                    "description": "대상이 Webhook인지 아닌지 여부",
                     "readonly": true,
                     "type": [
                         [
@@ -13811,7 +13811,7 @@
                 },
                 {
                     "name": "isUser",
-                    "description": "Whether or not the target is a user",
+                    "description": "대상이 사용자(user)인지 여부",
                     "readonly": true,
                     "type": [
                         [
@@ -13828,7 +13828,7 @@
                 },
                 {
                     "name": "isMessage",
-                    "description": "Whether or not the target is a message",
+                    "description": "대상이 메시지인지 여부",
                     "readonly": true,
                     "type": [
                         [
@@ -13847,7 +13847,7 @@
             "methods": [
                 {
                     "name": "makeContent",
-                    "description": "Makes the content of this message.",
+                    "description": "이 메세지의 content을(를) 작성합니다.",
                     "returns": {
                         "types": [
                             [
@@ -13876,7 +13876,7 @@
                 },
                 {
                     "name": "resolveData",
-                    "description": "Resolves data.",
+                    "description": "데이터를 resolve합니다.",
                     "returns": [
                         [
                             [
@@ -13892,7 +13892,7 @@
                 },
                 {
                     "name": "resolveFiles",
-                    "description": "Resolves files.",
+                    "description": "파일을 resolve합니다",
                     "async": true,
                     "returns": [
                         [
@@ -13914,7 +13914,7 @@
                 },
                 {
                     "name": "split",
-                    "description": "Converts this APIMessage into an array of APIMessages for each split content",
+                    "description": "APIMessage를 각 분할 컨텐츠에 대한 APIMessage 배열로 변환합니다.",
                     "returns": [
                         [
                             [
@@ -13935,12 +13935,12 @@
                 },
                 {
                     "name": "resolveFile",
-                    "description": "Resolves a single file into an object sendable to the API.",
+                    "description": "단일 파일을 API로 보낼 수있는 객체(Object)로 해결합니다.",
                     "scope": "static",
                     "params": [
                         {
                             "name": "fileLike",
-                            "description": "Something that could be resolved to a file",
+                            "description": "파일(file)로 해결(resolve) 될 수있는 것",
                             "type": [
                                 [
                                     [
@@ -13981,12 +13981,12 @@
                 },
                 {
                     "name": "partitionMessageAdditions",
-                    "description": "Partitions embeds and attachments.",
+                    "description": "파티션(Partitions) 임베드(embed) 및 첨부파일(attachments).",
                     "scope": "static",
                     "params": [
                         {
                             "name": "items",
-                            "description": "Items to partition",
+                            "description": "분할 할 항목",
                             "type": [
                                 [
                                     [
@@ -14037,12 +14037,12 @@
                 },
                 {
                     "name": "transformOptions",
-                    "description": "Transforms the user-level arguments into a final options object. Passing a transformed options object alone into\nthis method will keep it the same, allowing for the reuse of the final options object.",
+                    "description": "사용자 수준 인수를 최종 옵션 개체로 변환합니다. 변환 된 옵션 객체를 단독으로 전달합니다.\n이 방법은 최종 옵션 객체를 재사용 할 수 있도록 동일하게 유지합니다.",
                     "scope": "static",
                     "params": [
                         {
                             "name": "content",
-                            "description": "Content to send",
+                            "description": "보낼 내용",
                             "optional": true,
                             "type": [
                                 [
@@ -14054,7 +14054,7 @@
                         },
                         {
                             "name": "options",
-                            "description": "Options to use",
+                            "description": "사용할 옵션",
                             "optional": true,
                             "default": "{}",
                             "type": [
@@ -14077,7 +14077,7 @@
                         },
                         {
                             "name": "extra",
-                            "description": "Extra options to add onto transformed options",
+                            "description": "변형 된 옵션에 추가 할 수있는 추가 옵션",
                             "optional": true,
                             "default": "{}",
                             "type": [
@@ -14095,7 +14095,7 @@
                         },
                         {
                             "name": "isWebhook",
-                            "description": "Whether or not to use WebhookMessageOptions as the result",
+                            "description": "WebhookMessageOptions를 결과로 사용할지 여부",
                             "optional": true,
                             "default": false,
                             "type": [
@@ -14127,12 +14127,12 @@
                 },
                 {
                     "name": "create",
-                    "description": "Creates an `APIMessage` from user-level arguments.",
+                    "description": "user-level arguments에서 `APIMessage`를 만듭니다.",
                     "scope": "static",
                     "params": [
                         {
                             "name": "target",
-                            "description": "Target to send to",
+                            "description": "보낼 대상",
                             "type": [
                                 [
                                     [
@@ -14143,7 +14143,7 @@
                         },
                         {
                             "name": "content",
-                            "description": "Content to send",
+                            "description": "보낼 내용",
                             "optional": true,
                             "type": [
                                 [
@@ -14178,7 +14178,7 @@
                         },
                         {
                             "name": "extra",
-                            "description": "Extra options to add onto transformed options",
+                            "description": "변형 된 옵션에 추가 할 수있는 추가 옵션",
                             "optional": true,
                             "default": "{}",
                             "type": [
@@ -14222,11 +14222,11 @@
         },
         {
             "name": "Base",
-            "description": "Represents a data model that is identifiable by a Snowflake (i.e. Discord API data models).",
+            "description": "Snowflake (즉, Discord API 데이터 모델)로 식별 할 수있는 데이터 모델을 나타냅니다.",
             "props": [
                 {
                     "name": "client",
-                    "description": "The client that instantiated this",
+                    "description": "이것을 인스턴스화(instantiated) 한 클라이언트(client)",
                     "readonly": true,
                     "type": [
                         [
@@ -14250,7 +14250,7 @@
         },
         {
             "name": "CategoryChannel",
-            "description": "Represents a guild category channel on Discord.",
+            "description": "Discord의 길드 카테고리 채널을 나타냅니다.",
             "extends": [
                 [
                     [
@@ -14261,7 +14261,7 @@
             "props": [
                 {
                     "name": "children",
-                    "description": "Channels that are a part of this category",
+                    "description": "카테고리(category)의 일부인 채널(channel)",
                     "readonly": true,
                     "nullable": true,
                     "type": [
@@ -14288,7 +14288,7 @@
                 },
                 {
                     "name": "guild",
-                    "description": "The guild the channel is in",
+                    "description": "채널이있는 길드",
                     "type": [
                         [
                             [
@@ -14304,7 +14304,7 @@
                 },
                 {
                     "name": "name",
-                    "description": "The name of the guild channel",
+                    "description": "길드 채널의 이름",
                     "type": [
                         [
                             [
