@@ -11,19 +11,19 @@
                 "welcome": {
                     "name": "환영합니다",
                     "type": "md",
-                    "content": "<div align=\"center\">\n  <br />\n  <p>\n    <a href=\"https://discord.js.org\"><img src=\"/static/logo.svg\" width=\"546\" alt=\"discord.js\" id=\"djs-logo\" /></a>\n  </p>\n  <br />\n  <p>\n    <a href=\"https://discord.gg/bRCvFy9\"><img src=\"https://discordapp.com/api/guilds/222078108977594368/embed.png\" alt=\"Discord server\" /></a>\n    <a href=\"https://www.npmjs.com/package/discord.js\"><img src=\"https://img.shields.io/npm/v/discord.js.svg?maxAge=3600\" alt=\"NPM version\" /></a>\n    <a href=\"https://www.npmjs.com/package/discord.js\"><img src=\"https://img.shields.io/npm/dt/discord.js.svg?maxAge=3600\" alt=\"NPM downloads\" /></a>\n    <a href=\"https://travis-ci.org/discordjs/discord.js\"><img src=\"https://travis-ci.org/discordjs/discord.js.svg\" alt=\"Build status\" /></a>\n    <a href=\"https://david-dm.org/discordjs/discord.js\"><img src=\"https://img.shields.io/david/discordjs/discord.js.svg?maxAge=3600\" alt=\"Dependencies\" /></a>\n    <a href=\"https://www.patreon.com/discordjs\"><img src=\"https://img.shields.io/badge/donate-patreon-F96854.svg\" alt=\"Patreon\" /></a>\n  </p>\n  <p>\n    <a href=\"https://nodei.co/npm/discord.js/\"><img src=\"https://nodei.co/npm/discord.js.png?downloads=true&stars=true\" alt=\"NPM info\" /></a>\n  </p>\n</div>\n\n\n# 환영합니다!\n\ndiscord.js v12 문서에 오신 걸을 환영합니다!\n\n## 머릿말\n\ndiscord.js 는 강력한  [Node.js](https://nodejs.org) 모듈로써 [디스코드 API](https://discordapp.com/developers/docs/intro)와 쉽게 상호작용하게 해줍니다.\n\n- 객체 지향적\n- 빠르고 효율적\n- 다양한 기능\n- 유연함\n- 100% Promise 기반\n\n## 설치\n\n**12.0.0 버전 이상의 Node.js 가 요구됩니다**\n모두 선택 사항이기 때문에 비적합한 동위 종속성(unmet peer dependencies)에 대한 모든 경고를 무시하세요.\n\n음성 기능이 필요 없다면: `npm install discord.js`\n음성 기능과 함께: ([@discordjs/opus](https://www.npmjs.com/package/@discordjs/opus)): `npm install discord.js @discordjs/opus`\n음성 기능과 함께: ([opusscript](https://www.npmjs.com/package/opusscript)): `npm install discord.js opusscript`\n\n### 오디오 엔진\n\n추천하는 opus 엔진은 @discordjs/opus입니다. opusscript보다 훨씬 원할하게 작동합니다. 만약 두 개 모두 사용이 가능할 경우, discord.js 는 자동적으로 @discordjs/opus 를 선택합니다.\nopusscript를 사용하는 경우에는 단지 @ discordjs/opus를 사용하기 힘든 개발환경에서만 권장됩니다.\n개발용 봇의 경우 @discordjs/opus 사용은 필수사항이여야 하며, 특히 여러 길드에서 실행될 경우 더욱 그러해야 합니다.\n\n### 선택적인 패키지들\n\n- [zlib-sync](https://www.npmjs.com/package/zlib-sync) 웹소켓 데이터 압축 및 가속 (`npm install zlib-sync`)\n- [erlpack](https://github.com/discordapp/erlpack) 훨씬 더 빠른 웹소켓 데이터 (de)serialisation (`npm install discordapp/erlpack`)\n- 다음 패키지들 중 하나는 더 빠른 패킷 암호화 및 암호 해독을 위해 설치될 수 있습니다:\n  - [sodium](https://www.npmjs.com/package/sodium) (`npm install sodium`)\n  - [libsodium.js](https://www.npmjs.com/package/libsodium-wrappers) (`npm install libsodium-wrappers`)\n- [bufferutil](https://www.npmjs.com/package/bufferutil) 훨씬 더 빠른 웹소켓 연결 (`npm install bufferutil`)\n- [utf-8-validate](https://www.npmjs.com/package/utf-8-validate) 훨씬 빠른 웹소켓 처리를 위해 `bufferutil`과 조합 (`npm install utf-8-validate`)\n\n## 예시\n\n```js\nconst Discord = require('discord.js');\nconst client = new Discord.Client();\n\nclient.on('ready', () => {\n  console.log(`${client.user.tag}에 로그인하였습니다!`);\n});\n\nclient.on('message', msg => {\n  if (msg.content === '핑') {\n    msg.reply('퐁!');\n  }\n});\n\nclient.login('토큰');\n```\n\n## 관련링크\n\n- [공식 웹사이트 (영문)](https://discord.js.org/) ([source](https://github.com/discordjs/website))\n- [공식 문서 (영문)](https://discord.js.org/#/docs/main/master/general/welcome)\n- [가이드 (영문)](https://discordjs.guide/) ([source](https://github.com/discordjs/guide)) - this is still for stable  \n  또한 [업데이트 가이드 (영문)](https://discordjs.guide/additional-info/changes-in-v12.html) 의 진행중인 작업을 확인하세요. 라이브러리에서 업데이트되거나 제거된 항목들을 포함합니다.\n- [Discord.js 공식 디스코드 길드 (영문)](https://discord.gg/bRCvFy9)\n- [디스코드 API 디스코드 길드](https://discord.gg/discord-api)\n- [GitHub](https://github.com/discordjs/discord.js)\n- [NPM](https://www.npmjs.com/package/discord.js)\n- [관련된 라이브러리들](https://discordapi.com/unofficial/libs.html)\n\n- [Discord.js 비공식 한국 디스코드 길드](https://discord.gg/TwZeg6z)\n\n### 확장\n\n- [RPC](https://www.npmjs.com/package/discord-rpc) ([source](https://github.com/discordjs/RPC))\n\n## 기여하기\n\n이슈를 작성하기 전에 아직 보고/제안되지 않았는지 확인하고 해당 이슈를 다시 확인하십시오.\n[문서](https://discord.js.org/#/docs).  \nPR를 등록하고 싶으시다면 [기여 가이드](https://github.com/discordjs/discord.js/blob/master/.github/CONTRIBUTING.md)를 먼저 확인해보세요.\n\n## 도움\n\n문서에 있는 내용을 이해하지 못하거나, 문제가 발생한다면 부드럽게 처리하면 됩니다.\n올바른 방향으로 나아가세요. 주저하지 마시고 공식 [Discord.js 길드 (영문)](https://discord.gg/bRCvFy9)를 방문하세요.\n- [Discord.js 비공식 한국 디스코드 길드](https://discord.gg/TwZeg6z)\n",
+                    "content": "<div align=\"center\">\n  <br />\n  <p>\n    <a href=\"https://discord.js.org\"><img src=\"/static/logo.svg\" width=\"546\" alt=\"discord.js\" id=\"djs-logo\" /></a>\n  </p>\n  <br />\n  <p>\n    <a href=\"https://discord.gg/bRCvFy9\"><img src=\"https://discordapp.com/api/guilds/222078108977594368/embed.png\" alt=\"Discord server\" /></a>\n    <a href=\"https://www.npmjs.com/package/discord.js\"><img src=\"https://img.shields.io/npm/v/discord.js.svg?maxAge=3600\" alt=\"NPM version\" /></a>\n    <a href=\"https://www.npmjs.com/package/discord.js\"><img src=\"https://img.shields.io/npm/dt/discord.js.svg?maxAge=3600\" alt=\"NPM downloads\" /></a>\n    <a href=\"https://travis-ci.org/discordjs/discord.js\"><img src=\"https://travis-ci.org/discordjs/discord.js.svg\" alt=\"Build status\" /></a>\n    <a href=\"https://david-dm.org/discordjs/discord.js\"><img src=\"https://img.shields.io/david/discordjs/discord.js.svg?maxAge=3600\" alt=\"Dependencies\" /></a>\n    <a href=\"https://www.patreon.com/discordjs\"><img src=\"https://img.shields.io/badge/donate-patreon-F96854.svg\" alt=\"Patreon\" /></a>\n  </p>\n  <p>\n    <a href=\"https://nodei.co/npm/discord.js/\"><img src=\"https://nodei.co/npm/discord.js.png?downloads=true&stars=true\" alt=\"NPM info\" /></a>\n  </p>\n</div>\n\n\n# 환영합니다!\n\ndiscord.js v12 문서에 오신 걸을 환영합니다!\n\n## 머릿말\n\ndiscord.js 는 강력한  [Node.js](https://nodejs.org) 모듈로써 [디스코드 API](https://discordapp.com/developers/docs/intro)와 쉽게 상호작용하게 해줍니다.\n\n- 객체 지향적\n- 빠르고 효율적\n- 다양한 기능\n- 유연함\n- 100% Promise 기반\n\n## 설치\n\n**12.0.0 버전 이상의 Node.js 가 요구됩니다**\n모두 선택 사항이기 때문에 비적합한 동위 종속성(unmet peer dependencies)에 대한 모든 경고를 무시하시길 바랍니다.\n\n음성 기능이 필요 없다면: `npm install discord.js`\n음성 기능과 함께: ([@discordjs/opus](https://www.npmjs.com/package/@discordjs/opus)): `npm install discord.js @discordjs/opus`\n음성 기능과 함께: ([opusscript](https://www.npmjs.com/package/opusscript)): `npm install discord.js opusscript`\n\n### 오디오 엔진\n\n추천하는 opus 엔진은 @discordjs/opus입니다. opusscript보다 훨씬 원할하게 작동합니다. 만약 두 개 모두 사용이 가능할 경우, discord.js 는 자동적으로 @discordjs/opus 를 선택합니다.\nopusscript를 사용하는 경우에는 단지 @ discordjs/opus를 사용하기 힘든 개발환경에서만 권장됩니다.\n개발용 봇의 경우 @discordjs/opus 사용은 필수사항이여야 하며, 특히 여러 길드에서 실행될 경우 더욱 그러해야 합니다.\n\n### 선택적인 패키지들\n\n- [zlib-sync](https://www.npmjs.com/package/zlib-sync) 웹소켓 데이터 압축 및 가속 (`npm install zlib-sync`)\n- [erlpack](https://github.com/discordapp/erlpack) 훨씬 더 빠른 웹소켓 데이터 (de)serialisation (`npm install discordapp/erlpack`)\n- 다음 패키지들 중 하나는 더 빠른 패킷 암호화 및 암호 해독을 위해 설치될 수 있습니다:\n  - [sodium](https://www.npmjs.com/package/sodium) (`npm install sodium`)\n  - [libsodium.js](https://www.npmjs.com/package/libsodium-wrappers) (`npm install libsodium-wrappers`)\n- [bufferutil](https://www.npmjs.com/package/bufferutil) 훨씬 더 빠른 웹소켓 연결 (`npm install bufferutil`)\n- [utf-8-validate](https://www.npmjs.com/package/utf-8-validate) 훨씬 빠른 웹소켓 처리를 위해 `bufferutil`과 조합 (`npm install utf-8-validate`)\n\n## 예시\n\n```js\nconst Discord = require('discord.js');\nconst client = new Discord.Client();\n\nclient.on('ready', () => {\n  console.log(`${client.user.tag}에 로그인하였습니다!`);\n});\n\nclient.on('message', msg => {\n  if (msg.content === '핑') {\n    msg.reply('퐁!');\n  }\n});\n\nclient.login('토큰');\n```\n\n## 관련링크\n\n- [공식 웹사이트 (영문)](https://discord.js.org/) ([source](https://github.com/discordjs/website))\n- [공식 문서 (영문)](https://discord.js.org/#/docs/main/master/general/welcome)\n- [가이드 (영문)](https://discordjs.guide/) ([source](https://github.com/discordjs/guide)) - this is still for stable  \n  또한 [업데이트 가이드 (영문)](https://discordjs.guide/additional-info/changes-in-v12.html) 의 진행중인 작업을 확인하시길 바랍니다. 라이브러리에서 업데이트되거나 제거된 항목들을 포함합니다.\n- [Discord.js 공식 디스코드 길드 (영문)](https://discord.gg/bRCvFy9)\n- [디스코드 API 디스코드 길드](https://discord.gg/discord-api)\n- [GitHub](https://github.com/discordjs/discord.js)\n- [NPM](https://www.npmjs.com/package/discord.js)\n- [관련된 라이브러리들](https://discordapi.com/unofficial/libs.html)\n\n- [Discord.js 비공식 한국 디스코드 길드](https://discord.gg/TwZeg6z)\n\n### 확장\n\n- [RPC](https://www.npmjs.com/package/discord-rpc) ([source](https://github.com/discordjs/RPC))\n\n## 기여하기\n\n이슈를 작성하기 전에 아직 보고/제안되지 않았는지 확인하고 해당 이슈를 다시 확인하십시오.\n[문서](https://discord.js.org/#/docs).  \nPR를 등록하고 싶으시다면 [기여 가이드](https://github.com/discordjs/discord.js/blob/master/.github/CONTRIBUTING.md)를 먼저 확인해보시길 바랍니다.\n\n## 도움\n\n문서에 있는 내용을 이해하지 못하거나, 문제가 발생한다면 부드럽게 처리하면 됩니다.\n올바른 방향으로 나아가세요. 주저하지 마시고 공식 [Discord.js 길드 (영문)](https://discord.gg/bRCvFy9)를 방문하시길 바랍니다.\n- [Discord.js 비공식 한국 디스코드 길드](https://discord.gg/TwZeg6z)\n",
                     "path": "docs/general/welcome.md"
                 },
                 "updating": {
                     "name": "코드를 업데이트하기",
                     "type": "md",
-                    "content": "# 버전 12.0.0\n12.0.0 버전은 많은 새롭고 개선된 기능들과 최적화, 버그 픽스들이 이루어져 있습니다.\n[변경 로그](https://github.com/discordjs/discord.js/releases/tag/12.0.0) 에 모든 변경 사항들이 있습니다.\n당신은 또한 [가이드](https://discordjs.guide/additional-info/changes-in-v12.html) 를 참고해 당신의 v11 코드를 v12 로 업데이트 할 수 있습니다.\n\n# 버전 11.1.0\n\nv11.1.0 은 게이트웨이와 음성 기능이 안정되고 개선되었습니다 또한 감사 로그 및 메시지 검색과 같은 새로운 기능을 지원합니다.\n[변경 로그](https://github.com/discordjs/discord.js/releases/tag/11.1.0) 에 모든 변경 사항들과 사용 중지된 기능들이 포함되어 있습니다.\n\n# 버전 11\n\n버전 11 은 새로운 기능과 향상된 기능, 최적화 및 버그 수정이 포함되어 있습니다.\n[변경 로그](https://github.com/discordjs/discord.js/releases/tag/11.0.0) 에 모든 변경 사항들이 있습니다.\n\n## 증요한 사항\n\n- 메세지 반응과 임베드 (풍부한 글)\n- 성능 향상을 위해 uws 와 erlpack 지원\n- OAuth 애플리케이션 지원\n- 웹 배포\n\n## 주요 변경\n\n### Client.login() - 더이상 이메일 + 패스워드 로그인을 지원하지 않습니다.\n\nLogging in with an email and password has always been heavily discouraged since the advent of proper token support, but in v11 we have made the decision to completely remove the functionality, since Hammer & Chisel have [officially stated](https://github.com/hammerandchisel/discord-api-docs/issues/69#issuecomment-223886862) it simply shouldn't be done.\n\nUser accounts can still log in with tokens just like bot accounts. To obtain the token for a user account, you can log in to Discord with that account, and use Ctrl + Shift + I to open the developer tools. In the console tab, evaluating `localStorage.token` will give you the token for that account.\n\n### ClientUser.setEmail()/setPassword() now require the current password, as well as setUsername() on user accounts\n\nSince you can no longer log in with email and password, you must provide the current account password to the `setEmail()`, `setPassword()`, and `setUsername()` methods for user accounts (self-bots).\n\n### Removed TextBasedChannel.sendTTSMessage()\n\nThis method was deemed to be an entirely pointless shortcut that virtually nobody even used.\nThe same results can be achieved by passing options to `send()` or `sendMessage()`.\n\nExample:\n\n```js\nchannel.send('Hi there', { tts: true });\n```\n\n### Using Collection.find()/exists() with IDs will throw an error\n\nThis is simply to help prevent a common mistake that is made frequently.\nTo find something or check its existence using an ID, you should use `.get()` and `.has()` which are part of the [ES6 Map class](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Map), which Collection is an extension of.\n",
+                    "content": "# 버전 12.0.0\n12.0.0 버전은 많은 새롭고 개선된 기능들과 최적화, 버그 픽스들이 이루어져 있습니다.\n[변경 로그](https://github.com/discordjs/discord.js/releases/tag/12.0.0) 에 모든 변경 사항들이 있습니다.\n당신은 또한 [가이드](https://discordjs.guide/additional-info/changes-in-v12.html) 를 참고해 당신의 v11 코드를 v12 로 업데이트 할 수 있습니다.\n\n# 버전 11.1.0\n\nv11.1.0 은 게이트웨이와 음성 기능이 안정되고 개선되었습니다 또한 감사 로그 및 메시지 검색과 같은 새로운 기능을 지원합니다.\n[변경 로그](https://github.com/discordjs/discord.js/releases/tag/11.1.0) 에 모든 변경 사항들과 사용 중지된 기능들이 포함되어 있습니다.\n\n# 버전 11\n\n버전 11 은 새로운 기능과 향상된 기능, 최적화 및 버그 수정이 포함되어 있습니다.\n[변경 로그](https://github.com/discordjs/discord.js/releases/tag/11.0.0) 에 모든 변경 사항들이 있습니다.\n\n## 증요한 사항\n\n- 메세지 반응과 임베드 (풍부한 글)\n- 성능 향상을 위해 uws 와 erlpack 지원\n- OAuth 애플리케이션 지원\n- 웹 배포\n\n## 주요 변경\n\n### Client.login() - 더이상 이메일 + 패스워드 로그인을 지원하지 않습니다.\n\n적절한 토큰 지원이 출현한 이후 e-메일과 암호로 로그인하는 것은 항상 크게 좌절되었지만, v11에서는 Hammer & Chisel이 공식적으로 해서는 [안 된다고 언급](https://github.com/hammerandchisel/discord-api-docs/issues/69#issuecomment-223886862)했기 때문에 기능을 완전히 제거하기로 결정했습니다.\n\n사용자 계정은 봇 계정처럼 토큰으로 로그인할 수 있습니다. 사용자 계정에 대한 토큰을 얻으려면 해당 계정으로 Discord에 로그인하고 Ctrl + Shift + I를 사용하여 개발자 도구를 열 수 있습니다. 콘솔 탭에서 `localStorage.token`를 평가하면 해당 계정에 대한 토큰이 제공됩니다.\n\n### ClientUser.setEmail()/setPassword()에는 현재 암호와 사용자 계정의 setUsername()이 필요합니다.\n\ne-메일 및 비밀번호로 더 이상 로그인할 수 없으므로 사용자 계정(셀프봇)에 대한 `setEmail()`과 `setPassword()` 및 `setUsername()` 메서드에 현재 계정 비밀번호를 입력해야 합니다.\n\n### 제거 : TextBasedChannel.sendTTSMessage()\n\n이 방법은 사실상 아무도 사용하지 않는 전혀 무의미한 지름길로 여겨졌습니다.\n`send()` 또는 `SendMessage()` 옵션을 사용하면 동일한 결과를 얻을 수 있습니다.\n\n예시:\n\n```js\nchannel.send('안녕!', { tts: true });\n```\n\n### Collection.find()/exists()를 ID와 함께 사용하면 오류가 발생합니다.\n\n이것은 단순히 자주 일어나는 흔한 실수를 막기 위한 것입니다.\nID를 사용하여 무언가를 찾거나 존재 여부를 확인하려면 [ES6 지도 클래스](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Map)의 일부인 `.get()`와 `.has()`를 사용해야 하며, 이는 컬렉션의 extension입니다.\n",
                     "path": "docs/general/updating.md"
                 },
                 "faq": {
                     "name": "자주 물어보는 질문",
                     "type": "md",
-                    "content": "# 자주 물어보는 질문\n\n이 질문들은 가장 자주 물어보는 것들입니다.\n\n## `SyntaxError: Block-scoped declarations (let, const, function, class) not yet supported outside strict mode` 에러를 신경쓰지마세요‽\n\nNode.js 12.0.0 또는 더 최신 버전으로 업데이트하세요\n\n## 보이스는 어떻게 작동하게 하나요?\n\n- FFMPEG를 설치합니다.\n- `@discordjs/opus` 패키지 또는 `opusscript` 패키지를 설치합니다.\n @discordjs/opus는 성능이 현저하게 향상되었기 때문에 크게 선호된다.\n\n## FFMPEG는 어떻게 설치하나요?\n\n- **npm:** `npm install ffmpeg-static`\n- **Ubuntu 16.04:** `sudo apt install ffmpeg`\n- **Ubuntu 14.04:** `sudo apt-get install libav-tools`\n- **Windows:** `npm install ffmpeg-static` 또는 [AoDude의 가이드에서 FFMPEG 섹션(영문)](https://github.com/bdistin/OhGodMusicBot/blob/master/README.md#download-ffmpeg)을 확인해보세요.\n\n## @discordjs/opus를 어떻게 설정하나요?\n\n- **Ubuntu:** 간단하게 `npm install @discordjs/opus`, 를 실행하고 끝입니다. 축하합니다!\n- **Windows:**  `npm install --global --production windows-build-tools` 를 매니저 명령어 프롬포트 또는 PowerShell 에서 실행하세요.\n  그리고 `npm install @discordjs/opus` 를 실행하면 봇 디랙토리는 성공적으로 빌드할것입니다.  우후!\n\n다른 질문들은 [공식 Discord.js 가이드(영문)](https://discordjs.guide/popular-topics/common-questions.html) 에서 찾을 수 있습니다.\n만약 이곳에 써있지 않은 이슈가 있다면, 편하게  [공식 Discord.js 길드(영문)](https://discord.gg/bRCvFy9) 방문해보세요.\n항상  [문서](https://discord.js.org/#/docs/main/stable/general/welcome)를 먼저 읽어보도록하세요.\n(한국어 도움이 필요하시다면 [한국어 비공식 Discord.js 길드](https://discord.gg/TwZeg6z) 에서 도와드릴게요!)",
+                    "content": "# 자주 물어보는 질문\n\n이 질문들은 가장 자주 물어보는 것들입니다.\n\n## `SyntaxError: Block-scoped declarations (let, const, function, class) not yet supported outside strict mode` 에러를 신경쓰지마시길 바랍니다\n\nNode.js 12.0.0 또는 더 최신 버전으로 업데이트하시면 이 에러는 해결됩니다\n\n## 보이스는 어떻게 작동하게 하나요?\n\n- FFMPEG를 설치합니다.\n- `@discordjs/opus` 패키지 또는 `opusscript` 패키지를 설치합니다.\n @discordjs/opus는 성능이 현저하게 향상되었기 때문에 크게 선호된다.\n\n## FFMPEG는 어떻게 설치하나요?\n\n- **npm:** `npm install ffmpeg-static`\n- **Ubuntu 16.04:** `sudo apt install ffmpeg`\n- **Ubuntu 14.04:** `sudo apt-get install libav-tools`\n- **Windows:** `npm install ffmpeg-static` 또는 [AoDude의 가이드에서 FFMPEG 섹션(영문)](https://github.com/bdistin/OhGodMusicBot/blob/master/README.md#download-ffmpeg)을 확인해보시길 바랍니다.\n\n## @discordjs/opus를 어떻게 설정하나요?\n\n- **Ubuntu:** 간단하게 `npm install @discordjs/opus`, 를 실행하고 끝입니다. 축하합니다!\n- **Windows:**  `npm install --global --production windows-build-tools` 를 매니저 명령어 프롬포트 또는 PowerShell 에서 실행하시길 바랍니다\n  그리고 `npm install @discordjs/opus` 를 실행하면 봇 디랙토리는 성공적으로 빌드할것입니다.  우후!\n\n다른 질문들은 [공식 Discord.js 가이드(영문)](https://discordjs.guide/popular-topics/common-questions.html) 에서 찾을 수 있습니다.\n만약 이곳에 써있지 않은 이슈가 있다면, 편하게  [공식 Discord.js 길드(영문)](https://discord.gg/bRCvFy9) 방문해보세셔도 됩니다.\n항상  [문서](https://discord.js.org/#/docs/main/stable/general/welcome)를 먼저 읽어보시길 바랍니다.\n(한국어 도움이 필요하시다면 [한국어 비공식 Discord.js 길드](https://discord.gg/TwZeg6z) 에서 도와드리겠습니다!)",
                     "path": "docs/general/faq.md"
                 }
             }
@@ -34,7 +34,7 @@
                 "voice": {
                     "name": "음성",
                     "type": "md",
-                    "content": "# 음성 기능 소개\n\ndiscord.js 에서의 음성 기능은 다양한 방법으로 사용될 수 있습니다. 예를 들어, 뮤직봇이나 녹음하거나 오디오를 스트리밍 할 수 있습니다.\n\ndiscord.js 에서 `음성채널(VoiceChannel)`에 연결하면 음성을 사용하여 오디오를 스트리밍하고 수신할 수 있는 `음성연결(VoiceConnection)`을 얻을 수 있습니다.\n\n시작하기 위해, 다음을 확인해주세요:\n\n- FFmpeg - `npm install ffmpeg-static`\n- opus 인코더, 다음 중에 골라주세요:\n  - `npm install @discordjs/opus` (더 나은 성능)\n  - `npm install opusscript`\n- 좋은 인터넷 연결 상태\n\n추천하는 opus 엔진은 @discordjs/opus입니다. opusscript보다 훨씬 원할하게 작동합니다. 만약 두 개 모두 사용이 가능할 경우, discord.js 는 자동적으로 @discordjs/opus 를 선택합니다.\nopusscript를 사용하는 경우에는 단지 @ discordjs/opus를 사용하기 힘든 개발환경에서만 권장됩니다.\n개발용 봇의 경우 @discordjs/opus 사용은 필수사항이여야 하며, 특히 여러 길드에서 실행될 경우 더욱 그러해야 합니다.\n\n## 음성 채널에 접속하기\n\n아래 예시는 메세지에 응답하여, 메세지 전송자의 음성 채널에 에러를 확인하지 않고 접속합니다. 이 사항은 중요합니다.\n오디오를 스트리밍할 수 있는 `음성연결(VoiceConnection)`을 얻을 수 있기 때문이다.\n\n```js\nconst Discord = require('discord.js');\nconst client = new Discord.Client();\n\nclient.login('토큰');\n\nclient.on('message', async message => {\n  // 음성 기능은 길드에서만 작동됩니다. 길드가 아닐 경우,\n  // 무시합니다.\n  if (!message.guild) return;\n\n  if (message.content === '/join') {\n    // 유저의 음성 채널이 존재하는 경우에만 음성채널에 접속을 시도합니다.\n    if (message.member.voice.channel) {\n      const connection = await message.member.voice.channel.join();\n    } else {\n      message.reply('음성 채널에 먼저 접속해주세요!');\n    }\n  }\n});\n```\n\n## 음성채널에 스트리밍하기\n\n위 예시에서, 어떻게 음성채널에 접속하여 `음성연결VoiceConnection`을 얻을 수 있는 지 알아보았습니다. 음성연결을 제공 받았다면,\n오디오 스트리밍을 시작할 수 있습니다.\n\n### 음성연결에 플레이하기\n\n음성연결을 통해 오디오를 재생하는 가장 일반적인 예시는 로컬파일입니다. \n\n```js\nconst dispatcher = connection.play('/home/discord/audio.mp3');\n```\n\n여기서의 `dispatcher`는 `StreamDispatcher` 입니다. - 이것으로 음성연결의 볼륨 및 재생상황 제어할 수 있습니다.\n\n```js\ndispatcher.pause();\ndispatcher.resume();\n\ndispatcher.setVolume(0.5); // 볼륨을 절반으로 줄입니다.\n\ndispatcher.on('finish', () => {\n  console.log('재생이 종료되었습니다!');\n});\n\ndispatcher.destroy(); // 재생을 종료합니다.\n```\n\n또한, 먼저 재생을 시작할 때, 옵션을 설정할 수도 있습니다.\n\n```js\nconst dispatcher = connection.play('/home/discord/audio.mp3', {\n  volume: 0.5,\n});\n```\n\n### 무엇을 재생할 수 있을까요?\n\nDiscord.js 는 다음을 재생하게 해줍니다.\n\n```js\n// 재생 가능한 스트림, 예를 들어 유튜브 오디오입니다.\nconst ytdl = require('ytdl-core');\nconnection.play(ytdl('https://www.youtube.com/watch?v=ZlAU_w7-Xp8', { filter: 'audioonly' }));\n\n// 인터넷에 있는 파일\nconnection.play('http://www.sample-videos.com/audio/mp3/wave.mp3');\n\n// 로컬 파일\nconnection.play('/home/discord/audio.mp3');\n```\n\nv12의 새로운 기능은 Ffmpeg 대신 훨씬 더 나은 성능으로 OggOpus와 WebmOpus 으로 스트림을 재생하는 기능입니다. 이는 스트림에 대한 볼륨 제어를 더 이상 지원하지 않는다는 점에 유의하십시오.\n\n```js\nconnection.play(fs.createReadStream('./media.webm'), {\n  type: 'webm/opus',\n});\n\nconnection.play(fs.createReadStream('./media.ogg'), {\n  type: 'ogg/opus',\n});\n```\n\n재생할 수 있는 모든 목록은 문서를 참조하십시오. 여기에는 더 쓸게 너무 많아서요!\n\n## 음성 보르드케스트\n\n음성 보르드케스트은 여러 채널에서 동일한 오디오를 재생하는 \"라디오\" 봇에 매우 유용합니다. 오디오가 한 번만 변환되고, 성능이 훨씬 좋습니다.\n\n```js\nconst broadcast = client.voice.createBroadcast();\n\nbroadcast.on('subscribe', dispatcher => {\n  console.log('새로운 보르드케스트 구독자!');\n});\n\nbroadcast.on('unsubscribe', dispatcher => {\n  console.log('채널에서 보르드케스트 구독을 취소했습니다 :(');\n});\n```\n`broadcast`는 `VoiceBroadcast`의 한 예로서, `)`에 연결하면 음성을 사용하여 오디오를 스트리밍하고 수신할 수 있는 `음성연결(VoiceConnection)`을 얻을 수 있습니다.\n\n시작하기 위해, 다음을 확인해주세요:\n\n- FFmpeg - `npm install ffmpeg-static`\n- opus 인코더, 다음 중에 골라주세요:\n  - `npm install @discordjs/opus` (더 나은 성능)\n  - `npm install opusscript`\n- 좋은 인터넷 연결 상태\n\n추천하는 opus 엔진은 @discordjs/opus입니다. opusscript보다 훨씬 원할하게 작동합니다. 만약 두 개 모두 사용이 가능할 경우, discord.js 는 자동적으로 @discordjs/opus 를 선택합니다.\nopusscript를 사용하는 경우에는 단지 @ discordjs/opus를 사용하기 힘든 개발환경에서만 권장됩니다.\n개발용 봇의 경우 @discordjs/opus 사용은 필수사항이여야 하며, 특히 여러 길드에서 실행될 경우 더욱 그러해야 합니다.\n\n## 음성 채널에 접속하기\n\n아래 예시는 메세지에 응답하여, 메세지 전송자의 음성 채널에 에러를 확인하지 않고 접속합니다. 이 사항은 중요합니다.\n오디오를 스트리밍할 수 있는 `음성연결(VoiceConnection)`을 얻을 수 있기 때문이다.\n\n```js\nconst Discord = require('discord.js');\nconst client = new Discord.Client();\n\nclient.login('토큰');\n\nclient.on('message', async message => {\n  // 음성 기능은 길드에서만 작동됩니다. 길드가 아닐 경우,\n  // 무시합니다.\n  if (!message.guild) return;\n\n  if (message.content === '/join') {\n    // 유저의 음성 채널이 존재하는 경우에만 음성채널에 접속을 시도합니다.\n    if (message.member.voice.channel) {\n      const connection = await message.member.voice.channel.join();\n    } else {\n      message.reply('음성 채널에 먼저 접속해주세요!');\n    }\n  }\n});\n```\n\n## 음성채널에 스트리밍하기\n\n위 예시에서, 어떻게 음성채널에 접속하여 `음성연결VoiceConnection`을 얻을 수 있는 지 알아보았습니다. 음성연결을 제공 받았다면,\n오디오 스트리밍을 시작할 수 있습니다.\n\n### 음성연결에 플레이하는 방법\n\n음성연결을 통해 오디오를 재생하는 가장 일반적인 예시는 로컬파일입니다. \n\n```js\nconst dispatcher = connection.play('/home/discord/audio.mp3');\n```\n\n여기서의 `dispatcher`는 `StreamDispatcher` 입니다. - 이것으로 음성연결의 볼륨 및 재생상황 제어할 수 있습니다.\n\n```js\ndispatcher.pause();\ndispatcher.resume();\n\ndispatcher.setVolume(0.5); // 볼륨을 절반으로 줄입니다.\n\ndispatcher.on('finish', () => {\n  console.log('재생이 종료되었습니다!');\n});\n\ndispatcher.destroy(); // 재생을 종료합니다.\n```\n\n또한, 먼저 재생을 시작할 때, 옵션을 설정할 수도 있습니다.\n\n```js\nconst dispatcher = connection.play('/home/discord/audio.mp3', {\n  volume: 0.5,\n});\n```\n\n### 무엇을 재생할 수 있을까요?\n\nDiscord.js 는 다음을 재생하게 해줍니다.\n\n```js\n// 재생 가능한 스트림, 예를 들어 유튜브 오디오입니다.\nconst ytdl = require('ytdl-core');\nconnection.play(ytdl('https://www.youtube.com/watch?v=ZlAU_w7-Xp8', { filter: 'audioonly' }));\n\n// 인터넷에 있는 파일\nconnection.play('http://www.sample-videos.com/audio/mp3/wave.mp3');\n\n// 로컬 파일\nconnection.play('/home/discord/audio.mp3');\n```\n\nv12의 새로운 기능은 Ffmpeg 대신 훨씬 더 나은 성능으로 OggOpus와 WebmOpus 으로 스트림을 재생하는 기능입니다. 이는 스트림에 대한 볼륨 제어를 더 이상 지원하지 않는다는 점에 유의하십시오.\n\n```js\nconnection.play(fs.createReadStream('./media.webm'), {\n  type: 'webm/opus',\n});\n\nconnection.play(fs.createReadStream('./media.ogg'), {\n  type: 'ogg/opus',\n});\n```\n\n재생할 수 있는 모든 목록은 문서를 참조하십시오. 여기에는 더 쓸게 너무 많아서요!\n\n## 음성 보르드케스트하기\n\n음성 보르드케스트은 여러 채널에서 동일한 오디오를 재생하는 \"라디오\" 봇에 매우 유용합니다. 오디오가 한 번만 변환되고, 성능이 훨씬 좋습니다.\n\n```js\nconst broadcast = client.voice.createBroadcast();\n\nbroadcast.on('subscribe', dispatcher => {\n  console.log('새로운 보르드케스트 구독자!');\n});\n\nbroadcast.on('unsubscribe', dispatcher => {\n  console.log('채널에서 보르드케스트 구독을 취소했습니다 :(');\n});\n```\n`broadcast`는 `VoiceBroadcast`의 한 예로서, 일반 VoiceConnections 과 같은 `play` 메서드를 사용합니다.\n\n```js\nconst dispatcher = broadcast.play('./audio.mp3');\n\nconnection.play(broadcast);\n```\n\n위에 저장된 `dispatcher`는 BroadcastDispatcher라는 점을 유의해야 한다. - 이것은 보르드케스트에 등록되어 있는 모든 음성을 통제한다. 예를 들어, 이 볼륨 설정은 모든 음성의 볼륨에 영향을 미친다.\n\n## 음성 수신\n\n곧 찾아뵙겠습니다! \ncoming soon&trade;\n",
+                    "content": "# 음성 기능 소개\n\ndiscord.js 에서의 음성 기능은 다양한 방법으로 사용될 수 있습니다. 예를 들어, 뮤직봇이나 녹음하거나 오디오를 스트리밍 할 수 있습니다.\n\ndiscord.js 에서 `음성채널(VoiceChannel)`에 연결하면 음성을 사용하여 오디오를 스트리밍하고 수신할 수 있는 `음성연결(VoiceConnection)`을 얻을 수 있습니다.\n\n시작하기 위해, 다음을 확인해주시길 바랍니다:\n\n- FFmpeg - `npm install ffmpeg-static`\n- opus 인코더, 다음 중에 골라주시길 바랍니다:\n  - `npm install @discordjs/opus` (더 나은 성능)\n  - `npm install opusscript`\n- 좋은 인터넷 연결 상태\n\n추천하는 opus 엔진은 @discordjs/opus입니다. opusscript보다 훨씬 원할하게 작동합니다. 만약 두 개 모두 사용이 가능할 경우, discord.js 는 자동적으로 @discordjs/opus 를 선택합니다.\nopusscript를 사용하는 경우에는 단지 @ discordjs/opus를 사용하기 힘든 개발환경에서만 권장됩니다.\n개발용 봇의 경우 @discordjs/opus 사용은 필수사항이여야 하며, 특히 여러 길드에서 실행될 경우 더욱 그러해야 합니다.\n\n## 음성 채널에 접속하기\n\n아래 예시는 메세지에 응답하여, 메세지 전송자의 음성 채널에 에러를 확인하지 않고 접속합니다. 이 사항은 중요합니다.\n오디오를 스트리밍할 수 있는 `음성연결(VoiceConnection)`을 얻을 수 있기 때문이다.\n\n```js\nconst Discord = require('discord.js');\nconst client = new Discord.Client();\n\nclient.login('토큰');\n\nclient.on('message', async message => {\n  // 음성 기능은 길드에서만 작동됩니다. 길드가 아닐 경우,\n  // 무시합니다.\n  if (!message.guild) return;\n\n  if (message.content === '/join') {\n    // 유저의 음성 채널이 존재하는 경우에만 음성채널에 접속을 시도합니다.\n    if (message.member.voice.channel) {\n      const connection = await message.member.voice.channel.join();\n    } else {\n      message.reply('음성 채널에 먼저 접속해주세요!');\n    }\n  }\n});\n```\n\n## 음성채널에 스트리밍하기\n\n위 예시에서, 어떻게 음성채널에 접속하여 `음성연결VoiceConnection`을 얻을 수 있는 지 알아보았습니다. 음성연결을 제공 받았다면,\n오디오 스트리밍을 시작할 수 있습니다.\n\n### 음성연결에 플레이하기\n\n음성연결을 통해 오디오를 재생하는 가장 일반적인 예시는 로컬파일입니다. \n\n```js\nconst dispatcher = connection.play('/home/discord/audio.mp3');\n```\n\n여기서의 `dispatcher`는 `StreamDispatcher` 입니다. - 이것으로 음성연결의 볼륨 및 재생상황 제어할 수 있습니다.\n\n```js\ndispatcher.pause();\ndispatcher.resume();\n\ndispatcher.setVolume(0.5); // 볼륨을 절반으로 줄입니다.\n\ndispatcher.on('finish', () => {\n  console.log('재생이 종료되었습니다!');\n});\n\ndispatcher.destroy(); // 재생을 종료합니다.\n```\n\n또한, 먼저 재생을 시작할 때, 옵션을 설정할 수도 있습니다.\n\n```js\nconst dispatcher = connection.play('/home/discord/audio.mp3', {\n  volume: 0.5,\n});\n```\n\n### 무엇을 재생할 수 있을까요?\n\nDiscord.js 는 다음을 재생하게 해줍니다.\n\n```js\n// 재생 가능한 스트림, 예를 들어 유튜브 오디오입니다.\nconst ytdl = require('ytdl-core');\nconnection.play(ytdl('https://www.youtube.com/watch?v=ZlAU_w7-Xp8', { filter: 'audioonly' }));\n\n// 인터넷에 있는 파일\nconnection.play('http://www.sample-videos.com/audio/mp3/wave.mp3');\n\n// 로컬 파일\nconnection.play('/home/discord/audio.mp3');\n```\n\nv12의 새로운 기능은 Ffmpeg 대신 훨씬 더 나은 성능으로 OggOpus와 WebmOpus 으로 스트림을 재생하는 기능입니다. 이는 스트림에 대한 볼륨 제어를 더 이상 지원하지 않는다는 점에 유의하십시오.\n\n```js\nconnection.play(fs.createReadStream('./media.webm'), {\n  type: 'webm/opus',\n});\n\nconnection.play(fs.createReadStream('./media.ogg'), {\n  type: 'ogg/opus',\n});\n```\n\n재생할 수 있는 모든 목록은 문서를 참조하십시오. 여기에는 더 쓸게 너무 많아서요!\n\n## 음성 보르드케스트\n\n음성 보르드케스트은 여러 채널에서 동일한 오디오를 재생하는 \"라디오\" 봇에 매우 유용합니다. 오디오가 한 번만 변환되고, 성능이 훨씬 좋습니다.\n\n```js\nconst broadcast = client.voice.createBroadcast();\n\nbroadcast.on('subscribe', dispatcher => {\n  console.log('새로운 보르드케스트 구독자!');\n});\n\nbroadcast.on('unsubscribe', dispatcher => {\n  console.log('채널에서 보르드케스트 구독을 취소했습니다 :(');\n});\n```\n`broadcast`는 `VoiceBroadcast`의 한 예로서, `)`에 연결하면 음성을 사용하여 오디오를 스트리밍하고 수신할 수 있는 `음성연결(VoiceConnection)`을 얻을 수 있습니다.\n\n시작하기 위해, 다음을 확인해주시길 바랍니다:\n\n- FFmpeg - `npm install ffmpeg-static`\n- opus 인코더, 다음 중에 골라주시길 바랍니다:\n  - `npm install @discordjs/opus` (더 나은 성능)\n  - `npm install opusscript`\n- 좋은 인터넷 연결 상태\n\n추천하는 opus 엔진은 @discordjs/opus입니다. opusscript보다 훨씬 원할하게 작동합니다. 만약 두 개 모두 사용이 가능할 경우, discord.js 는 자동적으로 @discordjs/opus 를 선택합니다.\nopusscript를 사용하는 경우에는 단지 @ discordjs/opus를 사용하기 힘든 개발환경에서만 권장됩니다.\n개발용 봇의 경우 @discordjs/opus 사용은 필수사항이여야 하며, 특히 여러 길드에서 실행될 경우 더욱 그러해야 합니다.\n\n## 음성 채널에 접속하기\n\n아래 예시는 메세지에 응답하여, 메세지 전송자의 음성 채널에 에러를 확인하지 않고 접속합니다. 이 사항은 중요합니다.\n오디오를 스트리밍할 수 있는 `음성연결(VoiceConnection)`을 얻을 수 있기 때문이다.\n\n```js\nconst Discord = require('discord.js');\nconst client = new Discord.Client();\n\nclient.login('토큰');\n\nclient.on('message', async message => {\n  // 음성 기능은 길드에서만 작동됩니다. 길드가 아닐 경우,\n  // 무시합니다.\n  if (!message.guild) return;\n\n  if (message.content === '/join') {\n    // 유저의 음성 채널이 존재하는 경우에만 음성채널에 접속을 시도합니다.\n    if (message.member.voice.channel) {\n      const connection = await message.member.voice.channel.join();\n    } else {\n      message.reply('음성 채널에 먼저 접속해주세요!');\n    }\n  }\n});\n```\n\n## 음성채널에 스트리밍하기\n\n위 예시에서, 어떻게 음성채널에 접속하여 `음성연결VoiceConnection`을 얻을 수 있는 지 알아보았습니다. 음성연결을 제공 받았다면,\n오디오 스트리밍을 시작할 수 있습니다.\n\n### 음성연결에 플레이하는 방법\n\n음성연결을 통해 오디오를 재생하는 가장 일반적인 예시는 로컬파일입니다. \n\n```js\nconst dispatcher = connection.play('/home/discord/audio.mp3');\n```\n\n여기서의 `dispatcher`는 `StreamDispatcher` 입니다. - 이것으로 음성연결의 볼륨 및 재생상황 제어할 수 있습니다.\n\n```js\ndispatcher.pause();\ndispatcher.resume();\n\ndispatcher.setVolume(0.5); // 볼륨을 절반으로 줄입니다.\n\ndispatcher.on('finish', () => {\n  console.log('재생이 종료되었습니다!');\n});\n\ndispatcher.destroy(); // 재생을 종료합니다.\n```\n\n또한, 먼저 재생을 시작할 때, 옵션을 설정할 수도 있습니다.\n\n```js\nconst dispatcher = connection.play('/home/discord/audio.mp3', {\n  volume: 0.5,\n});\n```\n\n### 무엇을 재생할 수 있을까요?\n\nDiscord.js 는 다음을 재생하게 해줍니다.\n\n```js\n// 재생 가능한 스트림, 예를 들어 유튜브 오디오입니다.\nconst ytdl = require('ytdl-core');\nconnection.play(ytdl('https://www.youtube.com/watch?v=ZlAU_w7-Xp8', { filter: 'audioonly' }));\n\n// 인터넷에 있는 파일\nconnection.play('http://www.sample-videos.com/audio/mp3/wave.mp3');\n\n// 로컬 파일\nconnection.play('/home/discord/audio.mp3');\n```\n\nv12의 새로운 기능은 Ffmpeg 대신 훨씬 더 나은 성능으로 OggOpus와 WebmOpus 으로 스트림을 재생하는 기능입니다. 이는 스트림에 대한 볼륨 제어를 더 이상 지원하지 않는다는 점에 유의하십시오.\n\n```js\nconnection.play(fs.createReadStream('./media.webm'), {\n  type: 'webm/opus',\n});\n\nconnection.play(fs.createReadStream('./media.ogg'), {\n  type: 'ogg/opus',\n});\n```\n\n재생할 수 있는 모든 목록은 문서를 참조하십시오. 여기에는 더 쓸게 너무 많아서요!\n\n## 음성 보르드케스트하기\n\n음성 보르드케스트은 여러 채널에서 동일한 오디오를 재생하는 \"라디오\" 봇에 매우 유용합니다. 오디오가 한 번만 변환되고, 성능이 훨씬 좋습니다.\n\n```js\nconst broadcast = client.voice.createBroadcast();\n\nbroadcast.on('subscribe', dispatcher => {\n  console.log('새로운 보르드케스트 구독자!');\n});\n\nbroadcast.on('unsubscribe', dispatcher => {\n  console.log('채널에서 보르드케스트 구독을 취소했습니다 :(');\n});\n```\n`broadcast`는 `VoiceBroadcast`의 한 예로서, 일반 VoiceConnections 과 같은 `play` 메서드를 사용합니다.\n\n```js\nconst dispatcher = broadcast.play('./audio.mp3');\n\nconnection.play(broadcast);\n```\n\n위에 저장된 `dispatcher`는 BroadcastDispatcher라는 점을 유의해야 한다. - 이것은 보르드케스트에 등록되어 있는 모든 음성을 통제한다. 예를 들어, 이 볼륨 설정은 모든 음성의 볼륨에 영향을 미친다.\n\n## 음성 수신\n\n곧 찾아뵙겠습니다! \ncoming soon&trade;\n",
                     "path": "docs/topics/voice.md"
                 },
                 "web": {
@@ -87,7 +87,7 @@
                 "moderation": {
                     "name": "관리",
                     "type": "md",
-                    "content": "# 관리\n\n이곳에서는, 유저를 추방하거나 차단하는 예시를 확인하실 수 있습니다!\n\n## 유저 추방하기\n\n추방하고 싶다는 유저가 있다고 가정해봅시다. 여기 어떻게 __할 수 있는지__ 예시가 있습니다\n\n```js\n// discord.js 모듈을 인포트합니다\nconst Discord = require('discord.js');\n\n// Discord 클라이언트의 인스턴스 생성\nconst client = new Discord.Client();\n\n/**\n * ready 이벤트는 중요하며, 이 이벤트만이 봇이 정보에 반응을 시작된다는 것을 의미합니다.\n * 디스코드로 부터 정보가 전달됩니다.\n */\nclient.on('ready', () => {\n  console.log('준비되었습니다!');\n});\n\nclient.on('message', message => {\n  // 길드에서 오지 않은 메세지는 무시합니다.\n  if (!message.guild) return;\n\n  // 만약 메세지가 \"!kick\"으로 시작한다면\n  if (message.content.startsWith('!kick')) {\n  // 메시지에서 누군가를 언급한다고 가정하면, 유저가 반환됩니다.\n  // https://discord-kr.js.org/#/docs/main/master/class/messageMentions 에서 언급된 내용을 자세히 읽어보십시오.\n    const user = message.mentions.users.first();\n    // 만약 유저가 언급되었다면\n    if (user) {\n      // 유저에서 멤버 객체를 가져옵니다.\n      const member = message.guild.member(user);\n      // 만약 해당 유저가 길드에 있다면\n      if (member) {\n        /**\n         * 유저를 추방합니다.\n         * 길드 멤버에 실행하도록 하세요! \n         * 이건 아주 중요한 사항입니다!\n         */\n        member\n          .kick('감사로그에 표시될 사유를 입력해주세요 (선택) ')\n          .then(() => {\n            // 메세지 전송자에게 성공적으로 추방했다고 알려줍니다.\n            message.reply(`${user.tag}를 성공적으로 추방했습니다.`);\n          })\n          .catch(err => {\n            // 에러가 발생하였습니다.\n            // 이 에러는 보통 봇이 유저를 추방할 수 없을 때 발생합니다.\n            // 권한이 부족하거나, 역할의 낮을 때\n            message.reply('유저 추방에 실패하였습니다.');\n            // 에러를 출력합니다.\n            console.error(err);\n          });\n      } else {\n        // 언급된 유저가 길드에 존재하지 않을 때\n        message.reply(\"해당 유저는 길드에 존재하지 않습니다!\");\n      }\n      // 유저가 언급되지 않았을 때\n    } else {\n      message.reply(\"추방할 유저를 언급하지 않았습니다!\");\n    }\n  }\n});\n\n// https://discordapp.com/developers/applications/me 에 있는 토큰을 이용하여 봇에로그인하세요\nclient.login('토큰');\n```\n\n결과:\n\n![결과 이미지](/static/kick-example.png)\n\n## 유저 차단하기\n\n차단은 추방과 같은 방식으로 작동하지만, 바꿀 수 있는 옵션이 약간 더 많다.\n\n```js\n// 길드에서 오지 않은 메세지는 무시합니다.\nconst Discord = require('discord.js');\n\n// Discord 클라이언트의 인스턴스 생성\nconst client = new Discord.Client();\n\n/**\n * ready 이벤트는 중요하며, 이 이벤트만이 봇이 정보에 반응을 시작된다는 것을 의미합니다.\n * 디스코드로 부터 정보가 전달됩니다.\n */\nclient.on('ready', () => {\n  console.log('준비되었습니다.');\n});\n\nclient.on('message', message => {\n  // 언급된 유저가 길드에 존재하지 않을 때\n  if (!message.guild) return;\n\n  // 만약 메세지가 \"!ban\"으로 시작한다면\n  if (message.content.startsWith('!ban')) {\n  // 메시지에서 누군가를 언급한다고 가정하면, 유저가 반환됩니다.\n  // https://discord-kr.js.org/#/docs/main/master/class/messageMentions 에서 언급된 내용을 자세히 읽어보십시오.\n    const user = message.mentions.users.first();\n    // 만약 해당 유저가 길드에 있다면\n    if (user) {\n      // 유저에서 멤버 객체를 가져옵니다.\n      const member = message.guild.member(user);\n      // 만약 해당 유저가 길드에 있다면\n      if (member) {\n        /**\n         * 유저를 차단합니다.\n         * 길드 멤버에 실행하도록 하세요! \n         * 이건 아주 중요한 사항입니다!\n         * 옵션에 대해 더 알아보고 싶다면\n         * https://discord-kr.js.org/#/docs/main/master/class/GuildMember?scrollTo=ban 를 참고하세요\n         */\n    \n        member\n          .ban({\n            reason: '나빠요!?',\n          })\n          .then(() => {\n            // 메세지 전송자에게 성공적으로 차단했다고 알려줍니다.\n            message.reply(`${user.tag}를 성공적으로 차단했습니다.`);\n          })\n          .catch(err => {\n            // 에러가 발생하였습니다.\n            // 이 에러는 보통 봇이 유저를 차단할 수 없을 때 발생합니다.\n            // 권한이 부족하거나, 역할의 낮을 때\n            message.reply('유저 추방에 실패하였습니다.');\n            // 에러를 출력합니다.\n            console.error(err);\n          });\n      } else {\n        // 언급된 유저가 길드에 존재하지 않을 때\n        message.reply(\"That user isn't in this guild!\");\n      }\n    } else {\n      // 유저가 언급되지 않았을 때\n      message.reply(\"추방할 유저를 언급하지 않았습니다!\");\n    }\n  }\n});\n\n// https://discordapp.com/developers/applications/me 에 있는 토큰을 이용하여 봇에로그인하세요\nclient.login('토큰');\n```\n\nAnd the result is:\n\n![Image showing the result](/static/ban-example.png)\n",
+                    "content": "# 관리\n\n이곳에서는, 유저를 추방하거나 차단하는 예시를 확인하실 수 있습니다!\n\n## 유저 추방하기\n\n추방하고 싶다는 유저가 있다고 가정해봅시다. 여기 어떻게 __할 수 있는지__ 예시가 있습니다\n\n```js\n// discord.js 모듈을 인포트합니다\nconst Discord = require('discord.js');\n\n// Discord 클라이언트의 인스턴스 생성\nconst client = new Discord.Client();\n\n/**\n * ready 이벤트는 중요하며, 이 이벤트만이 봇이 정보에 반응을 시작된다는 것을 의미합니다.\n * 디스코드로 부터 정보가 전달됩니다.\n */\nclient.on('ready', () => {\n  console.log('준비되었습니다!');\n});\n\nclient.on('message', message => {\n  // 길드에서 오지 않은 메세지는 무시합니다.\n  if (!message.guild) return;\n\n  // 만약 메세지가 \"!kick\"으로 시작한다면\n  if (message.content.startsWith('!kick')) {\n  // 메시지에서 누군가를 언급한다고 가정하면, 유저가 반환됩니다.\n  // https://discord-kr.js.org/#/docs/main/master/class/messageMentions 에서 언급된 내용을 자세히 읽어보십시오.\n    const user = message.mentions.users.first();\n    // 만약 유저가 언급되었다면\n    if (user) {\n      // 유저에서 멤버 객체를 가져옵니다.\n      const member = message.guild.member(user);\n      // 만약 해당 유저가 길드에 있다면\n      if (member) {\n        /**\n         * 유저를 추방합니다.\n         * 길드 멤버에 실행하도록 하시길 바랍니다 \n         * 이건 아주 중요한 사항입니다!\n         */\n        member\n          .kick('감사로그에 표시될 사유를 입력해주세요 (선택) ')\n          .then(() => {\n            // 메세지 전송자에게 성공적으로 추방했다고 알려줍니다.\n            message.reply(`${user.tag}를 성공적으로 추방했습니다.`);\n          })\n          .catch(err => {\n            // 에러가 발생하였습니다.\n            // 이 에러는 보통 봇이 유저를 추방할 수 없을 때 발생합니다.\n            // 권한이 부족하거나, 역할의 낮을 때\n            message.reply('유저 추방에 실패하였습니다.');\n            // 에러를 출력합니다.\n            console.error(err);\n          });\n      } else {\n        // 언급된 유저가 길드에 존재하지 않을 때\n        message.reply(\"해당 유저는 길드에 존재하지 않습니다!\");\n      }\n      // 유저가 언급되지 않았을 때\n    } else {\n      message.reply(\"추방할 유저를 언급하지 않았습니다!\");\n    }\n  }\n});\n\n// https://discordapp.com/developers/applications/me 에 있는 토큰을 이용하여 봇에로그인하세요\nclient.login('토큰');\n```\n\n결과:\n\n![결과 이미지](/static/kick-example.png)\n\n## 유저 차단하기\n\n차단은 추방과 같은 방식으로 작동하지만, 바꿀 수 있는 옵션이 약간 더 많다.\n\n```js\n// 길드에서 오지 않은 메세지는 무시합니다.\nconst Discord = require('discord.js');\n\n// Discord 클라이언트의 인스턴스 생성\nconst client = new Discord.Client();\n\n/**\n * ready 이벤트는 중요하며, 이 이벤트만이 봇이 정보에 반응을 시작된다는 것을 의미합니다.\n * 디스코드로 부터 정보가 전달됩니다.\n */\nclient.on('ready', () => {\n  console.log('준비되었습니다.');\n});\n\nclient.on('message', message => {\n  // 언급된 유저가 길드에 존재하지 않을 때\n  if (!message.guild) return;\n\n  // 만약 메세지가 \"!ban\"으로 시작한다면\n  if (message.content.startsWith('!ban')) {\n  // 메시지에서 누군가를 언급한다고 가정하면, 유저가 반환됩니다.\n  // https://discord-kr.js.org/#/docs/main/master/class/messageMentions 에서 언급된 내용을 자세히 읽어보십시오.\n    const user = message.mentions.users.first();\n    // 만약 해당 유저가 길드에 있다면\n    if (user) {\n      // 유저에서 멤버 객체를 가져옵니다.\n      const member = message.guild.member(user);\n      // 만약 해당 유저가 길드에 있다면\n      if (member) {\n        /**\n         * 유저를 차단합니다.\n         * 길드 멤버에 실행하도록 하시길 바랍니다! \n         * 이건 아주 중요한 사항입니다!\n         * 옵션에 대해 더 알아보고 싶다면\n         * https://discord-kr.js.org/#/docs/main/master/class/GuildMember?scrollTo=ban 를 참고하시길 바랍니다\n         */\n    \n        member\n          .ban({\n            reason: '나빠요!?',\n          })\n          .then(() => {\n            // 메세지 전송자에게 성공적으로 차단했다고 알려줍니다.\n            message.reply(`${user.tag}를 성공적으로 차단했습니다.`);\n          })\n          .catch(err => {\n            // 에러가 발생하였습니다.\n            // 이 에러는 보통 봇이 유저를 차단할 수 없을 때 발생합니다.\n            // 권한이 부족하거나, 역할의 낮을 때\n            message.reply('유저 추방에 실패하였습니다.');\n            // 에러를 출력합니다.\n            console.error(err);\n          });\n      } else {\n        // 언급된 유저가 길드에 존재하지 않을 때\n        message.reply(\"That user isn't in this guild!\");\n      }\n    } else {\n      // 유저가 언급되지 않았을 때\n      message.reply(\"추방할 유저를 언급하지 않았습니다!\");\n    }\n  }\n});\n\n// https://discordapp.com/developers/applications/me 에 있는 토큰을 이용하여 봇에로그인하세요\nclient.login('토큰');\n```\n\nAnd the result is:\n\n![Image showing the result](/static/ban-example.png)\n",
                     "path": "docs/examples/moderation.md"
                 },
                 "webhook": {
@@ -580,7 +580,7 @@
                 },
                 {
                     "name": "channels",
-                    "description": "ID로 매핑된, 클라이언트가 현재 핸들링하고 있는 모든 {@link Channel} -\n만약 샤딩을 사용하고 있지 않다면, 봇이 멤버인 *모든* 길드에 있는 *모든* 채널에 해당합니다.\nDM 채널은 초기에 캐싱되지 않으므로 존재하지 않는다는 점에 유의하세요.\n매니저가 명시적으로 가져오거나 사용하지 않는 경우에 해당합니다.",
+                    "description": "ID로 매핑된, 클라이언트가 현재 핸들링하고 있는 모든 {@link Channel} -\n만약 샤딩을 사용하고 있지 않다면, 봇이 멤버인 *모든* 길드에 있는 *모든* 채널에 해당합니다.\nDM 채널은 초기에 캐싱되지 않으므로 존재하지 않는다는 점에 유의하시길 바랍니다.\n매니저가 명시적으로 가져오거나 사용하지 않는 경우에 해당합니다.",
                     "type": [
                         [
                             [
@@ -1011,14 +1011,14 @@
                 },
                 {
                     "name": "sweepMessages",
-                    "description": "모든 텍스트 기반 채널의 메시지를 스위프하고 최대 메시지 수명보다 오래된 메시지를 제거하세요.\n메시지가 수정된 경우, 원본 메시지의 시간이 아닌 메세지 수정 시간이 사용됩니다.",
+                    "description": "모든 텍스트 기반 채널의 메시지를 스위프하고 최대 메시지 수명보다 오래된 메시지를 제거합니다.\n메시지가 수정된 경우, 원본 메시지의 시간이 아닌 메세지 수정 시간이 사용됩니다.",
                     "examples": [
                         "// 1800초보다 오래된 모든 메세지를 메세지 캐시에서 삭제합니다.\nconst amount = client.sweepMessages(1800);\nconsole.log(`성공적으로 ${amount} 개의 메세지가 메세지 캐시에서 삭제되었습니다.`);"
                     ],
                     "params": [
                         {
                             "name": "lifetime",
-                            "description": "이것보다 오래된 메세지 (단위: 초)\n캐시에서 삭제될겁니다. 기본값은 {@link ClientOptions#messageCacheLifetime} 를 참고하세요",
+                            "description": "이것보다 오래된 메세지 (단위: 초)\n캐시에서 삭제될겁니다. 기본값은 {@link ClientOptions#messageCacheLifetime} 를 참고하시길 바랍니다",
                             "optional": true,
                             "default": "this.options.messageCacheLifetime",
                             "type": [
@@ -1161,7 +1161,7 @@
                 },
                 {
                     "name": "setTimeout",
-                    "description": "클라이언트가 종료되면 자동으로 취소되는 setTimeout을 설정하십시오.",
+                    "description": "클라이언트가 종료되면 자동으로 취소되는 setTimeout을 설정하시길 바랍니다.",
                     "inherits": "BaseClient#setTimeout",
                     "inherited": true,
                     "params": [
@@ -1178,7 +1178,7 @@
                         },
                         {
                             "name": "delay",
-                            "description": "실행하기 전 기다릴 시간 (밀리초)",
+                            "description": "실행하기 전 기다릴 시간 (밀리초(ms))",
                             "type": [
                                 [
                                     [
@@ -1313,7 +1313,7 @@
                 },
                 {
                     "name": "setImmediate",
-                    "description": "클라이언트가 종료되면 자동으로 취소되는 Immediate를 설정한다.",
+                    "description": "클라이언트가 종료되면 자동으로 취소되는 Immediate를 설정합니다.",
                     "inherits": "BaseClient#setImmediate",
                     "inherited": true,
                     "params": [
@@ -1467,7 +1467,7 @@
                 },
                 {
                     "name": "guildUnavailable",
-                    "description": "길드가 사용 불가능 할 때 실행됩니다. 예를 들어, 길드가 복구 중일때",
+                    "description": "길드가 사용 불가능 할 때 실행됩니다. 예를 들어, 길드가 복구 중일 때 실행됩니다",
                     "params": [
                         {
                             "name": "guild",
@@ -12286,11 +12286,11 @@
                 },
                 {
                     "name": "respawn",
-                    "description": "Kills and restarts the shard's process/worker.",
+                    "description": "샤드의 프로세스/워커를 종료하고, 재시작합니다.",
                     "params": [
                         {
                             "name": "delay",
-                            "description": "How long to wait between killing the process/worker and restarting it (in milliseconds)",
+                            "description": "샤드의 프로세스/워커를 종료하고 몇 초 뒤에 재시작할것인지(밀리초)",
                             "optional": true,
                             "default": 500,
                             "type": [
@@ -12303,7 +12303,7 @@
                         },
                         {
                             "name": "spawnTimeout",
-                            "description": "The amount in milliseconds to wait until the {@link Client} has become ready\nbefore resolving. (-1 or Infinity for no wait)",
+                            "description": "해결 전에 {@link Client}이(가) 준비될 때까지 기다리는 시간(밀리초)입니다. (-1 or Infinity for no wait)",
                             "optional": true,
                             "default": 30000,
                             "type": [
@@ -12336,11 +12336,11 @@
                 },
                 {
                     "name": "send",
-                    "description": "Sends a message to the shard's process/worker.",
+                    "description": "샤드의 프로세스/워커에게 메시지를 보냅니다",
                     "params": [
                         {
                             "name": "message",
-                            "description": "Message to send to the shard",
+                            "description": "샤드에 보낼 메시지입니다.",
                             "type": [
                                 [
                                     "*"
@@ -12368,14 +12368,14 @@
                 },
                 {
                     "name": "fetchClientValue",
-                    "description": "Fetches a client property value of the shard.",
+                    "description": "샤드의 클라이언트 속성 값을 가져옵니다.",
                     "examples": [
-                        "shard.fetchClientValue('guilds.cache.size')\n  .then(count => console.log(`${count} guilds in shard ${shard.id}`))\n  .catch(console.error);"
+                        "shard.fetchClientValue('guilds.cache.size')\n  .then(count => console.log(`${count} 개의 길드가 ${shard.id}번 샤드에 소속되어 있습니다`))\n  .catch(console.error);"
                     ],
                     "params": [
                         {
                             "name": "prop",
-                            "description": "Name of the client property to get, using periods for nesting",
+                            "description": "periods을 사용하여 가져올 클라이언트 속성의 이름입니다.",
                             "type": [
                                 [
                                     [
@@ -12405,11 +12405,11 @@
                 },
                 {
                     "name": "eval",
-                    "description": "Evaluates a script or function on the shard, in the context of the {@link Client}.",
+                    "description": "{@link Client}의 컨텍스트에서 샤드의 스크립트 또는 기능을 평가합니다.",
                     "params": [
                         {
                             "name": "script",
-                            "description": "JavaScript to run on the shard",
+                            "description": "시드에서 실행할 JavaScript입니다.",
                             "type": [
                                 [
                                     [
@@ -12437,7 +12437,7 @@
                                 ]
                             ]
                         ],
-                        "description": "Result of the script execution"
+                        "description": "스크립트 실행 결과입니다."
                     },
                     "meta": {
                         "line": 257,
@@ -12447,12 +12447,12 @@
                 },
                 {
                     "name": "_handleMessage",
-                    "description": "Handles a message received from the child process/worker.",
+                    "description": "하위 프로세스/작업자로부터 수신된 메시지를 처리합니다.",
                     "access": "private",
                     "params": [
                         {
                             "name": "message",
-                            "description": "Message received",
+                            "description": "메시지가 수신됨",
                             "type": [
                                 [
                                     "*"
@@ -12468,12 +12468,12 @@
                 },
                 {
                     "name": "_handleExit",
-                    "description": "Handles the shard's process/worker exiting.",
+                    "description": "종료하는 샤드의 프로세스/작업자를 처리합니다.",
                     "access": "private",
                     "params": [
                         {
                             "name": "respawn",
-                            "description": "Whether to spawn the shard again",
+                            "description": "샤드를 다시 스폰",
                             "optional": true,
                             "default": "this.manager.respawn",
                             "type": [
@@ -12495,11 +12495,11 @@
             "events": [
                 {
                     "name": "spawn",
-                    "description": "Emitted upon the creation of the shard's child process/worker.",
+                    "description": "Shard의 하위 프로세스/작업자를 생성할 때 종료됩니다.",
                     "params": [
                         {
                             "name": "process",
-                            "description": "Child process/worker that was created",
+                            "description": "생성된 하위 프로세스/작업자입니다.",
                             "type": [
                                 [
                                     [
@@ -12522,7 +12522,7 @@
                 },
                 {
                     "name": "ready",
-                    "description": "Emitted upon the shard's {@link Client#ready} event.",
+                    "description": "샤드의 {@link Client#ready} 이벤트에서 방출됩니다.",
                     "meta": {
                         "line": 294,
                         "file": "Shard.js",
@@ -12531,7 +12531,7 @@
                 },
                 {
                     "name": "disconnect",
-                    "description": "Emitted upon the shard's {@link Client#disconnect} event.",
+                    "description": "샤드의 {@link Client#disconnect} 이벤트에서 방출됩니다.",
                     "meta": {
                         "line": 305,
                         "file": "Shard.js",
@@ -12540,7 +12540,7 @@
                 },
                 {
                     "name": "reconnecting",
-                    "description": "Emitted upon the shard's {@link Client#reconnecting} event.",
+                    "description": "샤드의 {@link Client#reconnecting} 이벤트에서 방출됩니다.",
                     "meta": {
                         "line": 316,
                         "file": "Shard.js",
@@ -12549,7 +12549,7 @@
                 },
                 {
                     "name": "message",
-                    "description": "Emitted upon receiving a message from the child process/worker.",
+                    "description": "하위 프로세스/작업자로부터 메시지를 수신할 때 전송됩니다.",
                     "params": [
                         {
                             "name": "message",
@@ -12569,7 +12569,7 @@
                 },
                 {
                     "name": "death",
-                    "description": "Emitted upon the shard's child process/worker exiting.",
+                    "description": "하위 프로세스/작업자가 종료될 때 방출됩니다.",
                     "params": [
                         {
                             "name": "process",
@@ -12603,13 +12603,13 @@
         },
         {
             "name": "ShardClientUtil",
-            "description": "Helper class for sharded clients spawned as a child process/worker, such as from a {@link ShardingManager}.\nUtilises IPC to send and receive data to/from the master process and other shards.",
+            "description": "{@link ShardingManager}에서와 같이 하위 프로세스/작업자로 생성된 shadded 클라이언트의 도우미 클래스입니다.\nUtiles IPC를 사용하여 마스터 프로세스 및 기타 파드에서 데이터를 주고받습니다.",
             "construct": {
                 "name": "ShardClientUtil",
                 "params": [
                     {
                         "name": "client",
-                        "description": "Client of the current shard",
+                        "description": "현재 샤드의 클라이언트입니다.",
                         "type": [
                             [
                                 [
@@ -12620,7 +12620,7 @@
                     },
                     {
                         "name": "mode",
-                        "description": "Mode the shard was spawned with",
+                        "description": "모드 샤드가 다음과 함께 생성되었습니다.",
                         "type": [
                             [
                                 [
@@ -12634,7 +12634,7 @@
             "props": [
                 {
                     "name": "client",
-                    "description": "Client for the shard",
+                    "description": "샤드를 위한 클라이언트입니다.",
                     "type": [
                         [
                             [
@@ -12650,7 +12650,7 @@
                 },
                 {
                     "name": "mode",
-                    "description": "Mode the shard was spawned with",
+                    "description": "mode 샤드가 다음과 함께 생성되었습니다.",
                     "type": [
                         [
                             [
@@ -12666,7 +12666,7 @@
                 },
                 {
                     "name": "parentPort",
-                    "description": "Message port for the master process (only when {@link ShardClientUtil#mode} is `worker`)",
+                    "description": "마스터 프로세스의 메시지 포트입니다({@link ShardClientUtil#mode}이(가) `worker`인 경우에만).",
                     "nullable": true,
                     "type": [
                         [
@@ -12683,7 +12683,7 @@
                 },
                 {
                     "name": "ids",
-                    "description": "Array of shard IDs of this client",
+                    "description": "이 클라이언트의 샤드 ID 배열입니다.",
                     "readonly": true,
                     "type": [
                         [
@@ -12705,7 +12705,7 @@
                 },
                 {
                     "name": "count",
-                    "description": "Total number of shards",
+                    "description": "전체 샤드의 개수입니다.",
                     "readonly": true,
                     "type": [
                         [
@@ -12724,7 +12724,7 @@
             "methods": [
                 {
                     "name": "send",
-                    "description": "Sends a message to the master process.",
+                    "description": "마스터 프로세스로 메시지를 보냅니다.",
                     "params": [
                         {
                             "name": "message",
@@ -12756,7 +12756,7 @@
                 },
                 {
                     "name": "fetchClientValues",
-                    "description": "Fetches a client property value of each shard.",
+                    "description": "각 샤드의 클라이언트 속성 값을 가져옵니다.",
                     "see": [
                         "{@link ShardingManager#fetchClientValues}"
                     ],
@@ -12766,7 +12766,7 @@
                     "params": [
                         {
                             "name": "prop",
-                            "description": "Name of the client property to get, using periods for nesting",
+                            "description": "Periods을(를) 사용하여 가져올 클라이언트 속성의 이름입니다.",
                             "type": [
                                 [
                                     [
@@ -12800,7 +12800,7 @@
                 },
                 {
                     "name": "broadcastEval",
-                    "description": "Evaluates a script or function on all shards, in the context of the {@link Clients}.",
+                    "description": "{@link Clients} 컨텍스트에서 모든 샤드의 스크립트 또는 기능을 평가합니다.",
                     "see": [
                         "{@link ShardingManager#broadcastEval}"
                     ],
@@ -12810,7 +12810,7 @@
                     "params": [
                         {
                             "name": "script",
-                            "description": "JavaScript to run on each shard",
+                            "description": "각 샤드에서 실행할 JavaScript입니다.",
                             "type": [
                                 [
                                     [
@@ -12842,7 +12842,7 @@
                                 ]
                             ]
                         ],
-                        "description": "Results of the script execution"
+                        "description": "스크립트 실행 결과입니다."
                     },
                     "meta": {
                         "line": 136,
@@ -12852,14 +12852,14 @@
                 },
                 {
                     "name": "respawnAll",
-                    "description": "Requests a respawn of all shards.",
+                    "description": "모든 샤드의 리스폰을 요청합니다.",
                     "see": [
                         "{@link ShardingManager#respawnAll}"
                     ],
                     "params": [
                         {
                             "name": "shardDelay",
-                            "description": "How long to wait between shards (in milliseconds)",
+                            "description": "파편 사이에 얼마나 오래 기다려야 하는지 (밀리초)",
                             "optional": true,
                             "default": 5000,
                             "type": [
@@ -12872,7 +12872,7 @@
                         },
                         {
                             "name": "respawnDelay",
-                            "description": "How long to wait between killing a shard's process/worker and restarting it\n(in milliseconds)",
+                            "description": "샤드의 프로세스/작업자를 죽이고 다시 시작하는 동안 대기하는 시간\n(밀리초)",
                             "optional": true,
                             "default": 500,
                             "type": [
@@ -12885,7 +12885,7 @@
                         },
                         {
                             "name": "spawnTimeout",
-                            "description": "The amount in milliseconds to wait for a shard to become ready before\ncontinuing to another. (-1 or Infinity for no wait)",
+                            "description": "다른 샤드가 준비될 때까지 기다리는 시간(밀리초)입니다. (-1 or Infinity for no wait)",
                             "optional": true,
                             "default": 30000,
                             "type": [
@@ -12910,7 +12910,7 @@
                                 ]
                             ]
                         ],
-                        "description": "Resolves upon the message being sent"
+                        "description": "보내는 메시지에 따라 해결합니다."
                     },
                     "meta": {
                         "line": 166,
@@ -12920,7 +12920,7 @@
                 },
                 {
                     "name": "_handleMessage",
-                    "description": "Handles an IPC message.",
+                    "description": "IPC 메시지를 처리합니다.",
                     "access": "private",
                     "params": [
                         {
@@ -12942,12 +12942,12 @@
                 },
                 {
                     "name": "_respond",
-                    "description": "Sends a message to the master process, emitting an error from the client upon failure.",
+                    "description": "오류 발생 시 클라이언트에서 오류를 발생시키는 메시지를 마스터 프로세스로 보냅니다.",
                     "access": "private",
                     "params": [
                         {
                             "name": "type",
-                            "description": "Type of response to send",
+                            "description": "보낼 응답 유형",
                             "type": [
                                 [
                                     [
@@ -12958,7 +12958,7 @@
                         },
                         {
                             "name": "message",
-                            "description": "Message to send",
+                            "description": "보낼 메시지",
                             "type": [
                                 [
                                     "*"
@@ -12974,7 +12974,7 @@
                 },
                 {
                     "name": "singleton",
-                    "description": "Creates/gets the singleton of this class.",
+                    "description": "이 클래스의 singleton을 만들거나 가져옵니다.",
                     "scope": "static",
                     "params": [
                         {
@@ -12990,7 +12990,7 @@
                         },
                         {
                             "name": "mode",
-                            "description": "Mode the shard was spawned with",
+                            "description": "mode 샤드가 다음과 함께 생성되었습니다.",
                             "type": [
                                 [
                                     [
@@ -13022,7 +13022,7 @@
         },
         {
             "name": "ShardingManager",
-            "description": "This is a utility class that makes multi-process sharding of a bot an easy and painless experience.\nIt works by spawning a self-contained {@link ChildProcess} or {@link Worker} for each individual shard, each\ncontaining its own instance of your bot's {@link Client}. They all have a line of communication with the master\nprocess, and there are several useful methods that utilise it in order to simplify tasks that are normally difficult\nwith sharding. It can spawn a specific number of shards or the amount that Discord suggests for the bot, and takes a\npath to your main bot script to launch for each one.",
+            "description": "봇의 다중 공정 샤딩을 쉽고 고통 없는 체험으로 만드는 유틸리티 클래스입니다.\n각 개별 샤드에 대해 자체 포함 {@link ChildProcess} 또는 {@link Worker}을(를) 생성하는 방식으로 작동하며, 각각에는 봇의 {@link Client} 인스턴스가 포함되어 있습니다. 모두 master process와 통신을 할 수 있으며, 일반적으로 어려운 작업을 단순화하기 위해 이를 활용하는 몇 가지 유용한 방법이 있습니다. 특정 수의 샤드 또는 Discord가 봇에 대해 제안하는 양을 생성할 수 있으며, 각 파트에 대해 시작하려면 메인 봇 스크립트로 이동해야 합니다.",
             "extends": [
                 [
                     [
