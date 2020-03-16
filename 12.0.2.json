@@ -14320,7 +14320,7 @@
                 },
                 {
                     "name": "rawPosition",
-                    "description": "The raw position of the channel from discord",
+                    "description": "디스코드에서 채널의 원래 위치",
                     "type": [
                         [
                             [
@@ -14336,7 +14336,7 @@
                 },
                 {
                     "name": "parentID",
-                    "description": "The ID of the category parent of this channel",
+                    "description": "이 채널의 카테고리 상위 ID",
                     "nullable": true,
                     "type": [
                         [
@@ -14353,7 +14353,7 @@
                 },
                 {
                     "name": "permissionOverwrites",
-                    "description": "A map of permission overwrites in this channel for roles and users",
+                    "description": "이 채널에서 역할 및 사용자에 대한 권한 맵을 덮어씀",
                     "type": [
                         [
                             [
@@ -14378,7 +14378,7 @@
                 },
                 {
                     "name": "parent",
-                    "description": "The category parent of this channel",
+                    "description": "이 채널의 상위 카테고리",
                     "readonly": true,
                     "nullable": true,
                     "type": [
@@ -14396,7 +14396,7 @@
                 },
                 {
                     "name": "permissionsLocked",
-                    "description": "If the permissionOverwrites match the parent channel, null if no parent",
+                    "description": "permissionOverwrites가 상위 채널과 일치하면, 상위 채널이 없으면 null",
                     "readonly": true,
                     "nullable": true,
                     "type": [
@@ -14414,7 +14414,7 @@
                 },
                 {
                     "name": "position",
-                    "description": "The position of the channel",
+                    "description": "채널의 위치",
                     "readonly": true,
                     "type": [
                         [
@@ -14431,7 +14431,7 @@
                 },
                 {
                     "name": "members",
-                    "description": "A collection of members that can see this channel, mapped by their ID",
+                    "description": "이 채널을 볼 수 있고 회원 ID로 구성 된 회원 리스트",
                     "readonly": true,
                     "type": [
                         [
@@ -14457,7 +14457,7 @@
                 },
                 {
                     "name": "deletable",
-                    "description": "Whether the channel is deletable by the client user",
+                    "description": "클라이언트 사용자가 채널을 삭제할 수 있는지 여부",
                     "readonly": true,
                     "type": [
                         [
@@ -14474,7 +14474,7 @@
                 },
                 {
                     "name": "manageable",
-                    "description": "Whether the channel is manageable by the client user",
+                    "description": "클라이언트 사용자가 채널을 관리 할 수 있는지 여부",
                     "readonly": true,
                     "type": [
                         [
@@ -14491,7 +14491,7 @@
                 },
                 {
                     "name": "viewable",
-                    "description": "Whether the channel is viewable by the client user",
+                    "description": "클라이언트 사용자가 채널을 볼 수 있는지 여부",
                     "readonly": true,
                     "type": [
                         [
@@ -14508,7 +14508,7 @@
                 },
                 {
                     "name": "type",
-                    "description": "The type of the channel, either:\n* `dm` - a DM channel\n* `text` - a guild text channel\n* `voice` - a guild voice channel\n* `category` - a guild category channel\n* `news` - a guild news channel\n* `store` - a guild store channel\n* `unknown` - a generic channel of unknown type, could be Channel or GuildChannel",
+                    "description": "채널의 유형 중 하나 :\n* `dm` - DM channel\n* `text` - 길드의 텍스트 채널\n* `voice` - 길드의 보이스 채널\n* `category` - 길드의 카테고리 채널\n* `news` - 길드의 뉴스 채널\n* `store` - 길드의 스토어 채널\n* `unknown` -알 수없는 유형의 일반 채널은 Channel 또는 GuildChannel 일 수 있음",
                     "type": [
                         [
                             [
@@ -14524,7 +14524,7 @@
                 },
                 {
                     "name": "deleted",
-                    "description": "Whether the channel has been deleted",
+                    "description": "채널이 삭제되었는지 여부",
                     "type": [
                         [
                             [
@@ -14540,7 +14540,7 @@
                 },
                 {
                     "name": "id",
-                    "description": "The unique ID of the channel",
+                    "description": "채널의 고유 ID",
                     "type": [
                         [
                             [
@@ -14556,7 +14556,7 @@
                 },
                 {
                     "name": "createdTimestamp",
-                    "description": "The timestamp the channel was created at",
+                    "description": "채널이 생성 된 타임 스탬프(timestamp)",
                     "readonly": true,
                     "type": [
                         [
@@ -14573,7 +14573,7 @@
                 },
                 {
                     "name": "createdAt",
-                    "description": "The time the channel was created at",
+                    "description": "채널이 생성 된 시간",
                     "readonly": true,
                     "type": [
                         [
@@ -14590,7 +14590,7 @@
                 },
                 {
                     "name": "client",
-                    "description": "The client that instantiated this",
+                    "description": "이것을 인스턴스화(instantiated) 한 클라이언트",
                     "readonly": true,
                     "type": [
                         [
@@ -14609,13 +14609,13 @@
             "methods": [
                 {
                     "name": "permissionsFor",
-                    "description": "Gets the overall set of permissions for a member or role in this channel, taking into account channel overwrites.",
+                    "description": "채널 덮어 쓰기를 고려 하여 이 채널의 멤버 또는 역할에 대한 전체 권한 집합을 가져옵니다.",
                     "inherits": "GuildChannel#permissionsFor",
                     "inherited": true,
                     "params": [
                         {
                             "name": "memberOrRole",
-                            "description": "The member or role to obtain the overall permissions for",
+                            "description": "전체 권한을 얻는 유저 또는 역할",
                             "type": [
                                 [
                                     [
@@ -14653,14 +14653,14 @@
                 },
                 {
                     "name": "memberPermissions",
-                    "description": "Gets the overall set of permissions for a member in this channel, taking into account channel overwrites.",
+                    "description": "채널 덮어 쓰기를 고려하여이 채널의 멤버에 대한 전체 권한 세트를 가져옵니다.",
                     "access": "private",
                     "inherits": "GuildChannel#memberPermissions",
                     "inherited": true,
                     "params": [
                         {
                             "name": "member",
-                            "description": "The member to obtain the overall permissions for",
+                            "description": "전체 권한을 얻는 유저",
                             "type": [
                                 [
                                     [
@@ -14690,14 +14690,14 @@
                 },
                 {
                     "name": "rolePermissions",
-                    "description": "Gets the overall set of permissions for a role in this channel, taking into account channel overwrites.",
+                    "description": "채널 덮어 쓰기를 고려하여이 채널의 역할에 대한 전체 권한 집합을 가져옵니다.",
                     "access": "private",
                     "inherits": "GuildChannel#rolePermissions",
                     "inherited": true,
                     "params": [
                         {
                             "name": "role",
-                            "description": "The role to obtain the overall permissions for",
+                            "description": "전체 권한을 얻는 역할",
                             "type": [
                                 [
                                     [
@@ -14727,16 +14727,16 @@
                 },
                 {
                     "name": "overwritePermissions",
-                    "description": "Replaces the permission overwrites in this channel.",
+                    "description": "이 채널의 권한 덮어 쓰기를 대체합니다.",
                     "inherits": "GuildChannel#overwritePermissions",
                     "inherited": true,
                     "examples": [
-                        "channel.overwritePermissions([\n  {\n     id: message.author.id,\n     deny: ['VIEW_CHANNEL'],\n  },\n], 'Needed to change permissions');"
+                        "channel.overwritePermissions([\n  {\n     id: message.author.id,\n     deny: ['VIEW_CHANNEL'],\n  },\n], '권한을 바꿔야해요');"
                     ],
                     "params": [
                         {
                             "name": "overwrites",
-                            "description": "Permission overwrites the channel gets updated with",
+                            "description": "권한이 채널 업데이트로 덮어 쓰기",
                             "type": [
                                 [
                                     [
@@ -14766,7 +14766,7 @@
                         },
                         {
                             "name": "reason",
-                            "description": "Reason for updating the channel overwrites",
+                            "description": "채널 덮어 쓰기를 업데이트하는 이유",
                             "optional": true,
                             "type": [
                                 [
@@ -14797,7 +14797,7 @@
                 },
                 {
                     "name": "updateOverwrite",
-                    "description": "Updates Overwrites for a user or role in this channel. (creates if non-existent)",
+                    "description": "업데이트이 채널에서 사용자 또는 역할을 덮어 씁니다. (존재하지 않는 경우 작성)",
                     "inherits": "GuildChannel#updateOverwrite",
                     "inherited": true,
                     "examples": [
@@ -14806,7 +14806,7 @@
                     "params": [
                         {
                             "name": "userOrRole",
-                            "description": "The user or role to update",
+                            "description": "업데이트 할 사용자 또는 역할",
                             "type": [
                                 [
                                     [
@@ -14822,7 +14822,7 @@
                         },
                         {
                             "name": "options",
-                            "description": "The options for the update",
+                            "description": "업데이트 옵션",
                             "type": [
                                 [
                                     [
@@ -14833,7 +14833,7 @@
                         },
                         {
                             "name": "reason",
-                            "description": "Reason for creating/editing this overwrite",
+                            "description": "이 덮어 쓰기를 작성 / 편집하는 이유",
                             "optional": true,
                             "type": [
                                 [
@@ -14864,7 +14864,7 @@
                 },
                 {
                     "name": "createOverwrite",
-                    "description": "Overwrites the permissions for a user or role in this channel. (replaces if existent)",
+                    "description": "이 채널에서 사용자 또는 역할에 대한 권한을 덮어 씁니다. (존재하는 경우 교체)",
                     "inherits": "GuildChannel#createOverwrite",
                     "inherited": true,
                     "examples": [
@@ -14873,7 +14873,7 @@
                     "params": [
                         {
                             "name": "userOrRole",
-                            "description": "The user or role to update",
+                            "description": "업데이트 할 사용자 또는 역할",
                             "type": [
                                 [
                                     [
@@ -14889,7 +14889,7 @@
                         },
                         {
                             "name": "options",
-                            "description": "The options for the update",
+                            "description": "업데이트 옵션",
                             "type": [
                                 [
                                     [
@@ -14900,7 +14900,7 @@
                         },
                         {
                             "name": "reason",
-                            "description": "Reason for creating/editing this overwrite",
+                            "description": "이 덮어 쓰기를 작성 / 편집하는 이유",
                             "optional": true,
                             "type": [
                                 [
@@ -14931,7 +14931,7 @@
                 },
                 {
                     "name": "lockPermissions",
-                    "description": "Locks in the permission overwrites from the parent channel.",
+                    "description": "권한은 상위 채널을 따라 잠깁니다.",
                     "inherits": "GuildChannel#lockPermissions",
                     "inherited": true,
                     "returns": [
@@ -14954,7 +14954,7 @@
                 },
                 {
                     "name": "edit",
-                    "description": "Edits the channel.",
+                    "description": "채널을 편집합니다.",
                     "inherits": "GuildChannel#edit",
                     "inherited": true,
                     "examples": [
@@ -14963,7 +14963,7 @@
                     "params": [
                         {
                             "name": "data",
-                            "description": "The new data for the channel",
+                            "description": "채널의 새로운 데이터",
                             "type": [
                                 [
                                     [
@@ -14974,7 +14974,7 @@
                         },
                         {
                             "name": "reason",
-                            "description": "Reason for editing this channel",
+                            "description": "이 채널을 편집하는 이유",
                             "optional": true,
                             "type": [
                                 [
@@ -15006,7 +15006,7 @@
                 },
                 {
                     "name": "setName",
-                    "description": "Sets a new name for the guild channel.",
+                    "description": "길드 채널의 새 이름을 설정합니다.",
                     "inherits": "GuildChannel#setName",
                     "inherited": true,
                     "examples": [
