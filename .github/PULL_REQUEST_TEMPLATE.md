@@ -1,12 +1,12 @@
-**Please describe the changes this PR makes and why it should be merged:**
+번역에 기여해주셔서 감사합니다.
+**아래를 확인해주세요!!!**
 
-**Status**
+**상태**
 
-- [ ] Code changes have been tested against the Discord API, or there are no code changes
-- [ ] I know how to update typings and have done so, or typings don't need updating
+- [ ] 번역 규칙을 확인하셨나요? [번역규칙](https://github.com/discordjs-kr/discord.js/blob/docs/words.md)
+- [ ] `description` 이외의 항목은 수정하지 않습니다.
 
-**Semantic versioning classification:**
+**동의**
 
-- [ ] This PR changes the library's interface (methods or parameters added)
-  - [ ] This PR includes breaking changes (methods removed or renamed, parameters moved or removed)
-- [ ] This PR **only** includes non-code changes, like changes to documentation, README, etc.
+- [ ] PR을 시작하게되면, 기여자 목록에 포함되게 되는점, 동의합니까?
+- [ ] 기여하신 번역내용은 일부 수정되거나 삭제될 수 있습니다.
